@@ -52,7 +52,7 @@ let countriesDal = {
             console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {id,...country}
             }
         }
         catch (error) {
@@ -126,12 +126,20 @@ let countriesDal = {
         }).catch((err) => {
             console.log(err)
         })
+        return {
+            status: "success",
+            data: "countries table created successfully"
+        }
     },
     dropTable: async () => {
-        return await data_base.schema.dropTableIfExists('countries')
+        await data_base.schema.dropTableIfExists('countries')
+        return {
+            status: "success",
+            data: "countries table dropped successfully"
+        }
     },
     fillTable: async () => {
-        return await data_base('countries').insert([
+        await data_base('countries').insert([
             {
                 name: 'USA'
             },
@@ -154,6 +162,10 @@ let countriesDal = {
                 name: 'Thailand'
             }
         ])
+        return {
+            status: "success",
+            data: "countries table filled successfully"
+        }
     }
 
 }

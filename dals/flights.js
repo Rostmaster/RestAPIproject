@@ -56,7 +56,7 @@ let flightsDal = {
             console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: result.rowCount
+                data: { id, ...flight }
             }
         }
         catch (error) {
@@ -81,7 +81,7 @@ let flightsDal = {
                 const result = await data_base.raw(query)
                 return {
                     status: "success",
-                    data: result.rowCount
+                    data: { id, ...flight }
                 }
             }
 
@@ -89,7 +89,7 @@ let flightsDal = {
 
             return {
                 status: "success",
-                data: query_arr.length
+                data: { id, ...flight }
             }
         }
         catch (error) {
@@ -108,7 +108,10 @@ let flightsDal = {
             console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {
+                    message: 'success',
+                    id
+                }
             }
         }
         catch (error) {
@@ -122,25 +125,39 @@ let flightsDal = {
     },
     createTable: async () => {
         data_base.schema.hasTable('flights').then((exists) => {
-            if (!exists) 
-            return data_base.schema.createTable('flights', (table) => {
-                table.increments('id').primary()
-                table.integer('airline_id').notNullable()
-                table.integer('origin_country_id').notNullable()
-                table.integer('destination_country_id').notNullable()
-                table.dateTime('departure_time').notNullable()
-                table.dateTime('landing_time').notNullable()
-                table.integer('remaining_tickets').notNullable()
-            })
+            if (!exists) {
+                return data_base.schema.createTable('flights', (table) => {
+                    table.increments('id').primary()
+                    table.integer('airline_id').notNullable()
+                    table.integer('origin_country_id').notNullable()
+                    table.integer('destination_country_id').notNullable()
+                    table.dateTime('departure_time').notNullable()
+                    table.dateTime('landing_time').notNullable()
+                    table.integer('remaining_tickets').notNullable()
+                })
+            }
+
         }).catch((err) => {
-            console.log(err)
+            return {
+                status: "error",
+                internal: false,
+                error: err.message.replaceAll("\"", "'")
+            }
         })
+        return {
+            status: "success",
+            data: "table flights created"
+        }
     },
     dropTable: async () => {
-        return data_base.schema.dropTableIfExists('flights')
+        await data_base.schema.dropTableIfExists('flights')
+        return {
+            status: "success",
+            data: "table flights dropped"
+        }
     },
     fillTable: async () => {
-        return data_base('flights').insert([
+        await data_base('flights').insert([
             {
                 airline_id: 1,
                 origin_country_id: 1,
@@ -166,6 +183,10 @@ let flightsDal = {
                 remaining_tickets: 100
             }
         ])
+        return {
+            status: "success",
+            data: "table flights filled"
+        }
     }
 
 }

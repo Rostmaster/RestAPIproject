@@ -1,14 +1,23 @@
 {
-    "server":{
-        "port": 3000
-    },
-    "database": {
-        "client": "pg",
-        "connection": {
-          "host": "localhost",
-          "user": "postgres",
-          "password": "admin",
-          "database": "ecom"
-        }
-      }
+  "server": {
+    "port": 3000
+  },
+  "database": {
+    "client": "pg",
+    "connection": {
+      "host": "localhost",
+      "user": "postgres",
+      "password": "admin",
+      "database": "ecom"
+    }
+  },
+  "databaseForTests": {
+    "client": "pg",
+    "connection": {
+      "host": "localhost",
+      "user": "postgres",
+      "password": "admin",
+      "database": "test"
+    }
+  }
 }

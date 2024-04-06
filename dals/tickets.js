@@ -78,7 +78,7 @@ let ticketsDal = {
                 const result = await data_base.raw(query)
                 return {
                     status: "success",
-                    data: result.rowCount
+                    data: {id, ...ticket }
                 }
             }
 
@@ -86,7 +86,7 @@ let ticketsDal = {
 
             return {
                 status: "success",
-                data: query_arr.length
+                data: {id, ...ticket }
             }
         }
         catch (error) {
@@ -105,7 +105,7 @@ let ticketsDal = {
             console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {id}
             }
         }
         catch (error) {
@@ -128,12 +128,21 @@ let ticketsDal = {
         }).catch((err) => {
             console.log(err)
         })
+
+        return {
+            status: "success",
+            data: {message: "table tickets created"}
+        }
     },
     dropTable: async () => {
-        return await data_base.schema.dropTableIfExists('tickets')
+       await data_base.schema.dropTableIfExists('tickets')
+       return {
+        status: "success",
+        data: {message: "table tickets dropped"}
+       }
     },
     fillTable: async () => {
-        return await data_base('tickets').insert([
+        await data_base('tickets').insert([
             {
                 flight_id: 1,
                 customer_id: 1
@@ -163,6 +172,10 @@ let ticketsDal = {
                 customer_id: 7
             }
         ])
+        return{
+            status: "success",
+            data: {message: "table tickets filled"}
+        }
     }
 
 }

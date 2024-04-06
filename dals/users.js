@@ -7,15 +7,16 @@ let usersDal = {
 
     getAll: async () => {
         const users = await data_base.raw("select * from users")
-        console.log(users.rows.map(s => `[ID:${s.id}], ${s.username}`));
+        console.log("DAL get all",users.rows.map(s => `[ID:${s.id}], ${s.username}`));
         return {
             status: "success",
             data: users.rows
         }
+        
     },
     get: async (id) => {
         const users = await data_base.raw(`select * from users where id = ${id}`)
-        console.log(users.rows[0]);
+        console.log("DAL get",users.rows[0]);
         return {
             status: "success",
             data: users.rows[0]
@@ -25,7 +26,7 @@ let usersDal = {
         try {
             delete user.id
             const result_ids = await data_base('users').insert(user).returning('id');
-            console.log(result_ids[0]);
+            console.log("DAL add",result_ids[0]);
             const id = result_ids[0].id
             console.log('insert succeed!');
             return {
@@ -44,6 +45,7 @@ let usersDal = {
     },
     update: async (id, user) => {
         try {
+            console.log(user)
             const result = await data_base.raw(`UPDATE users set username=?,password=?, email=? where id=?`,
                 [
                     user.username ? user.username : '',
@@ -51,10 +53,10 @@ let usersDal = {
                     user.email ? user.email : 0,
                     id
                 ])
-            console.log('updated succeeded for id ' + id);
+            console.log('DAL update:','updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {"id":id}
             }
         }
         catch (error) {
@@ -106,7 +108,7 @@ let usersDal = {
             console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {"id":id}
             }
         }
         catch (error) {
@@ -135,7 +137,7 @@ let usersDal = {
         return await data_base.schema.dropTableIfExists('users')
     },
     fillTable: async () => {
-        return await data_base('users').insert([
+        let result =  await data_base('users').insert([
             {
                  username: 'admin',
                  password: 'pass1',
@@ -152,8 +154,11 @@ let usersDal = {
                 email: 'guest@pass3.com'
             },
         ])
+        return {
+            status: "success",
+            data: result.rowCount
+        }
     }
-
 }
 
 module.exports = usersDal;

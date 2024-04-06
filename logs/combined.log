@@ -1,0 +1,895 @@
+{
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-06T13:25:25.560Z'
+}
+{
+  message: 'Service: user 6 added',
+  level: 'info',
+  timestamp: '2024-04-06T13:26:23.403Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:32:19.202Z'
+}
+{
+  message: 'Service: user undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T13:33:24.048Z'
+}
+{
+  message: 'Service: user undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T13:34:59.469Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:36:40.522Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:36:47.234Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:38:31.089Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:50:54.730Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:51:37.355Z'
+}
+{
+  message: 'PUT to /4 |: _Password is required',
+  level: 'error',
+  timestamp: '2024-04-06T13:53:02.916Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:57:22.026Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:57:38.250Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T13:59:30.924Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:00:12.103Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:01:28.913Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:01:31.716Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:01:42.964Z'
+}
+{
+  message: 'PUT to /4 |: _Password is required',
+  level: 'error',
+  timestamp: '2024-04-06T14:06:44.811Z'
+}
+{
+  message: 'PUT to /4 |: _Password is required',
+  level: 'error',
+  timestamp: '2024-04-06T14:07:14.732Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:13:04.558Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:16:16.703Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:18:42.428Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:19:04.175Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:20:08.493Z'
+}
+{
+  message: "!!PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:20:32.087Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:21:08.179Z'
+}
+{
+  message: 'PUT to /4 |: user is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T14:21:30.435Z'
+}
+{
+  message: 'PUT to /4 |: user is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T14:23:06.285Z'
+}
+{
+  message: 'PUT to /4 |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T14:23:06.286Z'
+}
+{
+  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:24:22.587Z'
+}
+{
+  message: "PUT to /4 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T14:24:22.589Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:29:24.988Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:29:56.552Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:30:30.381Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:40:50.366Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:41:29.425Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:43:20.493Z'
+}
+{
+  message: 'PUT to /4 |: JSON.keys is not a function',
+  level: 'error',
+  timestamp: '2024-04-06T14:49:53.843Z'
+}
+{
+  message: 'PUT to /4 |500|: JSON.keys is not a function',
+  level: 'error',
+  timestamp: '2024-04-06T14:49:53.846Z'
+}
+{
+  message: 'PUT to /4 |: email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:50:30.588Z'
+}
+{
+  message: 'PUT to /4 |500|: email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:50:30.590Z'
+}
+{
+  message: 'PUT to /4 |: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:51:10.466Z'
+}
+{
+  message: 'PUT to /4 |400|: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:51:10.469Z'
+}
+{
+  message: 'PUT to /4 |: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:52:30.461Z'
+}
+{
+  message: 'PUT to /4 |400|: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:52:30.463Z'
+}
+{
+  message: 'PUT to /4 |: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:52:58.712Z'
+}
+{
+  message: 'PUT to /4 |400|: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:52:58.713Z'
+}
+{
+  message: 'PUT to /4 |: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:53:46.175Z'
+}
+{
+  message: 'PUT to /4 |400|: _email is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:53:46.176Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:54:50.610Z'
+}
+{
+  message: 'PUT to /4 |: _password is required',
+  level: 'error',
+  timestamp: '2024-04-06T14:55:09.490Z'
+}
+{
+  message: 'PUT to /4 |400|: _password is required',
+  level: 'error',
+  timestamp: '2024-04-06T14:55:09.492Z'
+}
+{
+  message: 'Service: user 4 updated',
+  level: 'info',
+  timestamp: '2024-04-06T14:57:00.276Z'
+}
+{
+  message: 'PATCH to /4 |: _emaifl is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:57:08.937Z'
+}
+{
+  message: 'PATCH to /4 |400|: _emaifl is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T14:57:08.940Z'
+}
+{
+  message: 'Service: user undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:01:59.155Z'
+}
+{
+  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T15:04:32.863Z'
+}
+{
+  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T15:04:44.780Z'
+}
+{
+  message: 'Service: table users created',
+  level: 'info',
+  timestamp: '2024-04-06T15:07:46.352Z'
+}
+{
+  message: 'Service: table users dropped',
+  level: 'info',
+  timestamp: '2024-04-06T15:09:28.602Z'
+}
+{
+  message: 'Service: table users created',
+  level: 'info',
+  timestamp: '2024-04-06T15:09:48.895Z'
+}
+{
+  message: 'Service: table users filled',
+  level: 'info',
+  timestamp: '2024-04-06T15:10:31.326Z'
+}
+{
+  message: 'Service: table users filled',
+  level: 'info',
+  timestamp: '2024-04-06T15:11:58.217Z'
+}
+{
+  message: 'GET to /1 |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-06T15:18:22.559Z'
+}
+{
+  message: 'Service: ticket 9 added',
+  level: 'info',
+  timestamp: '2024-04-06T15:21:13.574Z'
+}
+{
+  message: 'PUT to /9 |: _customer_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T15:21:48.274Z'
+}
+{
+  message: 'PUT to /9 |400|: _customer_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T15:21:48.276Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:21:54.668Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:22:47.204Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:24:03.571Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:24:12.982Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:24:53.608Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:25:27.717Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:25:30.080Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:26:43.594Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:28:08.583Z'
+}
+{
+  message: 'Service: ticket undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:28:09.571Z'
+}
+{
+  message: 'Service: ticket 9 updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:28:37.712Z'
+}
+{
+  message: 'Service: ticket undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:29:21.605Z'
+}
+{
+  message: 'Service: ticket 9 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:29:59.471Z'
+}
+{
+  message: 'Service: ticket 9 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:30:07.105Z'
+}
+{
+  message: 'Service: ticket 9 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:30:08.456Z'
+}
+{
+  message: 'Service: ticket 10 added',
+  level: 'info',
+  timestamp: '2024-04-06T15:30:29.929Z'
+}
+{
+  message: 'Service: ticket 10 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:30:43.543Z'
+}
+{
+  message: 'Service: table tickets dropped',
+  level: 'info',
+  timestamp: '2024-04-06T15:31:12.128Z'
+}
+{
+  message: 'Service: table tickets created',
+  level: 'info',
+  timestamp: '2024-04-06T15:33:47.698Z'
+}
+{
+  message: 'Service: table tickets filled',
+  level: 'info',
+  timestamp: '2024-04-06T15:34:00.232Z'
+}
+{
+  message: 'Service: table tickets dropped',
+  level: 'info',
+  timestamp: '2024-04-06T15:34:14.183Z'
+}
+{
+  message: 'Service: table tickets created',
+  level: 'info',
+  timestamp: '2024-04-06T15:34:23.968Z'
+}
+{
+  message: 'Service: table tickets filled',
+  level: 'info',
+  timestamp: '2024-04-06T15:34:31.227Z'
+}
+{
+  message: 'Service: flight 11 added',
+  level: 'info',
+  timestamp: '2024-04-06T15:43:32.042Z'
+}
+{
+  message: 'PUT to /11 |: _origin_country_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T15:44:19.581Z'
+}
+{
+  message: 'PUT to /11 |400|: _origin_country_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T15:44:19.585Z'
+}
+{
+  message: 'Service: flight undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:44:41.578Z'
+}
+{
+  message: 'PUT to /11 |: _Key origin_coutry_id is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T15:44:51.046Z'
+}
+{
+  message: 'PUT to /11 |400|: _Key origin_coutry_id is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T15:44:51.046Z'
+}
+{
+  message: 'Service: flight undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:45:27.543Z'
+}
+{
+  message: 'Service: flight undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:47:01.612Z'
+}
+{
+  message: 'Service: flight undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:47:03.245Z'
+}
+{
+  message: 'Service: flight 11 updated',
+  level: 'info',
+  timestamp: '2024-04-06T15:47:35.103Z'
+}
+{
+  message: 'Service: flight undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:54:31.341Z'
+}
+{
+  message: 'Service: flight 12 added',
+  level: 'info',
+  timestamp: '2024-04-06T15:55:40.033Z'
+}
+{
+  message: 'Service: flight 12 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T15:55:49.667Z'
+}
+{
+  message: 'Service: table flights dropped',
+  level: 'info',
+  timestamp: '2024-04-06T15:59:46.881Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T15:59:59.570Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:00:46.905Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:01:32.887Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:02:33.340Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:04:41.498Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:06:14.980Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:07:28.659Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:08:38.701Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:09:08.479Z'
+}
+{
+  message: 'table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:10:25.063Z'
+}
+{
+  message: '[object Object]',
+  level: 'info',
+  timestamp: '2024-04-06T16:11:02.533Z'
+}
+{
+  message: '{"status":"success","data":"table flights created"}',
+  level: 'info',
+  timestamp: '2024-04-06T16:11:37.480Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:12:22.812Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:12:54.975Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:06.062Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:14.839Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:16.000Z'
+}
+{
+  message: 'Service: table flights dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:34.030Z'
+}
+{
+  message: 'Service: table flights created',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:44.476Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:13:53.635Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:14:17.366Z'
+}
+{
+  message: 'Service: table flights filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:14:20.277Z'
+}
+{
+  message: 'Service: customer 5 added',
+  level: 'info',
+  timestamp: '2024-04-06T16:19:19.559Z'
+}
+{
+  message: 'Service: customer undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:20:13.934Z'
+}
+{
+  message: 'Service: customer 5 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:20:54.690Z'
+}
+{
+  message: 'PUT to /5 |: _user_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T16:21:11.500Z'
+}
+{
+  message: 'PUT to /5 |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T16:21:11.502Z'
+}
+{
+  message: 'Service: customer 5 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:21:22.442Z'
+}
+{
+  message: 'PATCH to /5 |: _Key last_namfe is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T16:21:26.749Z'
+}
+{
+  message: 'PATCH to /5 |400|: _Key last_namfe is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T16:21:26.750Z'
+}
+{
+  message: 'Service: customer 5 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:21:30.803Z'
+}
+{
+  message: 'Service: customer 5 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T16:22:55.517Z'
+}
+{
+  message: 'Service: table customers dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:23:07.218Z'
+}
+{
+  message: 'Service: table customers created',
+  level: 'info',
+  timestamp: '2024-04-06T16:23:20.701Z'
+}
+{
+  message: 'Service: table customers filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:23:35.254Z'
+}
+{
+  message: 'Service: country 9 added',
+  level: 'info',
+  timestamp: '2024-04-06T16:29:36.288Z'
+}
+{
+  message: 'Service: country undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:30:01.012Z'
+}
+{
+  message: 'Service: country undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T16:31:07.987Z'
+}
+{
+  message: 'Service: country 10 added',
+  level: 'info',
+  timestamp: '2024-04-06T16:31:14.855Z'
+}
+{
+  message: 'Service: country 9 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:31:33.258Z'
+}
+{
+  message: 'Service: country undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T16:31:42.540Z'
+}
+{
+  message: 'Service: country 10 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:31:55.906Z'
+}
+{
+  message: 'Service: country undefined deleted',
+  level: 'info',
+  timestamp: '2024-04-06T16:32:01.942Z'
+}
+{
+  message: 'Service: table countries dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:32:17.419Z'
+}
+{
+  message: 'Service: table countries dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:32:58.429Z'
+}
+{
+  message: 'Service: table countries created',
+  level: 'info',
+  timestamp: '2024-04-06T16:33:09.503Z'
+}
+{
+  message: 'Service: table countries filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:33:21.081Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:33:55.441Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:34:17.057Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:35:10.574Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:35:12.806Z'
+}
+{
+  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:35:13.978Z'
+}
+{
+  message: 'Service: country 8 added',
+  level: 'info',
+  timestamp: '2024-04-06T16:35:21.578Z'
+}
+{
+  message: 'POST to / |: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T16:36:20.300Z'
+}
+{
+  message: 'POST to / |: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-06T16:38:55.459Z'
+}
+{
+  message: 'POST to / |: _Key nafe is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T16:41:05.651Z'
+}
+{
+  message: 'Service: country 8 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:44:56.800Z'
+}
+{
+  message: 'Service: table countries dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:45:38.336Z'
+}
+{
+  message: 'Service: table countries created',
+  level: 'info',
+  timestamp: '2024-04-06T16:45:46.773Z'
+}
+{
+  message: 'Service: table countries filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:45:55.990Z'
+}
+{
+  message: 'Service: airline undefined added',
+  level: 'info',
+  timestamp: '2024-04-06T16:54:11.831Z'
+}
+{
+  message: 'PUT to /9 |: _country_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T16:54:49.830Z'
+}
+{
+  message: 'PUT to /9 |400|: _country_id is required',
+  level: 'error',
+  timestamp: '2024-04-06T16:54:49.831Z'
+}
+{
+  message: 'PUT to /9 |: _Key countdry_id is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T16:55:00.009Z'
+}
+{
+  message: 'PUT to /9 |400|: _Key countdry_id is invalid',
+  level: 'error',
+  timestamp: '2024-04-06T16:55:00.010Z'
+}
+{
+  message: 'Service: airline 9 updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:55:11.373Z'
+}
+{
+  message: 'Service: airline undefined updated',
+  level: 'info',
+  timestamp: '2024-04-06T16:55:29.990Z'
+}
+{
+  message: "DELETE to /9 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:55:38.532Z'
+}
+{
+  message: 'Service: airline undefined added',
+  level: 'info',
+  timestamp: '2024-04-06T16:56:34.952Z'
+}
+{
+  message: 'Service: airline 10 deleted',
+  level: 'info',
+  timestamp: '2024-04-06T16:57:09.398Z'
+}
+{
+  message: 'Service: table airlines dropped',
+  level: 'info',
+  timestamp: '2024-04-06T16:57:31.005Z'
+}
+{
+  message: "DELETE to /table-create |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-06T16:57:37.269Z'
+}
+{
+  message: 'Service: table airlines created',
+  level: 'info',
+  timestamp: '2024-04-06T16:58:09.261Z'
+}
+{
+  message: 'Service: table airlines filled',
+  level: 'info',
+  timestamp: '2024-04-06T16:58:18.615Z'
+}

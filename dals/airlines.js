@@ -54,7 +54,7 @@ let airlinesDal = {
             console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {id,...airline}
             }
         }
         catch (error) {
@@ -87,7 +87,7 @@ let airlinesDal = {
 
             return {
                 status: "success",
-                data: query_arr.length
+                data: {id,...airline}
             }
         }
         catch (error) {
@@ -106,7 +106,7 @@ let airlinesDal = {
             console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {id}
             }
         }
         catch (error) {
@@ -130,12 +130,20 @@ let airlinesDal = {
         }).catch((err) => {
             console.log(err)
         })
+        return {
+            status: "success",
+            data: "airlines table created successfully"
+        }
     },
     dropTable: async () => {
-        return await data_base.schema.dropTableIfExists('airlines')
+        await data_base.schema.dropTableIfExists('airlines')
+        return {
+            status: "success",
+            data: "airlines table dropped successfully"
+        }
     },
     fillTable: async () => {
-        return await data_base('airlines').insert([
+        await data_base('airlines').insert([
             {
                 name: 'USA Airways',
                 country_id: 1,
@@ -174,6 +182,10 @@ let airlinesDal = {
 
 
         ])
+        return {
+            status: "success",
+            data: "airlines table filled successfully"
+        }
     }
 
 }

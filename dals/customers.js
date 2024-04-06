@@ -57,7 +57,7 @@ let customersDal = {
             console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: result.rowCount
+                data: { id, ...customer }
             }
         }
         catch (error) {
@@ -82,7 +82,7 @@ let customersDal = {
                 const result = await data_base.raw(query)
                 return {
                     status: "success",
-                    data: result.rowCount
+                    data: { id, ...customer }
                 }
             }
 
@@ -109,7 +109,10 @@ let customersDal = {
             console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: {
+                    message: 'success',
+                    id
+                }
             }
         }
         catch (error) {
@@ -136,12 +139,20 @@ let customersDal = {
         }).catch((err) => {
             console.log(err)
         })
+        return {
+            status: "success",
+            data: { message: "table customers created" }
+        }
     },
     dropTable: async () => {
-        return await data_base.schema.dropTableIfExists('customers')
+        await data_base.schema.dropTableIfExists('customers')
+        return {
+            status: "success",
+            data: { message: "table customers dropped" }
+        }
     },
     fillTable: async () => {
-        return await data_base('customers').insert([
+        await data_base('customers').insert([
             {
                 first_name: 'John',
                 last_name: 'Doe',
@@ -176,6 +187,10 @@ let customersDal = {
             }
 
         ])
+        return {
+            status: "success",
+            data: { message: "table customers filled" }
+        }
     }
 
 }
