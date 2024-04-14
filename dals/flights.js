@@ -4,7 +4,7 @@ const config = require('config')
 const data_base = knex(config.database)
 
 let flightsDal = {
-    //get all the flights from the database with knex , return the values and not the promise
+    //? Flights CRUD
     getAll: async () => {
         const flights = await data_base.raw("select * from flights")
         console.log(flights.rows.map(s => `[${s.id}] ${s.origin_country_id} -> ${s.destination_country_id}`));
@@ -123,6 +123,20 @@ let flightsDal = {
             }
         }
     },
+    //? Flights Custom CRUD Actions
+    getFlightsByTickets: async (tickets) => {
+        const flights = []
+        for (let ticket of tickets) {
+            let result = await data_base.raw(`select * from flights where id = ${ticket.flight_id} `)
+            flights.push(result.rows[0])
+        }
+        return {
+            status: "success",
+            data: flights
+        }
+    },
+
+    //? Flights Table
     createTable: async () => {
         data_base.schema.hasTable('flights').then((exists) => {
             if (!exists) {

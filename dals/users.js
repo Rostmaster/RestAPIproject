@@ -5,6 +5,7 @@ const data_base = knex(config.database)
 
 let usersDal = {
 
+    //? User CRUD
     getAll: async () => {
         const users = await data_base.raw("select * from users")
         console.log("DAL get all",users.rows.map(s => `[ID:${s.id}], ${s.username}`));
@@ -158,7 +159,28 @@ let usersDal = {
             status: "success",
             data: result.rowCount
         }
+    },
+
+    //? Authentication
+    login: async (email) => {
+        try {
+            const result = await data_base.raw(`select * from users where email = '${email}'`)
+            console.log(result.rows[0]);
+            return {
+                status: "success",
+                data: result.rows[0]
+            }
+        }
+        catch (error) {
+            console.log('login failed!');
+            return {
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            }
+        }
     }
+
 }
 
 module.exports = usersDal;

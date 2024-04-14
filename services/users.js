@@ -1,5 +1,8 @@
 const DAL = require("../dals/users.js")
 const logger = require("../utils/logger.js")
+const cookieService = require("./cookies.js")
+const securityService = require("./security.js")
+const pagesService = require("./pages.js")
 
 const userValidation = (user, strict = true) => {
     let errorMSG = null
@@ -12,8 +15,15 @@ const userValidation = (user, strict = true) => {
     }
 
     Object.keys(user).forEach((key) => {
-        console.log("Validator", key, keys.includes(key))
         keys.includes(key) ? null : errorMSG = `_Key ${key} is invalid`
+    })
+
+    Object.keys(user).forEach((key) => {
+        user[key] === undefined ? errorMSG = `_value of ${key}(${user[key]}) is undefined` : null
+    })
+
+    Object.keys(user).forEach((key) => {
+        user[key] === '' ? errorMSG = `_value of ${key}(${user[key]}) is blank` : null
     })
 
     return {
@@ -24,6 +34,7 @@ const userValidation = (user, strict = true) => {
 
 const userService = {
 
+    //? User CRUD
     getAll: async (req, res) => {
         try {
             console.log(req.query)
@@ -55,16 +66,19 @@ const userService = {
     add: async (req, res) => {
         try {
             let raw_user = req.body
-            let id = req.params.userId
+            raw_user.password = securityService.toEncrypt(raw_user.password)
 
             let validationResult = userValidation(raw_user)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
             const user = await DAL.add(raw_user)
-            logger.info(`Service: user ${id} added`)
-            res.status(200).json(user)
+            logger.info(`Service: user ${user.data.id} added`)
+
+            cookieService.addExistingUserCookie(req, res)
+
+            pagesService.loginPage(req, res)
+
         } catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
             if (error.message[0] === '_') {
@@ -159,6 +173,9 @@ const userService = {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
         }
     },
+
+
+    //? Table operations
     createTable: async (req, res) => {
         try {
             const result = await DAL.createTable()
@@ -178,10 +195,10 @@ const userService = {
         catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
         }
-   
+
     },
     fillTable: async (req, res) => {
-        try{
+        try {
             const result = await DAL.fillTable()
             logger.info(`Service: table users filled`)
             res.status(200).json(result)
@@ -190,6 +207,44 @@ const userService = {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
         }
     },
+
+    //? Actions
+    login: async (req, res) => {
+        try {
+            const credentials = req.body
+            const requestForUser = await DAL.login(req.body.email)
+
+            if (requestForUser.status !== 'success') {
+                throw new Error("User not found")
+            }
+            // if (securityService.comparePassword(credentials.password, requestForUser.data.password)) {
+            if (credentials.password !== requestForUser.data.password) {
+                throw new Error("Invalid credentials")
+            }
+
+            await cookieService.addAuthCookie(req, res, requestForUser.data)
+            logger.info(`Service: user ${requestForUser.data.username} logged in`)
+            pagesService.dashBoardPageRender(req, res)
+        }
+        catch (error) {
+            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            res.status(500).json({
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            })
+        }
+    },
+    newUserRequest: async (req, res) => {
+        await cookieService.addNewUserCookie(req, res)
+        await pagesService.signupPage(req, res)
+        return
+    },
+    logout: async (req, res) => {
+        await cookieService.deleteAuthCookie(req, res)
+        await pagesService.loginPage(req, res)
+        return
+    }
 }
 
 module.exports = userService;

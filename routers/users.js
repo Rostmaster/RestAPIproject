@@ -1,10 +1,15 @@
 const { Router } = require("express")
-const service = require("../services/user.js")
+const service = require("../services/users.js")
 
 const router = new Router();
 
+
+//Actions
+router.post("/login", service.login);
+router.get("/logout", service.logout);
+router.get("/new_user_request", service.newUserRequest);
+
 //Table
-// router.get("/users-table", usersDal.getTable);
 router.post("/table-create", service.createTable);
 router.delete("/table-delete", service.dropTable);
 router.post("/table-fill", service.fillTable);

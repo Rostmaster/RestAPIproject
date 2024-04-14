@@ -5,6 +5,7 @@ const data_base = knex(config.database)
 
 let countriesDal = {
 
+    //? Countries CRUD
     getAll: async () => {
         const countries = await data_base.raw("select * from countries")
         console.log(countries.rows.map(s => `[${s.id}] ${s.name}`));
@@ -52,7 +53,7 @@ let countriesDal = {
             console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
-                data: {id,...country}
+                data: { id, ...country }
             }
         }
         catch (error) {
@@ -116,6 +117,40 @@ let countriesDal = {
             }
         }
     },
+    //? Countries Custom CRUD Actions
+    getCountriesByFlights: async (flights) => {
+        let countries = {}
+        const updatedFlights = []
+
+        for (flight of flights) {
+            let origin_country = ''
+            let destination_country = ''
+            if (flight.origin_country_id in countries) {
+                origin_country = countries[flight.origin_country_id]
+            }
+            else {
+                let country = await data_base.raw(`select * from countries where id = ${flight.origin_country_id}`)
+                countries[flight.origin_country_id] = country.rows[0].name
+                origin_country = countries[flight.origin_country_id]
+            }
+
+            if (flight.destination_country_id in countries) {
+                destination_country = countries[flight.destination_country_id]
+            }
+            else {
+                let country = await data_base.raw(`select * from countries where id = ${flight.destination_country_id}`)
+                countries[flight.destination_country_id] = country.rows[0].name
+                destination_country = countries[flight.destination_country_id]
+            }
+
+            updatedFlights.push({...flight, origin_country, destination_country })
+        }
+        return {
+            status: "success",
+            data: updatedFlights
+        }
+    },
+    //? Countries Table
     createTable: async () => {
         await data_base.schema.hasTable('countries').then((exists) => {
             if (!exists)

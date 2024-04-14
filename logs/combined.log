@@ -1,895 +1,615 @@
 {
   message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T13:25:25.560Z'
+  timestamp: '2024-04-07T18:59:01.512Z'
 }
 {
-  message: 'Service: user 6 added',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T13:26:23.403Z'
+  timestamp: '2024-04-07T19:00:35.727Z'
 }
 {
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:32:19.202Z'
-}
-{
-  message: 'Service: user undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T13:33:24.048Z'
-}
-{
-  message: 'Service: user undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T13:34:59.469Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:36:40.522Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:36:47.234Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:38:31.089Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:50:54.730Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:51:37.355Z'
-}
-{
-  message: 'PUT to /4 |: _Password is required',
-  level: 'error',
-  timestamp: '2024-04-06T13:53:02.916Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:57:22.026Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:57:38.250Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T13:59:30.924Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:00:12.103Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:01:28.913Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:01:31.716Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:01:42.964Z'
-}
-{
-  message: 'PUT to /4 |: _Password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:06:44.811Z'
-}
-{
-  message: 'PUT to /4 |: _Password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:07:14.732Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:13:04.558Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:16:16.703Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:18:42.428Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:19:04.175Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:20:08.493Z'
-}
-{
-  message: "!!PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:20:32.087Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:21:08.179Z'
-}
-{
-  message: 'PUT to /4 |: user is not defined',
-  level: 'error',
-  timestamp: '2024-04-06T14:21:30.435Z'
-}
-{
-  message: 'PUT to /4 |: user is not defined',
-  level: 'error',
-  timestamp: '2024-04-06T14:23:06.285Z'
-}
-{
-  message: 'PUT to /4 |500|: user is not defined',
-  level: 'error',
-  timestamp: '2024-04-06T14:23:06.286Z'
-}
-{
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:24:22.587Z'
-}
-{
-  message: "PUT to /4 |500|: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T14:24:22.589Z'
-}
-{
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:29:24.988Z'
+  timestamp: '2024-04-10T15:47:15.592Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:29:56.552Z'
+  timestamp: '2024-04-10T15:57:41.616Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:30:30.381Z'
+  timestamp: '2024-04-10T16:04:25.609Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:40:50.366Z'
+  timestamp: '2024-04-10T16:06:03.204Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:41:29.425Z'
+  timestamp: '2024-04-10T16:06:51.938Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user undefined added',
   level: 'info',
-  timestamp: '2024-04-06T14:43:20.493Z'
-}
-{
-  message: 'PUT to /4 |: JSON.keys is not a function',
-  level: 'error',
-  timestamp: '2024-04-06T14:49:53.843Z'
+  timestamp: '2024-04-10T16:08:14.152Z'
 }
 {
-  message: 'PUT to /4 |500|: JSON.keys is not a function',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:49:53.846Z'
+  timestamp: '2024-04-10T16:08:41.655Z'
 }
 {
-  message: 'PUT to /4 |: email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:50:30.588Z'
+  timestamp: '2024-04-10T16:09:25.081Z'
 }
 {
-  message: 'PUT to /4 |500|: email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:50:30.590Z'
+  timestamp: '2024-04-10T16:09:54.091Z'
 }
 {
-  message: 'PUT to /4 |: _email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:51:10.466Z'
+  timestamp: '2024-04-10T16:10:25.991Z'
 }
 {
-  message: 'PUT to /4 |400|: _email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:51:10.469Z'
+  timestamp: '2024-04-10T16:13:06.278Z'
 }
 {
-  message: 'PUT to /4 |: _email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:52:30.461Z'
+  timestamp: '2024-04-10T16:13:46.942Z'
 }
 {
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:30.463Z'
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-10T16:14:49.190Z'
 }
 {
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:58.712Z'
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-10T16:17:04.441Z'
 }
 {
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:58.713Z'
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-10T16:17:47.681Z'
 }
 {
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:53:46.175Z'
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-10T16:22:21.237Z'
 }
 {
-  message: 'PUT to /4 |400|: _email is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:53:46.176Z'
+  timestamp: '2024-04-10T16:23:34.453Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user 19 added',
   level: 'info',
-  timestamp: '2024-04-06T14:54:50.610Z'
-}
-{
-  message: 'PUT to /4 |: _password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:55:09.490Z'
+  timestamp: '2024-04-10T16:24:31.156Z'
 }
 {
-  message: 'PUT to /4 |400|: _password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:55:09.492Z'
+  message: 'Service: user undefined added',
+  level: 'info',
+  timestamp: '2024-04-10T16:24:31.158Z'
 }
 {
-  message: 'Service: user 4 updated',
+  message: 'Service: user 20 added',
   level: 'info',
-  timestamp: '2024-04-06T14:57:00.276Z'
+  timestamp: '2024-04-10T16:25:20.389Z'
 }
 {
-  message: 'PATCH to /4 |: _emaifl is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:57:08.937Z'
+  message: 'Service: user 21 added',
+  level: 'info',
+  timestamp: '2024-04-10T16:26:52.187Z'
 }
 {
-  message: 'PATCH to /4 |400|: _emaifl is invalid',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:57:08.940Z'
-}
-{
-  message: 'Service: user undefined deleted',
-  level: 'info',
-  timestamp: '2024-04-06T15:01:59.155Z'
+  timestamp: '2024-04-10T16:34:25.570Z'
 }
 {
-  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T15:04:32.863Z'
+  timestamp: '2024-04-10T16:57:38.616Z'
 }
 {
-  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T15:04:44.780Z'
+  timestamp: '2024-04-10T16:58:47.164Z'
 }
 {
-  message: 'Service: table users created',
+  message: 'Service: user 22 added',
   level: 'info',
-  timestamp: '2024-04-06T15:07:46.352Z'
+  timestamp: '2024-04-10T17:04:04.795Z'
 }
 {
-  message: 'Service: table users dropped',
+  message: 'Service: user 23 added',
   level: 'info',
-  timestamp: '2024-04-06T15:09:28.602Z'
+  timestamp: '2024-04-10T17:06:53.639Z'
 }
 {
-  message: 'Service: table users created',
+  message: 'Service: user 24 added',
   level: 'info',
-  timestamp: '2024-04-06T15:09:48.895Z'
+  timestamp: '2024-04-10T17:08:04.930Z'
 }
 {
-  message: 'Service: table users filled',
+  message: 'Service: user 25 added',
   level: 'info',
-  timestamp: '2024-04-06T15:10:31.326Z'
+  timestamp: '2024-04-10T17:09:03.701Z'
 }
 {
-  message: 'Service: table users filled',
+  message: 'Service: user 26 added',
   level: 'info',
-  timestamp: '2024-04-06T15:11:58.217Z'
+  timestamp: '2024-04-10T17:23:05.642Z'
 }
 {
-  message: 'GET to /1 |: select * from tickets where id = undefined - column "undefined" does not exist',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T15:18:22.559Z'
+  timestamp: '2024-04-10T17:23:44.441Z'
 }
 {
-  message: 'Service: ticket 9 added',
+  message: 'Service: user 27 added',
   level: 'info',
-  timestamp: '2024-04-06T15:21:13.574Z'
-}
-{
-  message: 'PUT to /9 |: _customer_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:21:48.274Z'
+  timestamp: '2024-04-10T17:24:10.156Z'
 }
 {
-  message: 'PUT to /9 |400|: _customer_id is required',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T15:21:48.276Z'
-}
-{
-  message: 'Service: ticket undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T15:21:54.668Z'
+  timestamp: '2024-04-10T17:32:39.399Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user 28 added',
   level: 'info',
-  timestamp: '2024-04-06T15:22:47.204Z'
+  timestamp: '2024-04-10T17:33:04.402Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user 29 added',
   level: 'info',
-  timestamp: '2024-04-06T15:24:03.571Z'
+  timestamp: '2024-04-10T17:33:04.534Z'
 }
 {
-  message: 'Service: ticket undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T15:24:12.982Z'
+  message: 'POST to / |: _value of password() is blank',
+  level: 'error',
+  timestamp: '2024-04-10T18:20:37.936Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user 30 added',
   level: 'info',
-  timestamp: '2024-04-06T15:24:53.608Z'
+  timestamp: '2024-04-10T18:27:38.639Z'
 }
 {
-  message: 'Service: ticket undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T15:25:27.717Z'
+  message: 'GET to /login |: select * from users where id = login - column "login" does not exist',
+  level: 'error',
+  timestamp: '2024-04-10T18:51:39.252Z'
 }
 {
-  message: 'Service: ticket undefined updated',
-  level: 'info',
-  timestamp: '2024-04-06T15:25:30.080Z'
+  message: 'POST to /login |: User not found',
+  level: 'error',
+  timestamp: '2024-04-10T18:57:17.871Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user 1 logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:26:43.594Z'
+  timestamp: '2024-04-10T19:01:54.967Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:28:08.583Z'
+  timestamp: '2024-04-10T19:02:54.700Z'
 }
 {
-  message: 'Service: ticket undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:28:09.571Z'
+  timestamp: '2024-04-10T19:03:23.857Z'
 }
 {
-  message: 'Service: ticket 9 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:28:37.712Z'
+  timestamp: '2024-04-12T11:42:29.591Z'
 }
 {
-  message: 'Service: ticket undefined deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:29:21.605Z'
+  timestamp: '2024-04-12T12:06:27.542Z'
 }
 {
-  message: 'Service: ticket 9 deleted',
-  level: 'info',
-  timestamp: '2024-04-06T15:29:59.471Z'
+  message: 'POST to / |: _username is required',
+  level: 'error',
+  timestamp: '2024-04-12T12:10:58.568Z'
 }
 {
-  message: 'Service: ticket 9 deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:30:07.105Z'
+  timestamp: '2024-04-12T12:12:42.545Z'
 }
 {
-  message: 'Service: ticket 9 deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:30:08.456Z'
+  timestamp: '2024-04-12T12:16:33.636Z'
 }
 {
-  message: 'Service: ticket 10 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:30:29.929Z'
+  timestamp: '2024-04-12T12:21:58.842Z'
 }
 {
-  message: 'Service: ticket 10 deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:30:43.543Z'
+  timestamp: '2024-04-12T13:17:34.794Z'
 }
 {
-  message: 'Service: table tickets dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:31:12.128Z'
+  timestamp: '2024-04-12T13:18:03.739Z'
 }
 {
-  message: 'Service: table tickets created',
-  level: 'info',
-  timestamp: '2024-04-06T15:33:47.698Z'
+  message: 'POST to / |: _value of email() is blank',
+  level: 'error',
+  timestamp: '2024-04-12T14:02:18.885Z'
 }
 {
-  message: 'Service: table tickets filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:34:00.232Z'
+  timestamp: '2024-04-13T11:26:42.260Z'
 }
 {
-  message: 'Service: table tickets dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:34:14.183Z'
+  timestamp: '2024-04-13T11:27:04.618Z'
 }
 {
-  message: 'Service: table tickets created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:34:23.968Z'
+  timestamp: '2024-04-13T11:29:04.648Z'
 }
 {
-  message: 'Service: table tickets filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:34:31.227Z'
+  timestamp: '2024-04-13T11:31:51.940Z'
 }
 {
-  message: 'Service: flight 11 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:43:32.042Z'
-}
-{
-  message: 'PUT to /11 |: _origin_country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:19.581Z'
+  timestamp: '2024-04-13T11:52:15.171Z'
 }
 {
-  message: 'PUT to /11 |400|: _origin_country_id is required',
+  message: 'POST to / |: _value of email() is blank',
   level: 'error',
-  timestamp: '2024-04-06T15:44:19.585Z'
+  timestamp: '2024-04-13T11:56:22.268Z'
 }
 {
-  message: 'Service: flight undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:44:41.578Z'
-}
-{
-  message: 'PUT to /11 |: _Key origin_coutry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:51.046Z'
+  timestamp: '2024-04-13T11:56:43.661Z'
 }
 {
-  message: 'PUT to /11 |400|: _Key origin_coutry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:51.046Z'
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-13T11:59:34.196Z'
 }
 {
-  message: 'Service: flight undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:45:27.543Z'
+  timestamp: '2024-04-13T12:10:53.597Z'
 }
 {
-  message: 'Service: flight undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:47:01.612Z'
+  timestamp: '2024-04-13T12:12:36.405Z'
 }
 {
-  message: 'Service: flight undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:47:03.245Z'
+  timestamp: '2024-04-13T12:13:15.468Z'
 }
 {
-  message: 'Service: flight 11 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:47:35.103Z'
+  timestamp: '2024-04-13T12:14:12.720Z'
 }
 {
-  message: 'Service: flight undefined deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:54:31.341Z'
+  timestamp: '2024-04-13T12:15:22.683Z'
 }
 {
-  message: 'Service: flight 12 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:55:40.033Z'
+  timestamp: '2024-04-13T12:17:17.103Z'
 }
 {
-  message: 'Service: flight 12 deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:55:49.667Z'
+  timestamp: '2024-04-13T12:17:42.535Z'
 }
 {
-  message: 'Service: table flights dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:59:46.881Z'
+  timestamp: '2024-04-13T12:19:14.562Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T15:59:59.570Z'
+  timestamp: '2024-04-13T12:19:39.872Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:00:46.905Z'
+  timestamp: '2024-04-13T12:20:40.340Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:01:32.887Z'
+  timestamp: '2024-04-13T12:21:08.053Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:02:33.340Z'
+  timestamp: '2024-04-13T12:21:32.542Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:04:41.498Z'
+  timestamp: '2024-04-13T12:22:11.108Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:06:14.980Z'
+  timestamp: '2024-04-13T12:22:42.577Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:07:28.659Z'
+  timestamp: '2024-04-13T12:23:02.931Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:08:38.701Z'
+  timestamp: '2024-04-13T12:23:55.245Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:09:08.479Z'
+  timestamp: '2024-04-13T12:24:22.245Z'
 }
 {
-  message: 'table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:10:25.063Z'
+  timestamp: '2024-04-13T12:25:48.621Z'
 }
 {
-  message: '[object Object]',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:11:02.533Z'
+  timestamp: '2024-04-13T12:30:07.932Z'
 }
 {
-  message: '{"status":"success","data":"table flights created"}',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:11:37.480Z'
+  timestamp: '2024-04-13T12:35:56.153Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:12:22.812Z'
+  timestamp: '2024-04-13T12:36:43.739Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:12:54.975Z'
+  timestamp: '2024-04-13T12:40:21.108Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:06.062Z'
+  timestamp: '2024-04-13T12:43:13.772Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:14.839Z'
+  timestamp: '2024-04-13T12:51:58.618Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:16.000Z'
+  timestamp: '2024-04-13T12:53:32.600Z'
 }
 {
-  message: 'Service: table flights dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:34.030Z'
+  timestamp: '2024-04-13T13:09:01.382Z'
 }
 {
-  message: 'Service: table flights created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:44.476Z'
+  timestamp: '2024-04-13T13:14:03.784Z'
 }
 {
-  message: 'Service: table flights filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:13:53.635Z'
+  timestamp: '2024-04-13T13:14:33.516Z'
 }
 {
-  message: 'Service: table flights filled',
-  level: 'info',
-  timestamp: '2024-04-06T16:14:17.366Z'
+  message: 'POST to /login |: Invalid credentials',
+  level: 'error',
+  timestamp: '2024-04-13T13:15:00.514Z'
 }
 {
-  message: 'Service: table flights filled',
-  level: 'info',
-  timestamp: '2024-04-06T16:14:20.277Z'
+  message: 'POST to /login |: Invalid credentials',
+  level: 'error',
+  timestamp: '2024-04-13T13:15:44.056Z'
 }
 {
-  message: 'Service: customer 5 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:19:19.559Z'
+  timestamp: '2024-04-13T13:16:02.735Z'
 }
 {
-  message: 'Service: customer undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:20:13.934Z'
+  timestamp: '2024-04-13T13:16:24.097Z'
 }
 {
-  message: 'Service: customer 5 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:20:54.690Z'
+  timestamp: '2024-04-13T13:19:54.549Z'
 }
 {
-  message: 'PUT to /5 |: _user_id is required',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T16:21:11.500Z'
+  timestamp: '2024-04-13T13:21:59.514Z'
 }
 {
-  message: 'PUT to /5 |400|: _user_id is required',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T16:21:11.502Z'
-}
-{
-  message: 'Service: customer 5 updated',
-  level: 'info',
-  timestamp: '2024-04-06T16:21:22.442Z'
+  timestamp: '2024-04-13T13:22:40.010Z'
 }
 {
-  message: 'PATCH to /5 |: _Key last_namfe is invalid',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T16:21:26.749Z'
+  timestamp: '2024-04-13T13:23:00.657Z'
 }
 {
-  message: 'PATCH to /5 |400|: _Key last_namfe is invalid',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T16:21:26.750Z'
-}
-{
-  message: 'Service: customer 5 updated',
-  level: 'info',
-  timestamp: '2024-04-06T16:21:30.803Z'
-}
-{
-  message: 'Service: customer 5 deleted',
-  level: 'info',
-  timestamp: '2024-04-06T16:22:55.517Z'
-}
-{
-  message: 'Service: table customers dropped',
-  level: 'info',
-  timestamp: '2024-04-06T16:23:07.218Z'
-}
-{
-  message: 'Service: table customers created',
-  level: 'info',
-  timestamp: '2024-04-06T16:23:20.701Z'
-}
-{
-  message: 'Service: table customers filled',
-  level: 'info',
-  timestamp: '2024-04-06T16:23:35.254Z'
+  timestamp: '2024-04-13T13:23:09.688Z'
 }
 {
-  message: 'Service: country 9 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:29:36.288Z'
+  timestamp: '2024-04-13T13:23:28.295Z'
 }
 {
-  message: 'Service: country undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:30:01.012Z'
+  timestamp: '2024-04-13T13:24:04.861Z'
 }
 {
-  message: 'Service: country undefined deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:31:07.987Z'
+  timestamp: '2024-04-13T13:26:48.427Z'
 }
 {
-  message: 'Service: country 10 added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:31:14.855Z'
+  timestamp: '2024-04-13T13:28:36.055Z'
 }
 {
-  message: 'Service: country 9 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:31:33.258Z'
+  timestamp: '2024-04-13T13:29:47.747Z'
 }
 {
-  message: 'Service: country undefined deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:31:42.540Z'
+  timestamp: '2024-04-13T13:36:18.585Z'
 }
 {
-  message: 'Service: country 10 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:31:55.906Z'
+  timestamp: '2024-04-13T13:39:27.462Z'
 }
 {
-  message: 'Service: country undefined deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:32:01.942Z'
+  timestamp: '2024-04-13T13:40:24.648Z'
 }
 {
-  message: 'Service: table countries dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:32:17.419Z'
+  timestamp: '2024-04-13T13:47:24.845Z'
 }
 {
-  message: 'Service: table countries dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:32:58.429Z'
+  timestamp: '2024-04-13T13:48:21.839Z'
 }
 {
-  message: 'Service: table countries created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:33:09.503Z'
+  timestamp: '2024-04-13T13:50:54.904Z'
 }
 {
-  message: 'Service: table countries filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:33:21.081Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:33:55.441Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:34:17.057Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:35:10.574Z'
+  timestamp: '2024-04-13T13:53:31.168Z'
 }
 {
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T16:35:12.806Z'
+  timestamp: '2024-04-13T16:03:27.209Z'
 }
 {
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T16:35:13.978Z'
-}
-{
-  message: 'Service: country 8 added',
-  level: 'info',
-  timestamp: '2024-04-06T16:35:21.578Z'
+  timestamp: '2024-04-13T16:04:07.847Z'
 }
 {
-  message: 'POST to / |: id is not defined',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T16:36:20.300Z'
+  timestamp: '2024-04-13T16:04:59.677Z'
 }
 {
-  message: 'POST to / |: id is not defined',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T16:38:55.459Z'
+  timestamp: '2024-04-13T16:06:05.072Z'
 }
 {
-  message: 'POST to / |: _Key nafe is invalid',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T16:41:05.651Z'
-}
-{
-  message: 'Service: country 8 updated',
-  level: 'info',
-  timestamp: '2024-04-06T16:44:56.800Z'
-}
-{
-  message: 'Service: table countries dropped',
-  level: 'info',
-  timestamp: '2024-04-06T16:45:38.336Z'
-}
-{
-  message: 'Service: table countries created',
-  level: 'info',
-  timestamp: '2024-04-06T16:45:46.773Z'
+  timestamp: '2024-04-13T16:08:25.431Z'
 }
 {
-  message: 'Service: table countries filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:45:55.990Z'
+  timestamp: '2024-04-13T16:12:03.657Z'
 }
 {
-  message: 'Service: airline undefined added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:54:11.831Z'
-}
-{
-  message: 'PUT to /9 |: _country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:54:49.830Z'
-}
-{
-  message: 'PUT to /9 |400|: _country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:54:49.831Z'
-}
-{
-  message: 'PUT to /9 |: _Key countdry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:55:00.009Z'
-}
-{
-  message: 'PUT to /9 |400|: _Key countdry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:55:00.010Z'
+  timestamp: '2024-04-13T16:13:28.228Z'
 }
 {
-  message: 'Service: airline 9 updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:55:11.373Z'
+  timestamp: '2024-04-13T16:15:01.934Z'
 }
 {
-  message: 'Service: airline undefined updated',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:55:29.990Z'
-}
-{
-  message: "DELETE to /9 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:55:38.532Z'
+  timestamp: '2024-04-14T17:32:19.887Z'
 }
 {
-  message: 'Service: airline undefined added',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:56:34.952Z'
+  timestamp: '2024-04-14T17:35:21.248Z'
 }
 {
-  message: 'Service: airline 10 deleted',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:57:09.398Z'
+  timestamp: '2024-04-14T17:37:43.957Z'
 }
 {
-  message: 'Service: table airlines dropped',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:57:31.005Z'
-}
-{
-  message: "DELETE to /table-create |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:57:37.269Z'
+  timestamp: '2024-04-14T17:54:05.068Z'
 }
 {
-  message: 'Service: table airlines created',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:58:09.261Z'
+  timestamp: '2024-04-14T17:57:21.473Z'
 }
 {
-  message: 'Service: table airlines filled',
+  message: 'Service: user admin logged in',
   level: 'info',
-  timestamp: '2024-04-06T16:58:18.615Z'
+  timestamp: '2024-04-14T17:59:07.443Z'
 }

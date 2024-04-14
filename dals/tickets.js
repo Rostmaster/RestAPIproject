@@ -5,6 +5,7 @@ const data_base = knex(config.database)
 
 let ticketsDal = {
 
+    //? Tickets CRUD
     getAll: async () => {
         const tickets = await data_base.raw("select * from tickets")
         console.log(tickets.rows.map(s => `[ID:${s.id}], Customer:${s.customer_id}`));
@@ -117,6 +118,16 @@ let ticketsDal = {
             }
         }
     },
+    //? Tickets Custom CRUD requests
+    getTicketsByUser: async (user_id) => {
+        const tickets = await data_base.raw(`select * from tickets where customer_id = ${user_id}`)
+        console.log(tickets.rows);
+        return {
+            status: "success",
+            data: tickets.rows
+        }
+    },
+    //? Tickets Table 
     createTable: async () => {
         await data_base.schema.hasTable('tickets').then((exists) => {
             if (!exists)

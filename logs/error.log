@@ -1,355 +1,155 @@
 {
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:32:19.202Z'
+  timestamp: '2024-04-10T16:08:41.655Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:36:40.522Z'
+  timestamp: '2024-04-10T16:09:25.081Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:36:47.234Z'
+  timestamp: '2024-04-10T16:09:54.091Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:38:31.089Z'
+  timestamp: '2024-04-10T16:10:25.991Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:50:54.730Z'
+  timestamp: '2024-04-10T16:13:06.278Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:51:37.355Z'
+  timestamp: '2024-04-10T16:13:46.942Z'
 }
 {
-  message: 'PUT to /4 |: _Password is required',
+  message: 'POST to / |: Cannot set headers after they are sent to the client',
   level: 'error',
-  timestamp: '2024-04-06T13:53:02.916Z'
+  timestamp: '2024-04-10T16:17:04.453Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: Cannot set headers after they are sent to the client',
   level: 'error',
-  timestamp: '2024-04-06T13:57:22.026Z'
+  timestamp: '2024-04-10T16:17:47.693Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:57:38.250Z'
+  timestamp: '2024-04-10T16:23:34.453Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T13:59:30.924Z'
+  timestamp: '2024-04-10T16:34:25.570Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:00:12.103Z'
+  timestamp: '2024-04-10T16:57:38.616Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:01:28.913Z'
+  timestamp: '2024-04-10T16:58:47.164Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:01:31.716Z'
+  timestamp: '2024-04-10T17:23:44.441Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:01:42.964Z'
+  timestamp: '2024-04-10T17:32:39.399Z'
 }
 {
-  message: 'PUT to /4 |: _Password is required',
+  message: 'POST to / |: _value of password() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:06:44.811Z'
+  timestamp: '2024-04-10T18:20:37.936Z'
 }
 {
-  message: 'PUT to /4 |: _Password is required',
+  message: 'GET to /login |: select * from users where id = login - column "login" does not exist',
   level: 'error',
-  timestamp: '2024-04-06T14:07:14.732Z'
+  timestamp: '2024-04-10T18:51:39.252Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to /login |: User not found',
   level: 'error',
-  timestamp: '2024-04-06T14:13:04.558Z'
+  timestamp: '2024-04-10T18:57:17.871Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _username is required',
   level: 'error',
-  timestamp: '2024-04-06T14:16:16.703Z'
+  timestamp: '2024-04-12T12:10:58.568Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of email() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:18:42.428Z'
+  timestamp: '2024-04-12T14:02:18.885Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to / |: _value of email() is blank',
   level: 'error',
-  timestamp: '2024-04-06T14:19:04.175Z'
+  timestamp: '2024-04-13T11:56:22.268Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:20:08.493Z'
+  timestamp: '2024-04-13T13:15:00.514Z'
 }
 {
-  message: "!!PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:20:32.087Z'
+  timestamp: '2024-04-13T13:15:44.056Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:21:08.179Z'
+  timestamp: '2024-04-13T13:21:59.514Z'
 }
 {
-  message: 'PUT to /4 |: user is not defined',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:21:30.435Z'
+  timestamp: '2024-04-13T13:22:40.010Z'
 }
 {
-  message: 'PUT to /4 |: user is not defined',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:23:06.285Z'
+  timestamp: '2024-04-13T13:23:00.657Z'
 }
 {
-  message: 'PUT to /4 |500|: user is not defined',
+  message: 'POST to /login |: Invalid credentials',
   level: 'error',
-  timestamp: '2024-04-06T14:23:06.286Z'
+  timestamp: '2024-04-13T13:23:09.688Z'
 }
 {
-  message: "PUT to /4 |: Cannot read properties of undefined (reading 'id')",
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T14:24:22.587Z'
+  timestamp: '2024-04-13T16:03:27.209Z'
 }
 {
-  message: "PUT to /4 |500|: Cannot read properties of undefined (reading 'id')",
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T14:24:22.589Z'
+  timestamp: '2024-04-13T16:04:07.847Z'
 }
 {
-  message: 'PUT to /4 |: JSON.keys is not a function',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T14:49:53.843Z'
+  timestamp: '2024-04-13T16:04:59.677Z'
 }
 {
-  message: 'PUT to /4 |500|: JSON.keys is not a function',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T14:49:53.846Z'
+  timestamp: '2024-04-13T16:06:05.072Z'
 }
 {
-  message: 'PUT to /4 |: email is invalid',
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'id')",
   level: 'error',
-  timestamp: '2024-04-06T14:50:30.588Z'
-}
-{
-  message: 'PUT to /4 |500|: email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:50:30.590Z'
-}
-{
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:51:10.466Z'
-}
-{
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:51:10.469Z'
-}
-{
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:30.461Z'
-}
-{
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:30.463Z'
-}
-{
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:58.712Z'
-}
-{
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:52:58.713Z'
-}
-{
-  message: 'PUT to /4 |: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:53:46.175Z'
-}
-{
-  message: 'PUT to /4 |400|: _email is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:53:46.176Z'
-}
-{
-  message: 'PUT to /4 |: _password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:55:09.490Z'
-}
-{
-  message: 'PUT to /4 |400|: _password is required',
-  level: 'error',
-  timestamp: '2024-04-06T14:55:09.492Z'
-}
-{
-  message: 'PATCH to /4 |: _emaifl is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:57:08.937Z'
-}
-{
-  message: 'PATCH to /4 |400|: _emaifl is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T14:57:08.940Z'
-}
-{
-  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T15:04:32.863Z'
-}
-{
-  message: "DELETE to /users-table-create |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T15:04:44.780Z'
-}
-{
-  message: 'GET to /1 |: select * from tickets where id = undefined - column "undefined" does not exist',
-  level: 'error',
-  timestamp: '2024-04-06T15:18:22.559Z'
-}
-{
-  message: 'PUT to /9 |: _customer_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:21:48.274Z'
-}
-{
-  message: 'PUT to /9 |400|: _customer_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:21:48.276Z'
-}
-{
-  message: 'PUT to /11 |: _origin_country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:19.581Z'
-}
-{
-  message: 'PUT to /11 |400|: _origin_country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:19.585Z'
-}
-{
-  message: 'PUT to /11 |: _Key origin_coutry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:51.046Z'
-}
-{
-  message: 'PUT to /11 |400|: _Key origin_coutry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T15:44:51.046Z'
-}
-{
-  message: 'PUT to /5 |: _user_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:21:11.500Z'
-}
-{
-  message: 'PUT to /5 |400|: _user_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:21:11.502Z'
-}
-{
-  message: 'PATCH to /5 |: _Key last_namfe is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:21:26.749Z'
-}
-{
-  message: 'PATCH to /5 |400|: _Key last_namfe is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:21:26.750Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:33:55.441Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:34:17.057Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:35:10.574Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:35:12.806Z'
-}
-{
-  message: "POST to / |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:35:13.978Z'
-}
-{
-  message: 'POST to / |: id is not defined',
-  level: 'error',
-  timestamp: '2024-04-06T16:36:20.300Z'
-}
-{
-  message: 'POST to / |: id is not defined',
-  level: 'error',
-  timestamp: '2024-04-06T16:38:55.459Z'
-}
-{
-  message: 'POST to / |: _Key nafe is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:41:05.651Z'
-}
-{
-  message: 'PUT to /9 |: _country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:54:49.830Z'
-}
-{
-  message: 'PUT to /9 |400|: _country_id is required',
-  level: 'error',
-  timestamp: '2024-04-06T16:54:49.831Z'
-}
-{
-  message: 'PUT to /9 |: _Key countdry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:55:00.009Z'
-}
-{
-  message: 'PUT to /9 |400|: _Key countdry_id is invalid',
-  level: 'error',
-  timestamp: '2024-04-06T16:55:00.010Z'
-}
-{
-  message: "DELETE to /9 |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:55:38.532Z'
-}
-{
-  message: "DELETE to /table-create |: Cannot read properties of undefined (reading 'id')",
-  level: 'error',
-  timestamp: '2024-04-06T16:57:37.269Z'
+  timestamp: '2024-04-13T16:08:25.431Z'
 }

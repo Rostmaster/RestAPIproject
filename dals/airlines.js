@@ -4,7 +4,8 @@ const config = require('config')
 const data_base = knex(config.database)
 
 let airlinesDal = {
-
+    
+    //? Airlines CRUD
     getAll: async () => {
         const airlines = await data_base.raw("select * from airlines")
         console.log(airlines.rows.map(s => `[ID:${s.id}], ${s.name}`));
@@ -118,6 +119,28 @@ let airlinesDal = {
             }
         }
     },
+    //? Airlines Custom CRUD Actions
+    getAirlinesByFlights: async (flights) => {
+        let airlines = {}
+        const updatedFlights = []
+
+        for (flight of flights) {
+            if (airlines[flight.airline_id]) {
+                updatedFlights.push({...flight, airline: airlines[flight.airline_id] })
+            }
+            else {
+                let airline = await data_base.raw(`select * from airlines where id = ${flight.airline_id}`)
+                airlines[flight.airline_id] = airline.rows[0].name
+                updatedFlights.push({...flight, airline: airlines[flight.airline_id] })
+            }
+        }
+
+        return {
+            status: "success",
+            data: updatedFlights
+        }
+    },
+    //? Airlines Table
     createTable: async () => {
         await data_base.schema.hasTable('airlines').then((exists) => {
             if (!exists)

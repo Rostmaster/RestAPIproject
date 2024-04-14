@@ -1,0 +1,35 @@
+doctype html 
+head 
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+    link(rel="shortcut icon" href="#")
+    title 
+body
+    .wrapper 
+        h1 Login Page
+        section#login
+            label(for="email") Email 
+            input(type="text" id="email" name="email")
+            label(for="password") Password
+            input(type="password" id="password" name="password")
+            button(id="login_btn") Login
+
+            span(id="sign_up_link") Sign up
+
+script
+    include ./includes/js/login.js
+
+
+style.
+    #sign_up {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    label {
+        display:block;
+    }
+    input {
+        width:200px;
+        padding:10px;
+        margin:10px;
+    }
+
