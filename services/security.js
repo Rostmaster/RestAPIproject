@@ -2,9 +2,9 @@ const bcrypt = require('bcrypt')
 
 const securityService = {
 
-    toEncrypt: (password) => {
+    toEncrypt: (data) => {
         const salt = bcrypt.genSaltSync()
-        return bcrypt.hashSync(password, salt)
+        return bcrypt.hashSync(data, salt)
     },
     compare: async (password1, password2) => {
         

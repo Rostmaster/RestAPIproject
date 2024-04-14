@@ -613,3 +613,53 @@
   level: 'info',
   timestamp: '2024-04-14T17:59:07.443Z'
 }
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T18:05:47.714Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T18:08:29.571Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T18:10:02.999Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T18:30:09.455Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T18:50:46.681Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T19:02:15.564Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T19:03:05.578Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T19:05:15.124Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T19:06:07.228Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-04-14T19:07:10.530Z'
+}

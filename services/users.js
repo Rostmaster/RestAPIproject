@@ -31,6 +31,52 @@ const userValidation = (user, strict = true) => {
         result: errorMSG ? false : true
     }
 }
+const addAuthCookie = async (user) => {
+    try {
+        await fetch(`http://localhost:3000/api/services/addAuthCookie`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({ user })
+        })
+        return {
+            message: "success",
+            result: true
+        }
+    }
+    catch (error) {
+        logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+        return {
+            message: "error",
+            result: false
+        }
+    }
+
+}
+const addExistingUserCookie = async (user) => {
+    try {
+        await fetch(`http://localhost:3000/api/services/addExistingUserCookie`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({ user })
+        })
+        return {
+            message: "success",
+            result: true
+        }
+    } catch (error) {
+        logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+        return {
+            message: "error",
+            result: false
+        }
+    }
+}
 
 const userService = {
 
@@ -212,8 +258,9 @@ const userService = {
     login: async (req, res) => {
         try {
             const credentials = req.body
-            const requestForUser = await DAL.login(req.body.email)
-
+            const requestForUser = await DAL.login(credentials.email)
+            req.body.user = requestForUser.data
+            
             if (requestForUser.status !== 'success') {
                 throw new Error("User not found")
             }
@@ -222,7 +269,9 @@ const userService = {
                 throw new Error("Invalid credentials")
             }
 
-            await cookieService.addAuthCookie(req, res, requestForUser.data)
+            await addAuthCookie(requestForUser.data)
+            await addExistingUserCookie(requestForUser.data)
+
             logger.info(`Service: user ${requestForUser.data.username} logged in`)
             pagesService.dashBoardPageRender(req, res)
         }

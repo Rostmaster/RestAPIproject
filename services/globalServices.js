@@ -7,11 +7,14 @@ const flightsDal = require("../dals/flights.js")
 const ticketsDal = require("../dals/tickets.js")
 const usersDal = require("../dals/users.js")
 
+const cookieService = require("./cookies.js")
 
 const globalServices = {
 
-    getCustomerFlights: async (req, res, userID) => {
-       try{
+    //?Complex CRUD operations
+    getCustomerFlights: async (req, res) => {
+        try {
+            let userID = await req.body.user.id
             let tickets = await ticketsDal.getTicketsByUser(userID)
             let flights = await flightsDal.getFlightsByTickets(tickets.data)
             let flightsWithCountries = await countriesDal.getCountriesByFlights(flights.data)
@@ -24,8 +27,11 @@ const globalServices = {
                 delete flight.destination_country_id
                 delete flight.remaining_tickets
             }
-            res.status(200).json({ data: result })
-            return
+            return{
+                status: "success",
+                internal: true,
+                data: result
+            }
         }
         catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
@@ -36,7 +42,7 @@ const globalServices = {
             })
         }
     },
-    getActiveFlights: async (req, res) => {
+    getActiveFlights: async (req, res) => {//TODO
         console.log('get active flights')
         //get all flights
         //filter by active
@@ -45,12 +51,12 @@ const globalServices = {
         //get airlines
         return 'result'
     },
-    getCurrentUser: async (req, res) => {
+    getCurrentUser: async (req, res) => {//TODO
         let user = 1
         //read auth cookie 
         //get from db
         res.status(200).json({ user: user })
-    }
+    },
 }
 
 module.exports = globalServices;

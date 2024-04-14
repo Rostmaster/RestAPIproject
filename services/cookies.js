@@ -4,9 +4,10 @@ const securityService = require('./security.js')
 const cookieService = {
     //Existing user cookie
     addExistingUserCookie: async (req, res) => {
+        const user = req.body.user
         await res.cookie('existingUser', 'your existing user cookie')
-        const authCookie = `${user.id}/${securityService.toEncrypt(user.username)}`
-        await res.cookie('auth', authCookie)
+        const authCookie = `${user.id}/${ securityService.toEncrypt(user.username)}`
+        await res.cookie('auth', authCookie).send()
     },
     checkExistingUser: async (req, res) => {
         return await Object.prototype.hasOwnProperty.call(req.cookies, 'existingUser')
@@ -16,12 +17,12 @@ const cookieService = {
     },
 
     //Auth cookie
-    addAuthCookie: (req, res, user) => {
+    addAuthCookie: (req, res) => {
+        const user = req.body.user
         const encryptedUsername = securityService.toEncrypt(user.username)
         const authCookie = `${user.id},${encryptedUsername}`
         const existingUser = `${user.id},${encryptedUsername}`
-        res.cookie('auth', authCookie)
-        res.cookie('existingUser', existingUser)
+        res.cookie('auth', authCookie).send()
     },
     checkAuth: async (req, res) => {
         if (!req.cookies.auth) return false
