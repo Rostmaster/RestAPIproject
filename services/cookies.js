@@ -5,9 +5,11 @@ const cookieService = {
     //Existing user cookie
     addExistingUserCookie: async (req, res) => {
         const user = req.body.user
-        await res.cookie('existingUser', 'your existing user cookie')
-        const authCookie = `${user.id}/${ securityService.toEncrypt(user.username)}`
-        await res.cookie('auth', authCookie).send()
+        const encryptedUsername = securityService.toEncrypt(user.username)
+        const existingUser = `${user.id},${encryptedUsername}`
+        res.cookie('existingUser', existingUser)
+        res.status(200).send({status: "success", message: "Existing user cookie added"})
+
     },
     checkExistingUser: async (req, res) => {
         return await Object.prototype.hasOwnProperty.call(req.cookies, 'existingUser')
@@ -22,14 +24,22 @@ const cookieService = {
         const encryptedUsername = securityService.toEncrypt(user.username)
         const authCookie = `${user.id},${encryptedUsername}`
         const existingUser = `${user.id},${encryptedUsername}`
-        res.cookie('auth', authCookie).send()
+        res.cookie('existingUser', existingUser)
+        res.cookie('auth', authCookie)
+        res.status(200).send({status: "success", message: "Auth cookie added"})
+
     },
     checkAuth: async (req, res) => {
         if (!req.cookies.auth) return false
         console.log("There is an auth cookie")
         const userCookie = req.cookies.auth.split(',')
         const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
-        return securityService.compare(user.data.username, userCookie[1])
+        if(securityService.compare(user.data.username, userCookie[1])){
+            return user.data
+        }
+        else{
+            return null
+        }
     },
     deleteAuthCookie: async (req, res) => {
         await res.clearCookie('auth')

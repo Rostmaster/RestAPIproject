@@ -127,6 +127,26 @@ let ticketsDal = {
             data: tickets.rows
         }
     },
+
+    deleteTicketsByFlightId: async (flight_id) => {
+        try {
+            const result = await data_base.raw(`DELETE from tickets where flight_id = ${flight_id}`)
+            console.log(result.rowCount);
+            return {
+                status: "success",
+                data: {flight_id}
+            }
+        }
+        catch (error) {
+            console.log('delete failed for id ' + flight_id);
+            return {
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            }
+        }
+    },
+    
     //? Tickets Table 
     createTable: async () => {
         await data_base.schema.hasTable('tickets').then((exists) => {
@@ -134,7 +154,9 @@ let ticketsDal = {
                 return data_base.schema.createTable('tickets', (table) => {
                     table.increments('id').primary()
                     table.integer('flight_id').notNullable()
+                    .references('id').inTable('flights')
                     table.integer('customer_id').notNullable()
+                    .references('id').inTable('customers')
                 })
         }).catch((err) => {
             console.log(err)

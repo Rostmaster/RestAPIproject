@@ -67,8 +67,11 @@ const airlinesService = {
                 throw new Error(validationResult.message)
 
             const airline = await DAL.add(raw_airline)
+            if(airline.status === "error") throw new Error(airline.error)
+
             logger.info(`Service: airline ${id} added`)
             res.status(200).json(airline)
+            
         } catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
             if (error.message[0] === '_') {

@@ -1,28 +1,30 @@
 const cookieService = require("./cookies.js")
 const globalServices = require("./globalServices.js")
+const config = require("config")
 
-const renderDashboard = async (req, res) => {
-    const userID = await req.cookies.auth.split(',')[0]
-    let customerFlights = await globalServices.getCustomerFlights(req, res, userID)
-    res.status(200).render('dashboard', { customerFlights })
-    return
+const prepareDashboardData = async (req, res) => {
+    let customerFlights = (await globalServices.getCustomerFlights(req, res)).data
+    return { customerFlights }
 }
+
 const pagesService = {
 
     dashboardPage: async (req, res) => {
-        if (await cookieService.checkAuth(req, res)) {
-            let customerFlights = await globalServices.getCustomerFlights(req, res)
-            res.status(200).render('dashboard', { customerFlights })
+        try {
+            let user = await cookieService.checkAuth(req, res)
+            if (user !== null) {
+                req.user = user
+                let { customerFlights } = await prepareDashboardData(req, res)
+                res.status(200).render('dashboard', { customerFlights })
+                return
+            }
+            res.status(200).redirect("/login")
+            return
+        } catch (error) {
+            res.status(200).redirect("/login")
+
             return
         }
-        res.status(200).redirect("/login")
-        return
-    },
-
-    dashBoardPageRender: async (req, res) => {
-        let customerFlights = await globalServices.getCustomerFlights(req, res)
-        res.status(200).render('dashboard', { customerFlights:customerFlights.data })
-        return
     },
 
     signupPage: async (req, res) => {

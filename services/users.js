@@ -31,53 +31,6 @@ const userValidation = (user, strict = true) => {
         result: errorMSG ? false : true
     }
 }
-const addAuthCookie = async (user) => {
-    try {
-        await fetch(`http://localhost:3000/api/services/addAuthCookie`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({ user })
-        })
-        return {
-            message: "success",
-            result: true
-        }
-    }
-    catch (error) {
-        logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-        return {
-            message: "error",
-            result: false
-        }
-    }
-
-}
-const addExistingUserCookie = async (user) => {
-    try {
-        await fetch(`http://localhost:3000/api/services/addExistingUserCookie`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({ user })
-        })
-        return {
-            message: "success",
-            result: true
-        }
-    } catch (error) {
-        logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-        return {
-            message: "error",
-            result: false
-        }
-    }
-}
-
 const userService = {
 
     //? User CRUD
@@ -269,11 +222,11 @@ const userService = {
                 throw new Error("Invalid credentials")
             }
 
-            await addAuthCookie(requestForUser.data)
-            await addExistingUserCookie(requestForUser.data)
+            await cookieService.addAuthCookie(req,res)
+            // await cookieService.addExistingUserCookie(req,res)
 
             logger.info(`Service: user ${requestForUser.data.username} logged in`)
-            pagesService.dashBoardPageRender(req, res)
+            pagesService.dashboardPage(req, res)
         }
         catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)

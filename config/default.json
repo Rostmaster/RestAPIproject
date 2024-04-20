@@ -19,5 +19,9 @@
       "password": "admin",
       "database": "test"
     }
+  },
+  "pages":{
+    "dashboard":{
+      "resultLimit": 3    }
   }
 }

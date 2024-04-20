@@ -1,4 +1,5 @@
-const DAL = require("../dals/flights.js")
+const flightsDAL = require("../dals/flights.js")
+const ticketsDal = require("../dals/tickets.js")
 const logger = require("../utils/logger.js")
 
 const flightValidation = (flight, strict = true) => {
@@ -34,7 +35,7 @@ const flightsService = {
     getAll: async (req, res) => {
         try {
             console.log(req.query)
-            const flights = await DAL.getAll()
+            const flights = await flightsDAL.getAll()
             res.status(200).json(flights)
         } catch (error) {
             logger.error(error)
@@ -47,7 +48,7 @@ const flightsService = {
     },
     get: async (req, res) => {
         try {
-            const flight = await DAL.get(req.params.flightId)
+            const flight = await flightsDAL.get(req.params.flightId)
             if (!flight) throw new Error("flight not found")
             res.status(200).json(flight)
         } catch (error) {
@@ -69,7 +70,7 @@ const flightsService = {
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const flight = await DAL.add(raw_flight)
+            const flight = await flightsDAL.add(raw_flight)
             logger.info(`Service: flight ${id} added`)
             res.status(200).json(flight)
         } catch (error) {
@@ -98,7 +99,7 @@ const flightsService = {
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const flight = await DAL.update(id, raw_flight)
+            const flight = await flightsDAL.update(id, raw_flight)
             logger.info(`Service: flight ${id} updated`)
             res.status(200).json(flight)
         }
@@ -132,7 +133,7 @@ const flightsService = {
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const flight = await DAL.patch(id, raw_flight)
+            const flight = await flightsDAL.patch(id, raw_flight)
             logger.info(`Service: flight ${flight.data.id} updated`)
             res.status(200).json(flight)
         }
@@ -158,7 +159,10 @@ const flightsService = {
     },
     delete: async (req, res) => {
         try {
-            const flight = await DAL.delete(req.params.flightId)
+            //delete tickets related to this flight
+            ticketsDal.deleteTicketsByFlightId(req.params.flightId)
+
+            const flight = await flightsDAL.delete(req.params.flightId)
             logger.info(`Service: flight ${flight.data.id} deleted`)
             res.status(200).json(flight)
         }
@@ -168,7 +172,7 @@ const flightsService = {
     },
     createTable: async (req, res) => {
         try {
-            const result = await DAL.createTable()
+            const result = await flightsDAL.createTable()
             logger.info(`Service: table flights created`)
             res.status(200).json(result)
         }
@@ -178,7 +182,7 @@ const flightsService = {
     },
     dropTable: async (req, res) => {
         try {
-            const result = await DAL.dropTable()
+            const result = await flightsDAL.dropTable()
             logger.info(`Service: table flights dropped`)
             res.status(200).json(result)
         }
@@ -189,7 +193,7 @@ const flightsService = {
     },
     fillTable: async (req, res) => {
         try {
-            const result = await DAL.fillTable()
+            const result = await flightsDAL.fillTable()
             logger.info(`Service: table flights filled`)
             res.status(200).json(result)
         }

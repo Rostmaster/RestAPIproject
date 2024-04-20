@@ -5,6 +5,7 @@ const data_base = knex(config.database)
 
 let customersDal = {
 
+    //? Customer CRUD
     getAll: async () => {
         const customers = await data_base.raw("select * from customers")
         console.log(customers.rows.map(s => `[ID:${s.id}], ${s.first_name} ${s.last_name}`));
@@ -124,6 +125,8 @@ let customersDal = {
             }
         }
     },
+
+    //? Customers Table
     createTable: async () => {
         await data_base.schema.hasTable('customers').then((exists) => {
             if (!exists)
@@ -132,9 +135,10 @@ let customersDal = {
                     table.string('first_name').notNullable()
                     table.string('last_name').notNullable()
                     table.string('address').notNullable()
-                    table.string('phone_number').notNullable()
-                    table.string('credit_card').notNullable()
-                    table.integer('user_id').notNullable()
+                    table.string('phone_number').notNullable().unique()
+                    table.string('credit_card').notNullable().unique()
+                    table.integer('user_id').notNullable().unique()
+                    .references('id').inTable('users')
                 })
         }).catch((err) => {
             console.log(err)
@@ -157,33 +161,65 @@ let customersDal = {
                 first_name: 'John',
                 last_name: 'Doe',
                 address: '123 Main St',
-                phone_number: '123-456-7890',
-                credit_card: '1234567890123456',
+                phone_number: '123-456-7690',
+                credit_card: '123467890123456',
                 user_id: 1
             },
             {
                 first_name: 'Jane',
                 last_name: 'Doe',
                 address: '123 Secondary St',
-                phone_number: '123-456-7890',
-                credit_card: '1234567890123456',
+                phone_number: '123-456-890',
+                credit_card: '124567890123456',
                 user_id: 2
             },
             {
                 first_name: 'Josh',
                 last_name: 'Dowson',
                 address: '456 Main St',
-                phone_number: '123-456-7890',
-                credit_card: '1234567890123456',
+                phone_number: '123-456-789',
+                credit_card: '134567890123456',
                 user_id: 3
             },
             {
                 first_name: 'Gene',
                 last_name: 'Dion',
                 address: '456 Secondary St',
-                phone_number: '123-456-7890',
-                credit_card: '1234567890123456',
+                phone_number: '123-456-790',
+                credit_card: '234567890123456',
                 user_id: 4
+            },
+            {
+                first_name: 'John',
+                last_name: 'Doe',
+                address: '123 Main St',
+                phone_number: '123-456-76902',
+                credit_card: '1234678901234526',
+                user_id: 5
+            },
+            {
+                first_name: 'Jane',
+                last_name: 'Doe',
+                address: '123 Secondary St',
+                phone_number: '123-456-8903',
+                credit_card: '1245678901234563',
+                user_id: 6
+            },
+            {
+                first_name: 'Josh',
+                last_name: 'Dowson',
+                address: '456 Main St',
+                phone_number: '123-456-7894',
+                credit_card: '1345678901234564',
+                user_id: 7
+            },
+            {
+                first_name: 'Gene',
+                last_name: 'Dion',
+                address: '456 Secondary St',
+                phone_number: '123-456-7905',
+                credit_card: '2345678901234565',
+                user_id: 8
             }
 
         ])

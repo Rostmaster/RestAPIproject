@@ -146,9 +146,11 @@ let airlinesDal = {
             if (!exists)
                 return data_base.schema.createTable('airlines', (table) => {
                     table.increments('id').primary()
-                    table.string('name').notNullable()
+                    table.string('name').notNullable().unique()
                     table.integer('country_id').notNullable()
+                    .references('id').inTable('countries')
                     table.integer('user_id').notNullable()
+                    .references('id').inTable('users')
                 })
         }).catch((err) => {
             console.log(err)
@@ -202,8 +204,6 @@ let airlinesDal = {
                 country_id: 7,
                 user_id: 7
             }
-
-
         ])
         return {
             status: "success",

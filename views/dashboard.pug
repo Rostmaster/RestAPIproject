@@ -14,7 +14,7 @@ body
                     button(id="get_all_flights") Get all flights
             .content 
                 h2 Your Flights:
-                table(id="user_flights")
+                table
                     thead 
                         tr 
                             th FLIGHT
@@ -23,52 +23,36 @@ body
                             th DEPARTURE
                             th TIME
                             th DESTINATION 
-                    tbody
+                    tbody(id="user_flights")
                         each flight in customerFlights
                             tr(id=`row-${flight.id}`)
+                                td= flight.id
+                                td= flight.airline
                                 td= flight.departure_time
-                                td= flight.departure
-                                td= flight.destination
-                                td= flight.flight
-                                td= flight.gate
-                                td= flight.status
-                                h2 Your Flights:
+                                td= flight.origin_country
+                                td= flight.landing_time
+                                td= flight.destination_country
+
 
                 h2 All the flights:
-                table(id="all_flights")
+                table
                     thead 
                         tr 
+                            th FLIGHT 
+                            th AIRLINE
                             th DEPARTURE
                             th TIME
                             th DESTINATION 
                             th TIME
-                            th FLIGHT 
-                            th PRICE 
                             th TICKETS REMAINED 
-                    tbody
+                    tbody(id="all_flights")
 
-                span pages: 
-                br
-                span prev 1 2 3 4 5 6 next
+
+                .pagination
+
+
+style
+    include ./includes/style/dashboard.css
+
 script
     include ./includes/js/dashboard.js
-
-style.
-    #wrapper{
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    table{
-        border-collapse: collapse;
-    }
-    td,th{
-        border: 1px solid black;
-        padding: 10px;
-    }

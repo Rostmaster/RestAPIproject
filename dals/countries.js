@@ -156,7 +156,7 @@ let countriesDal = {
             if (!exists)
                 return data_base.schema.createTable('countries', (table) => {
                     table.increments('id').primary()
-                    table.string('name').notNullable()
+                    table.string('name').notNullable().unique()
                 })
         }).catch((err) => {
             console.log(err)

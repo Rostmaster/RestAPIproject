@@ -143,8 +143,11 @@ let flightsDal = {
                 return data_base.schema.createTable('flights', (table) => {
                     table.increments('id').primary()
                     table.integer('airline_id').notNullable()
+                        .references('id').inTable('airlines')
                     table.integer('origin_country_id').notNullable()
+                        .references('id').inTable('countries')
                     table.integer('destination_country_id').notNullable()
+                        .references('id').inTable('countries')
                     table.dateTime('departure_time').notNullable()
                     table.dateTime('landing_time').notNullable()
                     table.integer('remaining_tickets').notNullable()
@@ -195,7 +198,53 @@ let flightsDal = {
                 departure_time: '2019-01-01 00:00:00',
                 landing_time: '2019-01-01 00:00:00',
                 remaining_tickets: 100
-            }
+            }, {
+                airline_id: 1,
+                origin_country_id: 1,
+                destination_country_id: 2,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            },
+            {
+                airline_id: 2,
+                origin_country_id: 2,
+                destination_country_id: 3,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            },
+            {
+                airline_id: 3,
+                origin_country_id: 3,
+                destination_country_id: 1,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            }, {
+                airline_id: 1,
+                origin_country_id: 1,
+                destination_country_id: 2,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            },
+            {
+                airline_id: 2,
+                origin_country_id: 2,
+                destination_country_id: 3,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            },
+            {
+                airline_id: 3,
+                origin_country_id: 3,
+                destination_country_id: 1,
+                departure_time: '2019-01-01 00:00:00',
+                landing_time: '2019-01-01 00:00:00',
+                remaining_tickets: 100
+            },
         ])
         return {
             status: "success",
