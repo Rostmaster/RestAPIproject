@@ -121,13 +121,11 @@ let ticketsDal = {
     //? Tickets Custom CRUD requests
     getTicketsByUser: async (user_id) => {
         const tickets = await data_base.raw(`select * from tickets where customer_id = ${user_id}`)
-        console.log(tickets.rows);
         return {
             status: "success",
             data: tickets.rows
         }
     },
-
     deleteTicketsByFlightId: async (flight_id) => {
         try {
             const result = await data_base.raw(`DELETE from tickets where flight_id = ${flight_id}`)
@@ -146,7 +144,6 @@ let ticketsDal = {
             }
         }
     },
-    
     //? Tickets Table 
     createTable: async () => {
         await data_base.schema.hasTable('tickets').then((exists) => {

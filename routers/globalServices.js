@@ -11,6 +11,8 @@ router.post("/init_database", globalServices.initDatabase);
 router.get("/get_current_user", globalServices.getCurrentUser);
 router.post("/get_active_flights", globalServices.getActiveFlights);
 router.post("/get_customer_flights", globalServices.getCustomerFlights);
+router.post("/buy_ticket", globalServices.buyTicket);
+router.delete("/cancel_ticket", globalServices.cancelTicket);
 
 //?Cookies
 router.post("/addAuthCookie", cookieService.addAuthCookie);

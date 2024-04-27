@@ -368,3 +368,108 @@
   level: 'error',
   timestamp: '2024-04-20T17:41:50.719Z'
 }
+{
+  message: 'POST to / |: _Key flight_customer is invalid',
+  level: 'error',
+  timestamp: '2024-04-23T14:47:03.739Z'
+}
+{
+  message: 'POST to / |: _customer_id is required',
+  level: 'error',
+  timestamp: '2024-04-23T15:29:48.215Z'
+}
+{
+  message: 'POST to / |: _customer_id is required',
+  level: 'error',
+  timestamp: '2024-04-23T15:30:08.714Z'
+}
+{
+  message: 'POST to / |: _customer_id is required',
+  level: 'error',
+  timestamp: '2024-04-23T15:31:18.602Z'
+}
+{
+  message: 'DELETE to /api/services/cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:14:21.143Z'
+}
+{
+  message: 'DELETE to /api/services/cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:14:51.578Z'
+}
+{
+  message: 'DELETE to /api/services/cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:15:27.133Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:16:15.958Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:17:33.219Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:18:52.405Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:21:12.924Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:21:17.348Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:25:46.928Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:26:57.819Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: select * from flights where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-27T10:29:11.694Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:30:30.831Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:32:40.674Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:34:50.712Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:36:08.960Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:37:22.975Z'
+}
+{
+  message: 'DELETE to /cancel_ticket |: flight_id is not defined',
+  level: 'error',
+  timestamp: '2024-04-27T10:37:47.605Z'
+}

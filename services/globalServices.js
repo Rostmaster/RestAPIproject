@@ -46,8 +46,7 @@ const globalServices = {
     },
     getActiveFlights: async (req, res) => {
         try {
-            let tickets = await ticketsDal.getAll()
-            let flights = await flightsDal.getFlightsByTickets(tickets.data)
+            let flights = await flightsDal.getAll()
             let flightsWithCountries = await countriesDal.getCountriesByFlights(flights.data)
             let flightsWithAirlines = await airlinesDal.getAirlinesByFlights(flightsWithCountries.data)
             let result = flightsWithAirlines.data
@@ -74,11 +73,57 @@ const globalServices = {
             })
         }
     },
-    getCurrentUser: async (req, res) => {//TODO
-        let user = 1
-        //read auth cookie 
-        //get from db
-        res.status(200).json({ user: user })
+    getCurrentUser: async (req, res) => {
+        const userID = req.cookies.auth.split(',')[0]
+        console.log("UserID from get current user", userID)
+        res.status(200).json({ id: userID })
+    },
+    getCurrentCustomer: async (req, res) => {//TODO
+    },
+    buyTicket: async (req, res) => {
+        try {
+            console.log('==============hello there from buy ticket ==============')
+            let customer_id = req.body.customer_id
+            let flight_id = req.body.flight_id
+            let ticket = await ticketsDal.add({ flight_id, customer_id })
+            let flight = await flightsDal.get(flight_id)
+            flight = flight.data
+            flight.remaining_tickets = flight.remaining_tickets - 1
+            await flightsDal.update(flight.id, flight)
+
+            res.status(200).json(ticket)
+        }
+        catch (error) {
+            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            res.status(400).json({
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            })
+        }
+    },
+    cancelTicket: async (req, res) => {
+        try {
+            let ticket_id = req.body.ticket_id
+
+            let ticket = await ticketsDal.get(ticket_id)
+            ticketsDal.delete(ticket_id)
+
+            let flight = await flightsDal.get(ticket.data.flight_id)
+            flight = flight.data
+            flight.remaining_tickets = flight.remaining_tickets + 1
+            await flightsDal.update(flight.id, flight)
+
+            res.status(200).json(ticket)
+        }
+        catch (error) {
+            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            res.status(400).json({
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            })
+        }
     },
     deleteAllTables: async (req, res) => {
         try {
@@ -118,7 +163,7 @@ const globalServices = {
             await flightsDal.fillTable()
             await customersDal.fillTable()
             await ticketsDal.fillTable()
-            
+
             res.status(200).json({
                 status: "success",
                 internal: true,
@@ -134,7 +179,7 @@ const globalServices = {
             })
         }
     },
-    
+
 }
 
 module.exports = globalServices;

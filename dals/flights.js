@@ -7,7 +7,6 @@ let flightsDal = {
     //? Flights CRUD
     getAll: async () => {
         const flights = await data_base.raw("select * from flights")
-        console.log(flights.rows.map(s => `[${s.id}] ${s.origin_country_id} -> ${s.destination_country_id}`));
         return {
             status: "success",
             data: flights.rows
@@ -15,7 +14,6 @@ let flightsDal = {
     },
     get: async (id) => {
         const flights = await data_base.raw(`select * from flights where id = ${id}`)
-        console.log(flights.rows[0]);
         return {
             status: "success",
             data: flights.rows[0]
@@ -27,20 +25,18 @@ let flightsDal = {
             const result_ids = await data_base('flights').insert(flight).returning('id');
             console.log(result_ids[0]);
             const id = result_ids[0].id // the new id
-            console.log('insert succeed!');
             return {
                 status: "success",
                 data: { id, ...flight }
             }
         }
         catch (e) {
-            console.log('insert failed!');
             return {
                 status: "error",
                 internal: false,
                 error: e.message.replaceAll("\"", "'")
             }
-        }
+        } ds
     },
     update: async (id, flight) => {
         try {
@@ -53,7 +49,6 @@ let flightsDal = {
                     flight.landing_time ? flight.landing_time : '',
                     flight.remaining_tickets ? flight.remaining_tickets : 0,
                     id])
-            console.log('updated succeeded for id ' + id);
             return {
                 status: "success",
                 data: { id, ...flight }
@@ -128,7 +123,7 @@ let flightsDal = {
         const flights = []
         for (let ticket of tickets) {
             let result = await data_base.raw(`select * from flights where id = ${ticket.flight_id} `)
-            flights.push(result.rows[0])
+            flights.push({ ticket_id: ticket.id, ...result.rows[0] })
         }
         return {
             status: "success",

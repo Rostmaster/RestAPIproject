@@ -8,7 +8,6 @@ let usersDal = {
     //? User CRUD
     getAll: async () => {
         const users = await data_base.raw("select * from users")
-        console.log("DAL get all", users.rows.map(s => `[ID:${s.id}], ${s.username}`));
         return {
             status: "success",
             data: users.rows
@@ -17,7 +16,6 @@ let usersDal = {
     },
     get: async (id) => {
         const users = await data_base.raw(`select * from users where id = ${id}`)
-        console.log("DAL get", users.rows[0]);
         return {
             status: "success",
             data: users.rows[0]
@@ -27,7 +25,6 @@ let usersDal = {
         try {
             delete user.id
             const result_ids = await data_base('users').insert(user).returning('id');
-            console.log("DAL add", result_ids[0]);
             const id = result_ids[0].id
             console.log('insert succeed!');
             return {

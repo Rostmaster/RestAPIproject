@@ -1,8 +1,7 @@
 doctype html 
 head 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
-    link(rel="shortcut icon" href="#")
-    title 
+    title Dashboard
 body
     .wrapper 
         section#logout
@@ -11,45 +10,51 @@ body
                 .controls
                     button(id="logout_btn") Logout 
                     button(id="switch_user_btn") Switch User
-                    button(id="get_all_flights") Get all flights
             .content 
                 h2 Your Flights:
                 table
                     thead 
                         tr 
+                            th TICKET
                             th FLIGHT
                             th AIRWAYS
                             th TIME
                             th DEPARTURE
                             th TIME
                             th DESTINATION 
+                            th Options
                     tbody(id="user_flights")
                         each flight in customerFlights
                             tr(id=`row-${flight.id}`)
+                                td= flight.ticket_id
                                 td= flight.id
                                 td= flight.airline
                                 td= flight.departure_time
                                 td= flight.origin_country
                                 td= flight.landing_time
                                 td= flight.destination_country
+                                td
+                                    button(id=`${flight.ticket_id}` class="cancel_btn") Cancel
 
 
                 h2 All the flights:
                 table
                     thead 
-                        tr 
-                            th FLIGHT 
                             th AIRLINE
+                            th FLIGHT 
                             th DEPARTURE
                             th TIME
                             th DESTINATION 
                             th TIME
                             th TICKETS REMAINED 
                     tbody(id="all_flights")
-
-
                 .pagination
+                    h3 pages:
+                    ul(id="active-flights-pages_list") 
 
+    span Your flights pagination
+    br
+    span LOG for key procedures
 
 style
     include ./includes/style/dashboard.css

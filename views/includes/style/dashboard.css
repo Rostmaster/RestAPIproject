@@ -16,3 +16,34 @@ td,th{
   border: 1px solid black;
   padding: 10px;
 }
+#active-flights-pages_list{
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 0;
+  overflow: hidden;
+}
+#active-flights-pages_list li{
+  float: left;
+  margin: 0 30px;
+  cursor: pointer;
+}
+.active-flight-page-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.active{
+  font-weight: 700;
+}
+.remained_tickets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-collapse: collapse;
+}
+
+span{
+  color:red;
+  font-size: xx-large;
+}

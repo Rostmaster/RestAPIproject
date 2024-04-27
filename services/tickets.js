@@ -58,7 +58,7 @@ const ticketService = {
             let id = req.params.ticketId
 
             let validationResult = ticketValidation(raw_ticket)
-            console.log("Validation returned obj ", validationResult, id)
+            console.log("Ticket validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
@@ -178,10 +178,10 @@ const ticketService = {
         catch (error) {
             logger.error(`${req.method} to ${req.url} |: ${error.message}`)
         }
-   
+
     },
     fillTable: async (req, res) => {
-        try{
+        try {
             const result = await DAL.fillTable()
             logger.info(`Service: table tickets filled`)
             res.status(200).json(result)
