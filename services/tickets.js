@@ -1,6 +1,27 @@
 const DAL = require("../dals/tickets.js")
 const logger = require("../utils/logger.js")
 
+const pagePrefix = "/api/tickets"
+
+const returnError = (req, res, error) => {
+    if (error.message[0] === '_') {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |400|: ${error.message}`)
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+    else {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |500|: ${error.message}`)
+        res.status(500).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+}
+
 const ticketValidation = (ticket, strict = true) => {
     let errorMSG = null
     const keys = ['flight_id', 'customer_id']
@@ -12,7 +33,6 @@ const ticketValidation = (ticket, strict = true) => {
     }
 
     Object.keys(ticket).forEach((key) => {
-        console.log("Validator", key, keys.includes(key))
         keys.includes(key) ? null : errorMSG = `_Key ${key} is invalid`
     })
 
@@ -26,16 +46,10 @@ const ticketService = {
 
     getAll: async (req, res) => {
         try {
-            console.log(req.query)
             const tickets = await DAL.getAll()
             res.status(200).json(tickets)
         } catch (error) {
-            logger.error(error)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     get: async (req, res) => {
@@ -44,152 +58,133 @@ const ticketService = {
             if (!ticket) throw new Error("ticket not found")
             res.status(200).json(ticket)
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     add: async (req, res) => {
         try {
             let raw_ticket = req.body
-            let id = req.params.ticketId
 
             let validationResult = ticketValidation(raw_ticket)
-            console.log("Ticket validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
             const ticket = await DAL.add(raw_ticket)
-            logger.info(`Service: ticket ${id} added`)
+            if (ticket.status === "error") throw new Error(ticket.error)
+            const id = ticket.data.id
+
+            logger.info(`Tickets service: ticket ${id} added`)
             res.status(200).json(ticket)
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     update: async (req, res) => {
         try {
             let raw_ticket = req.body
+            delete raw_ticket.id
             let id = req.params.ticketId
 
             let validationResult = ticketValidation(raw_ticket)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const ticket = await DAL.update(id, raw_ticket)
-            logger.info(`Service: ticket ${ticket.data.id} updated`)
+            await DAL.update(id, raw_ticket)
+            const ticket = await DAL.get(id)
+            logger.info(`Tickets service: ticket ${ticket.data.id} updated`)
             res.status(200).json(ticket)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     patch: async (req, res) => {
         try {
             let raw_ticket = req.body
+            delete raw_ticket.id
             let id = req.params.ticketId
 
             let validationResult = ticketValidation(raw_ticket, false)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const ticket = await DAL.patch(id, raw_ticket)
-            logger.info(`Service: ticket ${ticket.data.id} updated`)
+            await DAL.patch(id, raw_ticket)
+            const ticket = await DAL.get(id)
+            logger.info(`Tickets service: ticket ${ticket.data.id} updated`)
             res.status(200).json(ticket)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     delete: async (req, res) => {
         try {
             const ticket = await DAL.delete(req.params.ticketId)
-            logger.info(`Service: ticket ${ticket.data.id} deleted`)
+            logger.info(`Tickets service: ticket ${ticket.data.id} deleted`)
             res.status(200).json(ticket)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
+
+    getTicketsByFlightId: async (req, res) => {
+        try {
+            const tickets = await DAL.getTicketsByFlightId(req.params.flightId)
+            logger.debug(`Tickets service: tickets by flight id:${req.params.flightId} received`)
+            res.status(200).json(tickets)
+        } catch (error) {
+            returnError(req, res, error)
+        }
+    },
+    getTicketsByCustomerId: async (req, res) => {
+        try {
+            const tickets = await DAL.getTicketsByCustomerId(req.params.customerId)
+            logger.debug(`Tickets service: tickets by customer id:${req.params.customerId} received`)
+            res.status(200).json(tickets)
+        } catch (error) {
+            returnError(req, res, error)
+        }
+    },
+
     createTable: async (req, res) => {
         try {
             const result = await DAL.createTable()
-            logger.info(`Service: table tickets created`)
+            logger.info(`Tickets service: table tickets created`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
     dropTable: async (req, res) => {
         try {
-            const reuslt = await DAL.dropTable()
-            logger.info(`Service: table tickets dropped`)
-            res.status(200).json(reuslt)
+            const result = await DAL.dropTable()
+            logger.info(`Tickets service: table tickets dropped`)
+            res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
 
     },
     fillTable: async (req, res) => {
         try {
             const result = await DAL.fillTable()
-            logger.info(`Service: table tickets filled`)
+            logger.info(`Tickets service: table tickets filled`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
+    error: (req, res) => {
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: "Bad Request"
+        })
+    }
 }
 
 module.exports = ticketService;

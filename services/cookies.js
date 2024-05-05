@@ -1,61 +1,69 @@
-const userService = require('./users.js')
 const securityService = require('./security.js')
 
 const cookieService = {
-    //Existing user cookie
-    addExistingUserCookie: async (req, res) => {
-        const user = req.body.user
-        const encryptedUsername = securityService.toEncrypt(user.username)
-        const existingUser = `${user.id},${encryptedUsername}`
-        res.cookie('existingUser', existingUser)
-        res.status(200).send({status: "success", message: "Existing user cookie added"})
-
-    },
-    checkExistingUser: async (req, res) => {
-        return await Object.prototype.hasOwnProperty.call(req.cookies, 'existingUser')
-    },
-    deleteExistingUserCookie: async (req, res) => {
-        await res.clearCookie('existingUser')
-    },
-
-    //Auth cookie
+    //adds cookies to the response
     addAuthCookie: (req, res) => {
         const user = req.body.user
-        const encryptedUsername = securityService.toEncrypt(user.username)
-        const authCookie = `${user.id},${encryptedUsername}`
-        const existingUser = `${user.id},${encryptedUsername}`
-        res.cookie('existingUser', existingUser)
+        const authCookie = `${user.id},${user.role_id},${user.password},${user.username},${user.email}`
         res.cookie('auth', authCookie)
-        res.status(200).send({status: "success", message: "Auth cookie added"})
-
     },
-    checkAuth: async (req, res) => {
-        if (!req.cookies.auth) return false
-        console.log("There is an auth cookie")
-        const userCookie = req.cookies.auth.split(',')
-        const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
-        if(securityService.compare(user.data.username, userCookie[1])){
-            return user.data
+    //returns user info from cookie with response
+    getUserInfo: (req, res) => {
+        try {
+            const userCookie = req.cookies.auth.split(',')
+            const user = {
+                id: userCookie[0],
+                role_id: userCookie[1],
+                password: userCookie[2],
+                username: userCookie[3],
+                email: userCookie[4]
+            }
+            res.status(200).json(user)
+        } catch (error) {
+            res.status(400).json({ error: 'no auth cookie found' })
         }
-        else{
-            return null
+
+    },
+    validateAuthentication: async (req, res) => {
+        try {
+            const userCookie = req.cookies.auth.split(',')
+            const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
+            if (securityService.compare(user.data.password, userCookie[2])) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+        catch (err) {
+            return false
         }
     },
-    deleteAuthCookie: async (req, res) => {
-        await res.clearCookie('auth')
+
+    //returns false if user is not authenticated and user if yes
+    getAuthenticatedUser: async (req, res) => {
+        try {
+            if (req.cookies.auth === undefined) return false
+            const userCookie = req.cookies.auth.split(',')
+            const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
+            if (securityService.compare(user.data.password, userCookie[2])) {
+                return user.data
+            }
+            else {
+                return false
+            }
+        }
+        catch (err) {
+            return false
+        }
+
     },
 
-    //New user cookie
-    addNewUserCookie: async (req, res) => {
-        await res.cookie('newUser', 'your new user cookie', { maxAge: 1000 })
-    },
-    checkNewUser: async (req, res) => {
-        return await Object.prototype.hasOwnProperty.call(req.cookies, 'newUser')
-    },
-    deleteNewUserCookie: async (req, res) => {
-        await res.clearCookie('newUser')
-    },
 
+    logout: (req, res) => {
+        res.clearCookie('auth')
+        res.clearCookie('existingUser')
+    },
 }
 
 module.exports = cookieService;

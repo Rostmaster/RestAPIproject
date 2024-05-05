@@ -4,11 +4,10 @@ const config = require('config')
 const data_base = knex(config.database)
 
 let airlinesDal = {
-    
+
     //? Airlines CRUD
     getAll: async () => {
         const airlines = await data_base.raw("select * from airlines")
-        console.log(airlines.rows.map(s => `[ID:${s.id}], ${s.name}`));
         return {
             status: "success",
             data: airlines.rows
@@ -16,7 +15,7 @@ let airlinesDal = {
     },
     get: async (id) => {
         const airlines = await data_base.raw(`select * from airlines where id = ${id}`)
-        console.log(airlines.rows[0]);
+        if (airlines.rows[0] === undefined) throw new Error(`_airline ${id} not found`)
         return {
             status: "success",
             data: airlines.rows[0]
@@ -26,16 +25,13 @@ let airlinesDal = {
         try {
             delete airline.id
             const result_ids = await data_base('airlines').insert(airline).returning('id');
-            console.log(result_ids[0]);
             const id = result_ids[0].id
-            console.log('insert succeed!');
             return {
                 status: "success",
                 data: { id, ...airline }
             }
         }
         catch (e) {
-            console.log('insert failed!');
             return {
                 status: "error",
                 internal: false,
@@ -45,25 +41,25 @@ let airlinesDal = {
     },
     update: async (id, airline) => {
         try {
-            const result = await data_base.raw(`UPDATE airlines set name=?,country_id=?, user_id=? where id=?`,
+            await data_base.raw(`UPDATE airlines set name=?,country_id=?, user_id=? where id=?`,
                 [
                     airline.name ? airline.name : '',
                     airline.country_id ? airline.country_id : 0,
                     airline.user_id ? airline.user_id : 0,
                     id
                 ])
-            console.log('updated succeeded for id ' + id);
+            const result = await data_base.raw(`select * from airlines where id = ${id}`)
+            if (result.rows[0] === undefined) throw new Error(`_airline ${id} not found`)
             return {
                 status: "success",
-                data: {id,...airline}
+                data: { id, ...result.rows[0] }
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
             return {
                 status: "error",
                 internal: false,
-                error: error.message.replaceAll("\"", "'")
+                error: `_${error.message.replaceAll("\"", "'")}`
             }
 
         }
@@ -77,22 +73,21 @@ let airlinesDal = {
 
             if (query_arr.length > 0) {
                 const query = `UPDATE airlines set ${query_arr.join(', ')} where id=${id}`
-                const result = await data_base.raw(query)
+                await data_base.raw(query)
+                const result = await data_base.raw(`select * from airlines where id = ${id}`)
+                if (result.rows[0] === undefined) throw new Error(`_airline ${id} not found`)
                 return {
                     status: "success",
-                    data: result.rowCount
+                    data: { id, ...result.rows[0] }
                 }
             }
 
-            console.log('updated successfully for id ' + id);
-
             return {
                 status: "success",
-                data: {id,...airline}
+                data: { id, ...airline }
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
             return {
                 status: "error",
                 internal: false,
@@ -104,14 +99,12 @@ let airlinesDal = {
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from airlines where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
-                data: {id}
+                data: { id }
             }
         }
         catch (error) {
-            console.log('delete failed for id ' + id);
             return {
                 status: "error",
                 internal: false,
@@ -119,6 +112,7 @@ let airlinesDal = {
             }
         }
     },
+    
     //? Airlines Custom CRUD Actions
     getAirlinesByFlights: async (flights) => {
         let airlines = {}
@@ -126,18 +120,32 @@ let airlinesDal = {
 
         for (flight of flights) {
             if (airlines[flight.airline_id]) {
-                updatedFlights.push({...flight, airline: airlines[flight.airline_id] })
+                updatedFlights.push({ ...flight, airline: airlines[flight.airline_id] })
             }
             else {
                 let airline = await data_base.raw(`select * from airlines where id = ${flight.airline_id}`)
                 airlines[flight.airline_id] = airline.rows[0].name
-                updatedFlights.push({...flight, airline: airlines[flight.airline_id] })
+                updatedFlights.push({ ...flight, airline: airlines[flight.airline_id] })
             }
         }
 
         return {
             status: "success",
             data: updatedFlights
+        }
+    },
+    getAirlinesByUserId: async (user_id) => {
+        const airlines = await data_base.raw(`select * from airlines where user_id = ${user_id}`)
+        return {
+            status: "success",
+            data: airlines.rows
+        }
+    },
+    getAirlinesByCountryId: async (country_id) => {
+        const airlines = await data_base.raw(`select * from airlines where country_id = ${country_id}`)
+        return {
+            status: "success",
+            data: airlines.rows
         }
     },
     //? Airlines Table
@@ -148,12 +156,16 @@ let airlinesDal = {
                     table.increments('id').primary()
                     table.string('name').notNullable().unique()
                     table.integer('country_id').notNullable()
-                    .references('id').inTable('countries')
+                        .references('id').inTable('countries')
                     table.integer('user_id').notNullable()
-                    .references('id').inTable('users')
+                        .references('id').inTable('users')
                 })
         }).catch((err) => {
-            console.log(err)
+            return {
+                status: "error",
+                internal: false,
+                error: err.message.replaceAll("\"", "'")
+            }
         })
         return {
             status: "success",
@@ -188,12 +200,12 @@ let airlinesDal = {
                 name: 'India Airways',
                 country_id: 4,
                 user_id: 4
-            }, 
+            },
             {
                 name: 'Singapore Airways',
                 country_id: 5,
                 user_id: 5
-            }, 
+            },
             {
                 name: 'Taiwan Airways',
                 country_id: 6,
@@ -214,15 +226,3 @@ let airlinesDal = {
 }
 
 module.exports = airlinesDal;
-
-//? FOR TESTING ONLY
-// console.clear()
-// airlinesDal.createTable()
-// airlinesDal.fillTable()
-// airlinesDal.dropTable()
-// airlinesDal.getAll()
-// airlinesDal.get(1)
-// airlinesDal.add({name:"Germany Airways",country_id:8, user_id:9})
-// airlinesDal.update(8,{name:"Germany Airways",country_id:8, user_id:8})
-// airlinesDal.patch(8, { user_id: 9})
-// airlinesDal.delete(8)

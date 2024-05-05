@@ -14,8 +14,8 @@ router.get("/", service.getAll);
 router.get("/:countryId", service.get);
 router.post("/", service.add);
 router.put("/:countryId", service.update);
-// router.patch("/:countryId", service.patch);
 router.delete("/:countryId", service.delete);
+router.use("/", service.error)
 
 
 module.exports = router

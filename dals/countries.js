@@ -7,8 +7,7 @@ let countriesDal = {
 
     //? Countries CRUD
     getAll: async () => {
-        const countries = await data_base.raw("select * from countries")
-        console.log(countries.rows.map(s => `[${s.id}] ${s.name}`));
+        const countries = await data_base.raw("select * from countries order by name asc")
         return {
             status: "success",
             data: countries.rows
@@ -16,7 +15,7 @@ let countriesDal = {
     },
     get: async (id) => {
         const countries = await data_base.raw(`select * from countries where id = ${id}`)
-        console.log(countries.rows[0]);
+        if (countries.rows[0] === undefined) throw new Error(`_country ${id} not found`)
         return {
             status: "success",
             data: countries.rows[0]
@@ -26,9 +25,7 @@ let countriesDal = {
         try {
             delete country.id
             const result_ids = await data_base('countries').insert(country).returning('id');
-            console.log(result_ids[0]);
             const id = result_ids[0].id // the new id
-            console.log('insert succeed!');
             return {
                 status: "success",
                 data: { id, ...country }
@@ -50,14 +47,14 @@ let countriesDal = {
                     country.name ? country.name : '',
                     id
                 ])
-            console.log('updated succeeded for id ' + id);
+
             return {
                 status: "success",
                 data: { id, ...country }
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
+            console.log('updated failed for id ' + id, error.ErrorMessage);
             return {
                 status: "error",
                 internal: false,
@@ -66,46 +63,12 @@ let countriesDal = {
 
         }
     },
-    // patch: async (id, country) => {
-    //     try {
-    //         const query_arr = []
-    //         for (let key in country) {
-    //             query_arr.push(`${key}='${country[key]}'`)
-    //         }
-
-    //         if (query_arr.length > 0) {
-    //             const query = `UPDATE countries set ${query_arr.join(', ')} where id=${id}`
-    //             const result = await data_base.raw(query)
-    //             return {
-    //                 status: "success",
-    //                 data: result.rowCount
-    //             }
-    //         }
-
-    //         console.log('updated successfully for id ' + id);
-
-    //         return {
-    //             status: "success",
-    //             data: query_arr.length
-    //         }
-    //     }
-    //     catch (error) {
-    //         console.log('updated failed for id ' + id);
-    //         return {
-    //             status: "error",
-    //             internal: false,
-    //             error: error.message.replaceAll("\"", "'")
-    //         }
-
-    //     }
-    // },
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from countries where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
-                data: result.rowCount
+                data: { id }
             }
         }
         catch (error) {
@@ -143,7 +106,7 @@ let countriesDal = {
                 destination_country = countries[flight.destination_country_id]
             }
 
-            updatedFlights.push({...flight, origin_country, destination_country })
+            updatedFlights.push({ ...flight, origin_country, destination_country })
         }
         return {
             status: "success",

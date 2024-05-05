@@ -1,49 +1,156 @@
-#wrapper{
-  width: 100vw;
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#logout_btn,
+#switch_user_btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
 }
 
-#header{
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+section.header {
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
 }
-table{
+section.body{
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+
+}
+section.content {
+  height: 90vh;
+  width: 70vw;
+}
+section.add_block{
+  height: 80vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 2vw 10vh 2vw;
+  background-color: rgba(128, 128, 128, 0.325);
+}
+
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.table_section {
+  padding: 2% 0;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
   border-collapse: collapse;
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9vw;
 }
-td,th{
-  border: 1px solid black;
-  padding: 10px;
-}
-#active-flights-pages_list{
+#active-flights-pages_list,
+#customer-flights-pages_list {
   list-style-type: none;
   margin: 0 20px;
   padding: 0;
   overflow: hidden;
 }
-#active-flights-pages_list li{
+#active-flights-pages_list li,
+#customer-flights-pages_list li {
   float: left;
   margin: 0 30px;
   cursor: pointer;
 }
-.active-flight-page-item{
+.active-flight-page-item,
+.customer-flight-page-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
 }
-.active{
+.active {
   font-weight: 700;
 }
-.remained_tickets{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-collapse: collapse;
+
+.info {
+  color: rgb(255, 0, 0);
+  font-size: xx-large;
+  width: 50%;
 }
 
-span{
-  color:red;
-  font-size: xx-large;
+.cell,
+.h_cell {
+  text-align: center;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+
+.h_cell {
+  background-color: #f1f1f1;
+  font-weight: 700;
+  text-align: center;
+}
+.cell {
+  margin: 5%;
+  background-color: #dddddd62;
+}
+
+tr:hover {
+  background-color: #e8e1e1;
+  
+}
+
+#message_block{
+font-size: 2vw;
+}
+
+#customer_message,
+#all_flights_message {
+  height: 25vh;
+}
+
+.buy_btn {
+  width: 50%;
+}
+
+.cancel_btn {
+  width: 80%;
+}
+
+.options,
+.remained_tickets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-collapse: collapse;
+  padding: 0.5%;
+  border: none;
+}
+
+
+.hidden {
+  display: none;
 }

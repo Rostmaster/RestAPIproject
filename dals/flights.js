@@ -23,7 +23,6 @@ let flightsDal = {
         try {
             delete flight.id
             const result_ids = await data_base('flights').insert(flight).returning('id');
-            console.log(result_ids[0]);
             const id = result_ids[0].id // the new id
             return {
                 status: "success",
@@ -40,7 +39,7 @@ let flightsDal = {
     },
     update: async (id, flight) => {
         try {
-            const result = await data_base.raw(`UPDATE flights set airline_id=?,origin_country_id=?,destination_country_id=?,departure_time=?,landing_time=?,remaining_tickets=? where id=?`,
+            await data_base.raw(`UPDATE flights set airline_id=?,origin_country_id=?,destination_country_id=?,departure_time=?,landing_time=?,remaining_tickets=? where id=?`,
                 [
                     flight.airline_id ? flight.airline_id : 0,
                     flight.origin_country_id ? flight.origin_country_id : 0,
@@ -49,13 +48,14 @@ let flightsDal = {
                     flight.landing_time ? flight.landing_time : '',
                     flight.remaining_tickets ? flight.remaining_tickets : 0,
                     id])
+            const result = await data_base.raw(`select * from flights where id = ${id}`)
             return {
                 status: "success",
-                data: { id, ...flight }
+                data: { id, ...result.rows[0] }
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
+            console.log('updated failed for id ' + id, error.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
@@ -73,10 +73,12 @@ let flightsDal = {
 
             if (query_arr.length > 0) {
                 const query = `UPDATE flights set ${query_arr.join(', ')} where id=${id}`
-                const result = await data_base.raw(query)
+                await data_base.raw(query)
+
+                const result = await data_base.raw(`select * from flights where id = ${id}`)
                 return {
                     status: "success",
-                    data: { id, ...flight }
+                    data: { id, ...result.rows[0] }
                 }
             }
 
@@ -88,7 +90,7 @@ let flightsDal = {
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
+            console.log('updated failed for id ' + id, error.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
@@ -100,13 +102,9 @@ let flightsDal = {
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from flights where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
-                data: {
-                    message: 'success',
-                    id
-                }
+                data: { id }
             }
         }
         catch (error) {
@@ -122,12 +120,33 @@ let flightsDal = {
     getFlightsByTickets: async (tickets) => {
         const flights = []
         for (let ticket of tickets) {
-            let result = await data_base.raw(`select * from flights where id = ${ticket.flight_id} `)
+            let result = await data_base.raw(`select * from flights where id = ${ticket.flight_id}`)
             flights.push({ ticket_id: ticket.id, ...result.rows[0] })
         }
         return {
             status: "success",
             data: flights
+        }
+    },
+    getFlightsByAirlineId: async (airline_id) => {
+        const flights = await data_base.raw(`select * from flights where airline_id = ${airline_id}`)
+        return {
+            status: "success",
+            data: flights.rows
+        }
+    },
+    getFlightsByOriginCountryId: async (origin_country_id) => {
+        const flights = await data_base.raw(`select * from flights where origin_country_id = ${origin_country_id}`)
+        return {
+            status: "success",
+            data: flights.rows
+        }
+    },
+    getFlightsByDestinationCountryId: async (destination_country_id) => {
+        const flights = await data_base.raw(`select * from flights where destination_country_id = ${destination_country_id}`)
+        return {
+            status: "success",
+            data: flights.rows
         }
     },
 

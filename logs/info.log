@@ -1,0 +1,6036 @@
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:33:34.152Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:35:42.850Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:36:50.698Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:38:50.734Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:42:29.792Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:42:52.178Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:43:22.199Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:43:40.532Z'
+}
+{
+  message: 'airlines service: GET to /222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:43:56.272Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:44:01.047Z'
+}
+{
+  message: 'airlines service: GET to /222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:44:04.298Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:44:56.202Z'
+}
+{
+  message: ' GET to .../api/airlines/222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:45:01.222Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:46:07.927Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:46:53.034Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:47:49.698Z'
+}
+{
+  message: 'POST to .../api/airlines/ |: \n' +
+    "            insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:47:52.160Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:48:10.822Z'
+}
+{
+  message: "POST to .../api/airlines/ |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:48:12.917Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:52:44.320Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:54:14.697Z'
+}
+{
+  message: "PUT to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:54:38.267Z'
+}
+{
+  message: "PUT to /122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:54:38.271Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:55:30.763Z'
+}
+{
+  message: "PUT to .../api/airlines/122/122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:55:31.301Z'
+}
+{
+  message: "PUT to .../api/airlines/122/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:55:31.303Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:56:01.201Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:56:02.211Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:56:02.215Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:57:06.966Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:57:08.480Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T11:58:13.866Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:58:15.706Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:58:45.843Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:59:53.425Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:01:01.942Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:01:04.784Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:01:06.659Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:01:55.525Z'
+}
+{
+  message: 'PUT to .../api/airlines/122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:01:58.391Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:03:12.583Z'
+}
+{
+  message: 'PATCH to /122 |: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:03:15.972Z'
+}
+{
+  message: 'PATCH to /122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:03:15.973Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:03:58.485Z'
+}
+{
+  message: 'PATCH to .../api/airlines/122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:04:00.351Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:04:54.228Z'
+}
+{
+  message: 'PATCH to .../api/airlines/122 |400|: _airline 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:04:55.223Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:05:37.889Z'
+}
+{
+  message: 'Service: airline 122 deleted',
+  level: 'info',
+  timestamp: '2024-05-03T12:05:39.957Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:06:21.891Z'
+}
+{
+  message: 'Service: airline 122 deleted',
+  level: 'info',
+  timestamp: '2024-05-03T12:06:24.207Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:09:18.433Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:09:20.214Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:09:57.938Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:09:59.376Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:10:31.148Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:10:33.110Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:10:41.637Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:10:50.943Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:11:36.694Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:12:04.874Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:12:08.977Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:13:25.246Z'
+}
+{
+  message: 'DELETE to /122 |: _airline 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:13:30.159Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:15:35.247Z'
+}
+{
+  message: 'Service: country 122 deleted',
+  level: 'info',
+  timestamp: '2024-05-03T12:15:43.148Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:19:07.357Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:19:14.859Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:20:47.279Z'
+}
+{
+  message: "DELETE to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:20:48.798Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:21:18.315Z'
+}
+{
+  message: "DELETE to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:21:19.784Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:22:22.198Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:22:36.432Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:22:43.351Z'
+}
+{
+  message: 'DELETE to ../api/country/122 |: _country122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:22:45.087Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:24:01.198Z'
+}
+{
+  message: 'DELETE to .../api/country/122 |: _country 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:24:02.711Z'
+}
+{
+  message: 'PUT to .../api/country/122 |400|: _Key user_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-03T12:24:08.131Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:26:09.699Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:26:39.423Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:26:49.863Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:27:07.132Z'
+}
+{
+  message: 'GET to .../api/country/111 |: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:27:23.474Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:28:33.084Z'
+}
+{
+  message: 'GET to .../api/country/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:28:34.994Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:32:52.197Z'
+}
+{
+  message: 'GET to .../api/airlines/111 |400|: _airline 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:33:00.783Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:33:36.796Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:33:57.915Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:35:19.747Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:35:22.765Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:35:44.939Z'
+}
+{
+  message: 'GET to .../api/countries/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:35:50.462Z'
+}
+{
+  message: 'PUT to .../api/countries/111 |400|: _Key user_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-03T12:36:01.091Z'
+}
+{
+  message: 'DELETE to .../api/countries/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:36:31.131Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:37:36.628Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:38:19.388Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:38:42.302Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:39:42.300Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:40:17.682Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:41:12.215Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:41:41.626Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:42:03.404Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:42:37.299Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:43:12.437Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:43:35.897Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:45:46.013Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:47:45.183Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:49:20.661Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:49:44.297Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:50:14.920Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:50:45.261Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:53:11.801Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:54:38.906Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:55:28.925Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:56:00.411Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:58:23.396Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:58:33.563Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:58:41.669Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T12:58:59.724Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:00:17.427Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:00:30.016Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:01:33.958Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:02:42.689Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:04:29.276Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:04:44.581Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:04:52.075Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:04:59.380Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:05:05.155Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:05:51.695Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:06:30.423Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:06:56.658Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:07:20.637Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:09:45.864Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:10:35.217Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:10:56.919Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:20:47.773Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:26:12.126Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:33:41.283Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:34:52.780Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T13:35:32.082Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:03:26.692Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:03:38.237Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:33:30.730Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:33:40.024Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:34:14.091Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:35:04.422Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:36:23.783Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:36:48.931Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:36:59.584Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:38:02.555Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:42:53.678Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:01.057Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:43:10.540Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:43:44.742Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:46.821Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:43:52.856Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:56.785Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:45:08.618Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:45:27.111Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:46:21.480Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:46:33.681Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-05-03T15:46:55.908Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:47:55.098Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T15:48:43.850Z'
+}
+{
+  message: 'Service: user admin logged in',
+  level: 'info',
+  timestamp: '2024-05-03T15:48:48.992Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T17:17:01.481Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T17:18:07.425Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T17:21:03.870Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T17:22:29.051Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T17:59:45.642Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:13:02.187Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:32:55.751Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:40:45.117Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:42:41.356Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:46:58.466Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:48:59.070Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:52:15.156Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:52:40.797Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:53:21.924Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:54:02.852Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:56:28.700Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:56:42.555Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:57:04.268Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:58:09.060Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:59:14.953Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:59:20.558Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T18:59:25.624Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:04:59.327Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:06:16.862Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:07:27.727Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:08:52.814Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:09:31.661Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:09:50.523Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:12:38.962Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:13:23.291Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:13:58.327Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:15:11.076Z'
+}
+{
+  message: 'Service: user 258 added',
+  level: 'info',
+  timestamp: '2024-05-03T19:15:50.984Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:17:31.703Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:19:08.425Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:19:41.258Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-03T19:20:14.277Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T06:10:48.111Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T06:18:36.006Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T08:38:19.219Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T08:40:09.093Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T08:40:46.907Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T08:41:55.068Z'
+}
+{
+  message: 'Service: user 259 added',
+  level: 'info',
+  timestamp: '2024-05-04T08:42:25.855Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:04:15.612Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:05:32.579Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:09:27.006Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:09:46.597Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:10:22.084Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:10:28.691Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:12:05.780Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:12:48.568Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:14:05.666Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:14:28.384Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:17:18.297Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:17:50.999Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:19:03.313Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:20:04.934Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:20:37.269Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:21:39.049Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:21:40.984Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:21:47.548Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:21:49.601Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:21:51.477Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:22:00.595Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:22:41.342Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:24:10.842Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:25:01.895Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:36:38.950Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:37:06.266Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:46:06.435Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:49:15.129Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:58:03.457Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T09:59:55.774Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:00:19.394Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:00:25.207Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:00:44.809Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:13:44.629Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:13:45.558Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:14:14.964Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:14:29.131Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:14:42.155Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-04T10:14:48.455Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 5',
+  level: 'info',
+  timestamp: '2024-05-04T10:14:59.439Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:15:30.234Z'
+}
+{
+  message: 'Service: country 144 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:15:33.024Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:00.323Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:16:00.761Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:09.982Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:36.741Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:16:37.141Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:16:44.215Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:53.365Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:17:50.790Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:18:58.393Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:19:00.811Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:19:27.913Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:19:57.543Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:20:11.312Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:20:41.215Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:20:43.820Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:21:11.717Z'
+}
+{
+  message: 'Service: country 161 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:21:39.403Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:22:07.786Z'
+}
+{
+  message: 'Service: country 164 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:22:22.459Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:22:57.933Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:23:10.623Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:23:23.515Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:24:32.276Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:24:46.108Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:25:25.663Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:25:38.823Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:26:12.861Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:26:15.102Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:27:10.592Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:27:39.202Z'
+}
+{
+  message: 'Service: country 177 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:27:48.286Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:28:35.006Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:28:50.621Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:30:14.598Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:30:49.789Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:30:57.183Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:31:03.357Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:31:36.660Z'
+}
+{
+  message: 'Service: country 186 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:05.150Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:34.582Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:45.707Z'
+}
+{
+  message: 'Service: airline 358 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:54.941Z'
+}
+{
+  message: 'Service: airline 358 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:54.962Z'
+}
+{
+  message: 'Service: airline 358 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:54.969Z'
+}
+{
+  message: 'Service: airline 358 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:54.976Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:54.983Z'
+}
+{
+  message: 'GET to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:54.991Z'
+}
+{
+  message: 'PUT to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.001Z'
+}
+{
+  message: 'DELETE to .../api/countries/undefined |400|: _country undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.008Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.024Z'
+}
+{
+  message: 'GET to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.030Z'
+}
+{
+  message: 'PUT to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.039Z'
+}
+{
+  message: 'PATCH to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.045Z'
+}
+{
+  message: 'DELETE to .../api/customers/undefined |400|: _customer undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.052Z'
+}
+{
+  message: 'Service: flight 155 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.071Z'
+}
+{
+  message: 'Service: flight 155 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.080Z'
+}
+{
+  message: 'Service: flight 155 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.087Z'
+}
+{
+  message: 'Service: flight 155 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.094Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.099Z'
+}
+{
+  message: 'Service: ticket 263 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.212Z'
+}
+{
+  message: 'Service: ticket 263 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.219Z'
+}
+{
+  message: 'Service: ticket 263 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.224Z'
+}
+{
+  message: 'Service: ticket 263 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:32:55.228Z'
+}
+{
+  message: 'Service: airline 360 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.029Z'
+}
+{
+  message: 'Service: airline 360 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.049Z'
+}
+{
+  message: 'Service: airline 360 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.055Z'
+}
+{
+  message: 'Service: airline 360 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.061Z'
+}
+{
+  message: 'Service: country 202 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.068Z'
+}
+{
+  message: 'Service: country 202 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.078Z'
+}
+{
+  message: 'Service: country 202 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.085Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.093Z'
+}
+{
+  message: 'GET to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.102Z'
+}
+{
+  message: 'PUT to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.111Z'
+}
+{
+  message: 'PATCH to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.118Z'
+}
+{
+  message: 'DELETE to .../api/customers/undefined |400|: _customer undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.124Z'
+}
+{
+  message: 'Service: flight 157 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.141Z'
+}
+{
+  message: 'Service: flight 157 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.151Z'
+}
+{
+  message: 'Service: flight 157 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.158Z'
+}
+{
+  message: 'Service: flight 157 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.162Z'
+}
+{
+  message: 'Service: country 203 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.167Z'
+}
+{
+  message: 'Service: ticket 265 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.276Z'
+}
+{
+  message: 'Service: ticket 265 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.285Z'
+}
+{
+  message: 'Service: ticket 265 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.292Z'
+}
+{
+  message: 'Service: ticket 265 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:33:31.297Z'
+}
+{
+  message: 'Service: airline 362 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.682Z'
+}
+{
+  message: 'Service: airline 362 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.699Z'
+}
+{
+  message: 'Service: airline 362 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.705Z'
+}
+{
+  message: 'Service: airline 362 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.710Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.716Z'
+}
+{
+  message: 'GET to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.723Z'
+}
+{
+  message: 'PUT to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.732Z'
+}
+{
+  message: 'DELETE to .../api/countries/undefined |400|: _country undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.739Z'
+}
+{
+  message: 'Service: customer 220 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.750Z'
+}
+{
+  message: 'Service: customer 220 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.761Z'
+}
+{
+  message: 'Service: customer 220 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.767Z'
+}
+{
+  message: 'Service: customer 220 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.773Z'
+}
+{
+  message: 'Service: flight 159 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.780Z'
+}
+{
+  message: 'Service: flight 159 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.789Z'
+}
+{
+  message: 'Service: flight 159 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.795Z'
+}
+{
+  message: 'Service: flight 159 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.801Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.805Z'
+}
+{
+  message: 'Service: ticket 267 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.917Z'
+}
+{
+  message: 'Service: ticket 267 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.926Z'
+}
+{
+  message: 'Service: ticket 267 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.932Z'
+}
+{
+  message: 'Service: ticket 267 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:08.937Z'
+}
+{
+  message: 'Service: airline 364 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.480Z'
+}
+{
+  message: 'Service: airline 364 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.501Z'
+}
+{
+  message: 'Service: airline 364 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.509Z'
+}
+{
+  message: 'Service: airline 364 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.515Z'
+}
+{
+  message: 'Service: country 208 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.522Z'
+}
+{
+  message: 'Service: country 208 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.533Z'
+}
+{
+  message: 'Service: country 208 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.541Z'
+}
+{
+  message: 'Service: customer 222 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.550Z'
+}
+{
+  message: 'Service: customer 222 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.562Z'
+}
+{
+  message: 'Service: customer 222 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.571Z'
+}
+{
+  message: 'Service: customer 222 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.576Z'
+}
+{
+  message: 'Service: flight 161 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.581Z'
+}
+{
+  message: 'Service: flight 161 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.591Z'
+}
+{
+  message: 'Service: flight 161 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.597Z'
+}
+{
+  message: 'Service: flight 161 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.601Z'
+}
+{
+  message: 'Service: country 209 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.606Z'
+}
+{
+  message: 'Service: ticket 269 added',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.722Z'
+}
+{
+  message: 'Service: ticket 269 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.728Z'
+}
+{
+  message: 'Service: ticket 269 updated',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.733Z'
+}
+{
+  message: 'Service: ticket 269 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T10:34:39.737Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:38:36.965Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:41:35.446Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:41:40.471Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:42:17.545Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:42:34.655Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:42:54.954Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:43:10.660Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:43:39.075Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:44:19.391Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:45:06.040Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:46:41.754Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:47:54.804Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:49:24.906Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:53:11.484Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:56:15.509Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T10:59:35.785Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:01:50.982Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:02:55.547Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:04:33.852Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:04:43.671Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:05:11.518Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:05:23.134Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:05:55.311Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:05:58.767Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:06:29.546Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:07:22.082Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:18:02.648Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:19:04.460Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:19:36.949Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T11:20:05.873Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:22:52.123Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:24:04.222Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:25:18.786Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:26:26.349Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:26:45.378Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:28:43.360Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:29:33.268Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:30:35.324Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:31:14.083Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:31:38.738Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:31:48.681Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:32:20.248Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:32:45.236Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:33:20.821Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:33:23.796Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:33:39.128Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:34:06.495Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:34:53.458Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:34:56.343Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:36:47.895Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted',
+  level: 'error',
+  timestamp: '2024-05-04T11:36:51.432Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:57:12.119Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T11:57:38.828Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted',
+  level: 'error',
+  timestamp: '2024-05-04T11:58:01.226Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:00:38.868Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:00:42.956Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:01:04.174Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:01:23.248Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:01:24.982Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:02:02.774Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:02:07.239Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:03:25.324Z'
+}
+{
+  message: 'Service: tickets by flight id:173 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:03:27.741Z'
+}
+{
+  message: 'Service: flight 173 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:03:27.757Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:05:47.229Z'
+}
+{
+  message: 'Service: tickets by flight id:173 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:05:48.219Z'
+}
+{
+  message: 'Service: flight 173 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:05:48.235Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:11:14.106Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:13:01.923Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:15:12.553Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:16:00.317Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:16:23.138Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:17:29.158Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:18:35.908Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:19:13.046Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:20:14.208Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:21:20.322Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:21:28.802Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:21:57.837Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:22:23.160Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:24:50.579Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:25:15.929Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:25:29.302Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:25:55.938Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:27:38.343Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:27:54.660Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:28:17.545Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:28:27.335Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:29:07.425Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:29:19.736Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:29:27.257Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:29:30.994Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:29:41.508Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:32:46.813Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:32:57.548Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:33:04.992Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:33:20.930Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:33:29.680Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:33:31.770Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:34:53.612Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:34:58.654Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:35:04.870Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:35:11.387Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:37:00.814Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:37:18.273Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:39:30.308Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:39:40.083Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:39:57.245Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:40:23.155Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:40:58.659Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:43:33.618Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:44:47.177Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:46:14.450Z'
+}
+{
+  message: 'Service: airlines by user id 318 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:46:49.607Z'
+}
+{
+  message: 'Service: customers by user id 318 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:46:49.621Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T12:46:49.628Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:47:50.252Z'
+}
+{
+  message: 'Service: airlines by user id 318 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:47:52.053Z'
+}
+{
+  message: 'Service: customers by user id 318 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T12:47:52.074Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T12:47:52.083Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:50:53.355Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T12:57:21.843Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T13:12:16.309Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T15:21:13.361Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T15:38:23.821Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T15:45:20.865Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T15:58:23.324Z'
+}
+{
+  message: 'Service: tickets by flight id:1',
+  level: 'info',
+  timestamp: '2024-05-04T15:58:37.472Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:08:51.214Z'
+}
+{
+  message: 'GET to .../api/flights/173 |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T16:09:35.810Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:10:08.648Z'
+}
+{
+  message: 'DELETE to .../api/flights/174 |500|: ticketsByFlight.data is not iterable',
+  level: 'error',
+  timestamp: '2024-05-04T16:10:08.660Z'
+}
+{
+  message: 'Service: tickets by flight id:1',
+  level: 'info',
+  timestamp: '2024-05-04T16:11:09.715Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:12:42.926Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:12:45.385Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:12:53.913Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:12:56.384Z'
+}
+{
+  message: 'GET to .../api/flights/173 |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T16:12:57.842Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:13:53.195Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:14:29.127Z'
+}
+{
+  message: "DELETE to .../api/flights/174 |500|: Cannot read properties of undefined (reading 'forEach')",
+  level: 'error',
+  timestamp: '2024-05-04T16:14:29.144Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:07.493Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:15.663Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:17.834Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:25.406Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:34.612Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:53.512Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:16:58.864Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:09.603Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:17.666Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:27.071Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:47.740Z'
+}
+{
+  message: 'Service: tickets by flight id:174',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:56.254Z'
+}
+{
+  message: 'Service: ticket 285 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:56.278Z'
+}
+{
+  message: 'Service: flight 174 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:17:56.287Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:18:13.245Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:18:26.535Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:23:21.170Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:23:30.226Z'
+}
+{
+  message: 'Service: tickets by customer id:234',
+  level: 'info',
+  timestamp: '2024-05-04T16:24:10.405Z'
+}
+{
+  message: 'Service: ticket 286 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:24:14.236Z'
+}
+{
+  message: 'Service: customer 234 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:24:14.261Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:26:33.758Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:29:26.025Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:41:42.101Z'
+}
+{
+  message: 'Service: airline 287 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:41:49.798Z'
+}
+{
+  message: 'Service: ticket 175 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:42:35.124Z'
+}
+{
+  message: 'DELETE to .../api/airlines/377 |400|: _airline 377 not found',
+  level: 'error',
+  timestamp: '2024-05-04T16:42:35.135Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:44:19.783Z'
+}
+{
+  message: 'Service: tickets by flight id:175',
+  level: 'info',
+  timestamp: '2024-05-04T16:44:39.968Z'
+}
+{
+  message: 'Service: ticket 287 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:44:43.639Z'
+}
+{
+  message: 'Service: flight 175 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:44:43.648Z'
+}
+{
+  message: 'Service: airline 377 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T16:44:43.657Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:45:47.379Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:49:01.501Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:49:47.485Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:50:29.204Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:52:23.256Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:52:29.565Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:52:42.225Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:52:48.796Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:52:59.118Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:53:19.178Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:54:38.594Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:57:32.521Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T16:59:36.665Z'
+}
+{
+  message: 'Service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:25.463Z'
+}
+{
+  message: 'Service: tickets by flight id:235',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:29.545Z'
+}
+{
+  message: 'Service: flight 235 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:29.561Z'
+}
+{
+  message: 'Service: tickets by flight id:176',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:33.302Z'
+}
+{
+  message: 'Service: ticket 289 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:34.231Z'
+}
+{
+  message: 'Service: ticket 290 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:36.023Z'
+}
+{
+  message: 'Service: flight 176 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:36.030Z'
+}
+{
+  message: 'Service: airline 378 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:06:36.041Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:06:37.647Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:11:14.341Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:13:33.651Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:14:35.590Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:15:12.145Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:16:35.833Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:17:35.634Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:18:14.942Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:19:41.168Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:07.557Z'
+}
+{
+  message: 'Customer service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:08.952Z'
+}
+{
+  message: 'DELETE to .../api/flights/235 |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:14.478Z'
+}
+{
+  message: 'Airlines service: airlines by user 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:14.500Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:14.516Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:41.350Z'
+}
+{
+  message: 'Customer service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:43.551Z'
+}
+{
+  message: 'Tickets service: tickets by flight id:235 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:43.585Z'
+}
+{
+  message: 'Flights service: flight 235 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:43.597Z'
+}
+{
+  message: 'Airlines service: airlines by user 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:22:43.608Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:43.620Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:26:04.846Z'
+}
+{
+  message: 'Customer service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:27:05.622Z'
+}
+{
+  message: 'Customer service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:28:14.900Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:29:40.714Z'
+}
+{
+  message: 'Customer service: customers by user id 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:29:53.904Z'
+}
+{
+  message: 'Tickets service: tickets by customer id:235 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:30:03.920Z'
+}
+{
+  message: 'Customer service: customer 235 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:30:03.933Z'
+}
+{
+  message: 'Airlines service: airlines by user 318 received',
+  level: 'info',
+  timestamp: '2024-05-04T17:30:03.946Z'
+}
+{
+  message: 'Users service: user 318 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:30:03.961Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:31:14.409Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:31:24.012Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:31:35.054Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:32:05.212Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:32:38.812Z'
+}
+{
+  message: 'Customer service: customer 236 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:36:27.989Z'
+}
+{
+  message: 'DELETE to .../api/airlines/379 |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-04T17:36:34.880Z'
+}
+{
+  message: 'DELETE to .../api/airlines/265 |400|: _user 265 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:36:34.903Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:37:43.736Z'
+}
+{
+  message: 'Tickets service: ticket 227 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:37:45.816Z'
+}
+{
+  message: 'Flights service: flight 151 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:37:45.821Z'
+}
+{
+  message: 'Airlines service: airline 379 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:37:45.826Z'
+}
+{
+  message: 'Users service: user 265 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T17:37:45.834Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:40:28.324Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:30.309Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:45.382Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:46.017Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:46.334Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:42:41.054Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:44:22.155Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:47:21.068Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:47:25.018Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:47:27.737Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:48:46.795Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:49:17.102Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:50:26.783Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:50:35.028Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:53:00.114Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:54:04.690Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:54:44.412Z'
+}
+{
+  message: 'GET to .../api/flights/by_origin_country/209 |500|: flights.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:52.651Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:52.665Z'
+}
+{
+  message: 'GET to .../api/flights/by_origin_country/209 |500|: flights.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:54.981Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:54.988Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T17:55:12.620Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:55:14.476Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:08:33.169Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |500|: Assignment to constant variable.',
+  level: 'error',
+  timestamp: '2024-05-04T18:08:37.621Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:08:54.691Z'
+}
+{
+  message: 'Countries service: country 209 deleted',
+  level: 'info',
+  timestamp: '2024-05-04T18:09:29.173Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:10:04.992Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:10:10.663Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:10:21.658Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:14:41.878Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T18:28:04.845Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:27:25.829Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:32:36.816Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:33:35.159Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:34:04.899Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:35:23.722Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:37:11.418Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:38:13.038Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:40:21.539Z'
+}
+{
+  message: 'Countries service: country 221 added',
+  level: 'info',
+  timestamp: '2024-05-04T19:40:40.637Z'
+}
+{
+  message: 'Countries service: country 222 added',
+  level: 'info',
+  timestamp: '2024-05-04T19:41:40.587Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:44:39.826Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:46:57.115Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:47:13.026Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:54:38.155Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T19:57:54.294Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:04:31.137Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:06:21.828Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:07:08.311Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:08:03.647Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:08:42.957Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:09:04.991Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:09:16.686Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:09:37.506Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:10:06.676Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:10:29.043Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:10:50.882Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:11:25.457Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:11:39.209Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:12:19.843Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:12:40.152Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:13:10.931Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:14:18.207Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:14:53.138Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:15:00.146Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:15:19.273Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:16:09.746Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:16:30.038Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:16:57.970Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:17:17.904Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:17:37.017Z'
+}
+{
+  message: 'POST to .../api/flights/ |500|: flight.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T20:18:12.875Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:19:20.287Z'
+}
+{
+  message: 'POST to .../api/flights/ |400|: _Key tickets_remained is invalid',
+  level: 'error',
+  timestamp: '2024-05-04T20:19:22.476Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-04T20:20:05.715Z'
+}
+{
+  message: 'Countries service: country 8 added',
+  level: 'info',
+  timestamp: '2024-05-04T20:20:11.149Z'
+}
+{
+  message: 'POST to .../api/flights/ |400|: _Key tickets_remained is invalid',
+  level: 'error',
+  timestamp: '2024-05-04T20:20:21.368Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:20:39.274Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:21:30.069Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:25:43.672Z'
+}
+{
+  message: 'Flights service: flight 13 added',
+  level: 'info',
+  timestamp: '2024-05-04T20:25:56.116Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:13:01.555Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:13:23.959Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:17:04.985Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:21:52.116Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:22:21.035Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:26:58.991Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:27:47.753Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:28:55.871Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:29:45.925Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:30:16.065Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:33:31.848Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T07:36:31.277Z'
+}
+{
+  message: 'Countries service: country 10 added',
+  level: 'info',
+  timestamp: '2024-05-05T07:36:59.773Z'
+}
+{
+  message: 'Flights service: flight 14 added',
+  level: 'info',
+  timestamp: '2024-05-05T07:37:57.101Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:41:20.636Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:41:43.391Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:42:58.237Z'
+}
+{
+  message: 'Flights service: flight 15 added',
+  level: 'info',
+  timestamp: '2024-05-05T07:43:08.304Z'
+}
+{
+  message: 'Flights service: flight 16 added',
+  level: 'info',
+  timestamp: '2024-05-05T07:43:58.311Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:48:33.129Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:49:50.247Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:50:14.027Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:53:03.772Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:55:31.018Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-05T07:56:28.055Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-05T07:56:29.654Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:56:46.886Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:57:54.217Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:58:03.729Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T07:58:54.315Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:00.761Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:01.485Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:02.070Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:02.946Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:03.891Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:04.278Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:04.634Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:05.273Z'
+}
+{
+  message: 'User 1 bought ticket undefined for flight 3',
+  level: 'info',
+  timestamp: '2024-05-05T07:59:05.884Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:06:00.190Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:41:32.481Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:42:02.863Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:42:12.171Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:42:43.663Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:44:55.041Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:47:03.321Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:49:16.658Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:50:08.125Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:52:53.706Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:55:06.404Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:56:17.193Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:56:29.329Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:56:43.604Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:56:59.535Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:58:32.189Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:58:43.560Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T08:58:53.020Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:00:25.176Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:08:42.968Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:08:52.220Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:09:04.506Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:16:58.745Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:17:07.957Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:17:19.476Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:17:47.599Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:46:32.941Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:48:13.500Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:57:46.320Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T09:58:43.446Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:13:11.423Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:22:01.932Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:22:25.710Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:22:58.715Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:23:18.343Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:23:47.056Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:24:12.094Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:24:30.644Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:24:43.850Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:24:52.681Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:06.233Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:11.844Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:35.298Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:39.231Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:43.612Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:47.221Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:37:52.683Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:38:15.796Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:38:19.143Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:38:24.996Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:38:32.404Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T10:49:38.055Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T11:46:50.581Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:00:07.586Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:02:05.442Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:02:11.296Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:05:09.706Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:12:08.537Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:12:37.048Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:13:12.590Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:13:31.216Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:14:14.879Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:18:21.957Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:18:35.053Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:19:41.257Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:20:31.035Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:25:00.422Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:25:05.060Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:42:33.331Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:48:14.044Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:52:40.312Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:53:30.111Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:59:04.232Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T12:59:27.256Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:05:24.169Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:09:20.376Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:10:15.583Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:11:56.055Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:13:33.327Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:14:41.233Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:16:11.260Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:16:38.666Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:17:27.226Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:19:41.965Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:21:05.768Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:24:07.709Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:24:24.099Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:24:28.302Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:28:05.326Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:30:41.772Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:32:53.969Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:33:01.045Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:33:02.889Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:36:39.473Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:39:37.364Z'
+}
+{
+  message: 'POST to .../api/airlines/ |400|: _Key role_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-05T13:39:48.140Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:42:26.354Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:42:39.338Z'
+}
+{
+  message: 'Users service: user 23 added',
+  level: 'info',
+  timestamp: '2024-05-05T13:42:54.054Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:44:31.998Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:46:10.093Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:46:12.080Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:46:13.188Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:50:42.741Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:54:37.154Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:57:01.822Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - insert or update on table 'customers' violates foreign key constraint 'customers_user_id_foreign'",
+  level: 'error',
+  timestamp: '2024-05-05T13:57:38.402Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T13:59:05.273Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:00:22.627Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:02:42.362Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:03:39.506Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:03:58.519Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:04:39.928Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:04:45.679Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:05:47.135Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:06:13.291Z'
+}
+{
+  message: 'Customer service: customer 9 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:06:29.547Z'
+}
+{
+  message: 'Airlines service: airline 8 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:07:03.381Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:08:35.641Z'
+}
+{
+  message: 'Airlines service: airline 9 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:08:50.035Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:10:42.335Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:10:59.327Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:11:09.711Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:11:45.939Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:12:04.766Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:12:11.941Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:16:36.262Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:17:23.211Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:28:50.715Z'
+}
+{
+  message: 'Users service: user 24 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:29:45.085Z'
+}
+{
+  message: 'Customer service: customer 10 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:30:29.863Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:30:29.872Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:31:33.694Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:31:54.511Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:32:09.885Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:32:47.409Z'
+}
+{
+  message: 'Users service: user 25 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:32:53.684Z'
+}
+{
+  message: 'Customer service: customer 12 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:33:23.042Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:33:23.049Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:34:59.502Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:35:55.370Z'
+}
+{
+  message: 'Users service: user 26 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:36:11.767Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:36:44.105Z'
+}
+{
+  message: 'Users service: user 26 updated',
+  level: 'info',
+  timestamp: '2024-05-05T14:36:44.144Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:38:47.183Z'
+}
+{
+  message: 'Users service: user 27 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:38:57.438Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:39:44.169Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:39:57.021Z'
+}
+{
+  message: 'Users service: user 27 updated',
+  level: 'info',
+  timestamp: '2024-05-05T14:39:57.043Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:41:56.007Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:42:36.857Z'
+}
+{
+  message: 'Customer service: customer 13 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:43:02.941Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:46:45.461Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:47:08.918Z'
+}
+{
+  message: 'Users service: user 27 updated',
+  level: 'info',
+  timestamp: '2024-05-05T14:47:23.982Z'
+}
+{
+  message: 'Users service: user 28 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:48:02.752Z'
+}
+{
+  message: 'Customer service: customer 15 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:48:07.529Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:49:13.116Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_user_id_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:49:16.376Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:49:51.917Z'
+}
+{
+  message: 'Users service: user 29 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:50:27.800Z'
+}
+{
+  message: 'Customer service: customer 17 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:50:38.818Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:50:45.365Z'
+}
+{
+  message: 'Users service: user 30 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:52:02.409Z'
+}
+{
+  message: 'Customer service: customer 18 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:52:15.521Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:54:36.522Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T14:54:55.639Z'
+}
+{
+  message: 'Customer service: customer 19 added',
+  level: 'info',
+  timestamp: '2024-05-05T14:55:13.597Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:57:11.644Z'
+}
+{
+  message: 'Users service: user 30 updated',
+  level: 'info',
+  timestamp: '2024-05-05T14:58:22.406Z'
+}
+{
+  message: 'Users service: user 30 updated',
+  level: 'info',
+  timestamp: '2024-05-05T14:59:57.178Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:01:10.960Z'
+}
+{
+  message: 'Users service: user 30 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:01:16.983Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:01:28.022Z'
+}
+{
+  message: 'Customer service: customer 20 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:01:59.607Z'
+}
+{
+  message: 'Users service: user 30 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:02:06.902Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: Bad request: user 30 already registered as customer',
+  level: 'error',
+  timestamp: '2024-05-05T15:02:35.031Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:04:28.464Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:04:49.686Z'
+}
+{
+  message: 'POST to .../api/pages/registration |400|: _Bad request: user 30 already registered as customer',
+  level: 'error',
+  timestamp: '2024-05-05T15:04:52.499Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:07:21.020Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:08:01.491Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:10:56.305Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:11:23.095Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:11:48.030Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:13:13.088Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:13:31.866Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:14:07.689Z'
+}
+{
+  message: 'Users service: user 31 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:15:02.256Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:15:37.145Z'
+}
+{
+  message: 'Customer service: customer 21 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:15:44.842Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T15:15:53.285Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T15:17:39.120Z'
+}
+{
+  message: 'Users service: user 31 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:17:39.136Z'
+}
+{
+  message: 'Users service: user 32 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:18:14.521Z'
+}
+{
+  message: 'Customer service: customer 23 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:18:29.099Z'
+}
+{
+  message: 'Users service: user 32 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:18:29.114Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:19:13.067Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:19:29.579Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:20:59.116Z'
+}
+{
+  message: 'Users service: user 33 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:21:12.708Z'
+}
+{
+  message: 'Users service: user 34 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:22:43.452Z'
+}
+{
+  message: 'POST to .../api/airlines/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T15:23:17.250Z'
+}
+{
+  message: 'Users service: user 34 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:23:17.267Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:24:19.967Z'
+}
+{
+  message: 'POST to .../api/pages/registration |400|: _Bad request: user 34 already registered as airline',
+  level: 'error',
+  timestamp: '2024-05-05T15:24:23.985Z'
+}
+{
+  message: 'Airlines service: airline 10 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:24:52.327Z'
+}
+{
+  message: 'Users service: user 34 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:24:52.342Z'
+}
+{
+  message: 'Users service: user 35 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:25:36.736Z'
+}
+{
+  message: 'Users service: user 36 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:26:05.647Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:26:12.496Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:26:17.919Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:26:29.561Z'
+}
+{
+  message: 'Users service: user 37 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:26:39.237Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:28:40.656Z'
+}
+{
+  message: 'Users service: user 38 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:28:57.793Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:30:01.973Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:30:10.976Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:31:14.684Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:32:25.089Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:33:03.439Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:33:51.951Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:34:42.427Z'
+}
+{
+  message: 'Users service: user 39 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:35:35.555Z'
+}
+{
+  message: 'Airlines service: airline 11 added',
+  level: 'info',
+  timestamp: '2024-05-05T15:35:44.989Z'
+}
+{
+  message: 'Users service: user 39 updated',
+  level: 'info',
+  timestamp: '2024-05-05T15:35:44.997Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:36:39.967Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:37:21.999Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:37:55.401Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:39:38.597Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:40:22.724Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:40:48.144Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:41:30.044Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:42:29.218Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:43:11.294Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:44:45.034Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:45:20.588Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:45:42.576Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:46:14.958Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:47:08.811Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:47:19.186Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:48:09.556Z'
+}
+{
+  message: 'POST to .../api/airlines/getByEmail |500|: securityService.comparePassword is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T15:48:14.672Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:48:28.052Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:53:47.730Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:57:37.645Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:59:29.359Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T15:59:32.871Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:04:14.408Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:05:16.822Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:06:11.300Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:06:58.439Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:07:29.988Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:07:46.449Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:08:41.170Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: cookiesService.addSessionCookie is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:08:49.444Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:09:26.806Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:10:49.650Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:11:19.565Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:13:47.546Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:14:05.827Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:14:18.147Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:14:22.415Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:14:32.290Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:14:45.858Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:14:55.066Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:15:03.389Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:15:16.194Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:16:20.441Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:17:04.592Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:17:55.086Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:19:25.809Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:19:52.543Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:22:17.307Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:23:28.827Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:25:37.866Z'
+}
+{
+  message: 'Users service: user 40 added',
+  level: 'info',
+  timestamp: '2024-05-05T16:25:52.963Z'
+}
+{
+  message: 'Airlines service: airline 12 added',
+  level: 'info',
+  timestamp: '2024-05-05T16:26:07.008Z'
+}
+{
+  message: 'Users service: user 40 updated',
+  level: 'info',
+  timestamp: '2024-05-05T16:26:07.019Z'
+}
+{
+  message: 'Airlines service: airline 13 added',
+  level: 'info',
+  timestamp: '2024-05-05T16:27:09.283Z'
+}
+{
+  message: 'Users service: user 40 updated',
+  level: 'info',
+  timestamp: '2024-05-05T16:27:09.293Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:29:18.614Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:31:44.363Z'
+}
+{
+  message: 'Users service: user 41 added',
+  level: 'info',
+  timestamp: '2024-05-05T16:31:55.168Z'
+}
+{
+  message: 'Airlines service: airline 14 added',
+  level: 'info',
+  timestamp: '2024-05-05T16:32:14.961Z'
+}
+{
+  message: 'Users service: user 41 updated',
+  level: 'info',
+  timestamp: '2024-05-05T16:32:14.975Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:37:04.987Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:37:30.900Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:38:02.429Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:38:55.572Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:38:59.449Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:04.472Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:08.095Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:25.083Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:30.863Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:37.157Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:39:50.405Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:40:14.277Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:40:28.272Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:40:33.105Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:41:51.236Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:43:01.504Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:46:00.927Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:46:49.360Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:47:27.715Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:48:17.955Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:48:31.616Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:49:19.066Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:49:30.621Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:50:05.258Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:50:15.405Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:50:41.700Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:52:47.999Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:54:35.331Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:57:02.044Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:57:43.576Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:58:39.745Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:59:09.979Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T16:59:41.680Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:00:10.651Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:00:59.075Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:01:58.079Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:03:23.548Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:04:27.963Z'
+}
+{
+  message: 'GET to .../api/airlines/d41 |500|: select * from users where id = d41 - column "d41" does not exist',
+  level: 'error',
+  timestamp: '2024-05-05T17:04:57.291Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:06:24.359Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:07:19.497Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:07:35.223Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:07:53.891Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:11:35.474Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:14:16.449Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:14:57.281Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:15:51.716Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:18:09.522Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:18:44.634Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:19:01.696Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:20:23.519Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:23:26.039Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:23:39.196Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:24:02.122Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:25:43.199Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:28:43.594Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:28:58.301Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:29:09.263Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:29:18.250Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:29:48.174Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:33:54.502Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:34:45.651Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:40:56.914Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:42:14.476Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:45:25.437Z'
+}
+{
+  message: 'GET to .../api/services/current_user_info |400|: _airline 41 not found',
+  level: 'error',
+  timestamp: '2024-05-05T17:45:30.359Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:47:32.212Z'
+}
+{
+  message: 'GET to .../api/services/current_user_info |400|: _airline 41 not found',
+  level: 'error',
+  timestamp: '2024-05-05T17:47:35.187Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:48:36.085Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:49:14.883Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:50:02.789Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:50:29.293Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:50:46.110Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:51:51.545Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:52:13.585Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:52:26.449Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:52:39.251Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:53:07.152Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:53:23.122Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:53:27.646Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:54:18.690Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:54:22.854Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:55:07.516Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:56:25.891Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:56:44.232Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:58:25.754Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:58:49.894Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:58:56.597Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T17:59:59.943Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:00:44.018Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:01:12.161Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:01:23.189Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:02:08.825Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:02:39.956Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:03:16.610Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:04:53.856Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:08:31.275Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:09:01.065Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:09:37.762Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:10:30.516Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:10:53.925Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:11:04.813Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:11:14.063Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:11:22.389Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:11:37.893Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:13:27.884Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:13:44.018Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:21:32.960Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:21:38.249Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:22:30.765Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:22:54.168Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:22:58.504Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:26:25.834Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:27:10.750Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:27:53.577Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:28:49.093Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:29:15.966Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:32:19.147Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:33:16.077Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:35:59.121Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:37:04.959Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:39:22.394Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:39:38.589Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:39:59.486Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:40:52.256Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:41:26.803Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:44:41.896Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:45:57.801Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:47:26.088Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:48:01.118Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:48:24.203Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:49:07.778Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:49:35.081Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:50:00.221Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:50:18.168Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:50:33.401Z'
+}
+{
+  message: 'User 41 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-05T18:50:37.432Z'
+}
+{
+  message: 'User 41 bought ticket undefined for flight 1',
+  level: 'info',
+  timestamp: '2024-05-05T18:50:57.144Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:52:00.569Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:52:15.085Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:52:27.521Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:53:14.758Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:54:49.545Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T18:57:26.049Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:00:27.259Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:01:08.975Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:01:21.338Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:01:47.197Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:02:02.847Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:02:15.778Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:03:26.612Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:03:43.377Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:04:06.062Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:05:23.374Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:05:45.022Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:06:50.524Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:07:42.721Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:08:06.097Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:08:51.202Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:09:31.442Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:10:21.719Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:11:42.514Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:11:49.402Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:13:04.687Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:13:22.639Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:15:33.337Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:17:14.520Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:19:33.495Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:20:38.790Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:21:53.276Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:22:02.944Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:22:17.887Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:23:41.710Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:23:45.717Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:24:02.096Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:29:57.939Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:30:16.945Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:31:19.442Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:32:45.018Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:33:58.336Z'
+}
+{
+  message: 'GET to .../api/services/get_chosen_customer_flights/1 |500|: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-05T19:34:01.383Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:34:46.950Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:36:06.375Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:37:07.091Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:39:12.409Z'
+}
+{
+  message: 'Server is started on port 3000',
+  level: 'info',
+  timestamp: '2024-05-05T19:41:18.489Z'
+}

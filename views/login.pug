@@ -6,15 +6,13 @@ head
 body
     .wrapper 
         h1 Login Page
-        section#login
+        section
+        form#login(action="/login" method="POST")
             label(for="email") Email 
             input(type="text" id="email" name="email")
             label(for="password") Password
             input(type="password" id="password" name="password")
-            button(id="login_btn") Login
-
-            button(id='add_a_cookie') Add Auth
-
+            button(type="submit" id="login_btn") Login
             span(id="sign_up_link") Sign up
 
 script

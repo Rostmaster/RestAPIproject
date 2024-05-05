@@ -1,5 +1,27 @@
 const DAL = require("../dals/airlines.js")
+const flightsDal = require("../dals/flights.js")
 const logger = require("../utils/logger.js")
+
+const pagePrefix = "/api/airlines"
+
+const returnError = (req, res, error) => {
+    if (error.message[0] === '_') {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |400|: ${error.message}`)
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+    else {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |500|: ${error.message}`)
+        res.status(500).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+}
 
 const airlineValidation = (airline, strict = true) => {
     let errorMSG = null
@@ -16,7 +38,6 @@ const airlineValidation = (airline, strict = true) => {
     }
 
     Object.keys(airline).forEach((key) => {
-        console.log("Validator", key, keys.includes(key))
         keys.includes(key) ? null : errorMSG = `_Key ${key} is invalid`
     })
 
@@ -30,11 +51,9 @@ const airlinesService = {
 
     getAll: async (req, res) => {
         try {
-            console.log(req.query)
             const airlines = await DAL.getAll()
             res.status(200).json(airlines)
         } catch (error) {
-            logger.error(error)
             res.status(500).json({
                 status: "error",
                 internal: false,
@@ -45,158 +64,159 @@ const airlinesService = {
     get: async (req, res) => {
         try {
             const airline = await DAL.get(req.params.airlineId)
-            if (!airline) throw new Error("airline not found")
+            if (airline.data === undefined) throw new Error(`_airline ${id} not found`)
             res.status(200).json(airline)
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     add: async (req, res) => {
         try {
             let raw_airline = req.body
-            let id = req.params.airlineId
 
             let validationResult = airlineValidation(raw_airline)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
             const airline = await DAL.add(raw_airline)
-            if(airline.status === "error") throw new Error(airline.error)
+            if (airline.status === "error") throw new Error(airline.error)
+            const id = airline.data.id
 
-            logger.info(`Service: airline ${id} added`)
+            logger.info(`Airlines service: airline ${id} added`)
             res.status(200).json(airline)
-            
+
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     update: async (req, res) => {
         try {
             let raw_airline = req.body
+            delete raw_airline.id
             let id = req.params.airlineId
 
             let validationResult = airlineValidation(raw_airline)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const airline = await DAL.update(id, raw_airline)
-            logger.info(`Service: airline ${airline.data.id} updated`)
+            await DAL.update(id, raw_airline)
+            const airline = await DAL.get(id)
+            if (airline.data === undefined) throw new Error(`_airline ${id} not found`)
+            logger.info(`Airlines service: airline ${airline.data.id} updated`)
             res.status(200).json(airline)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     patch: async (req, res) => {
         try {
             let raw_airline = req.body
+            delete raw_airline.id
             let id = req.params.airlineId
 
             let validationResult = airlineValidation(raw_airline, false)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const airline = await DAL.patch(id, raw_airline)
-            logger.info(`Service: airline ${airline.data.id} updated`)
+            await DAL.patch(id, raw_airline)
+            const airline = await DAL.get(id)
+            if (airline.data === undefined) throw new Error(`_airline ${id} not found`)
+            logger.info(`Airlines service: airline ${airline.data.id} updated`)
             res.status(200).json(airline)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     delete: async (req, res) => {
         try {
+            //delete flights related to this airline if they exist
+            let flightsByAirline =
+                await fetch(`http://localhost:3000/api/flights/by_airline/${req.params.airlineId}`)
+            flightsByAirline = await flightsByAirline.json()
+            if (flightsByAirline.status !== 'success') {
+                throw new Error(`_tickets by flight id ${req.params.airlineId} were not received ${flightsByAirline}`)
+            }
+            for (const flight of flightsByAirline.data) {
+                await fetch(`http://localhost:3000/api/flights/${flight.id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+            }
+
+            //TODO add verification that flights are deleted
+
             const airline = await DAL.delete(req.params.airlineId)
-            logger.info(`Service: airline ${airline.data.id} deleted`)
+            if (airline.data === undefined) throw new Error(`_airline ${req.params.airlineId} not found`)
+            if (airline.status === "error") throw new Error(airline.error)
+            logger.info(`Airlines service: airline ${req.params.airlineId} deleted`)
             res.status(200).json(airline)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
+
+    getAirlinesByUserId: async (req, res) => {
+        try {
+            const airlines = await DAL.getAirlinesByUserId(req.params.userId)
+            logger.debug(`Airlines service: airlines by user ${req.params.userId} received`)
+            res.status(200).json(airlines)
+        } catch (error) {
+            returnError(req, res, error)
+        }
+    },
+    getAirlinesByCountryId: async (req, res) => {
+        try {
+            const airlines = await DAL.getAirlinesByCountryId(req.params.countryId)
+            logger.debug(`Airlines service: airlines by country ${req.params.countryId} received`)
+            res.status(200).json(airlines)
+        } catch (error) {
+            returnError(req, res, error)
+        }
+    },
+
     createTable: async (req, res) => {
         try {
             const result = await DAL.createTable()
-            logger.info(`Service: table airlines created`)
+            logger.info(`Airlines service: table airlines created`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
     dropTable: async (req, res) => {
         try {
             const result = await DAL.dropTable()
-            logger.info(`Service: table airlines dropped`)
+            logger.info(`Airlines service: table airlines dropped`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
 
     },
     fillTable: async (req, res) => {
         try {
             const result = await DAL.fillTable()
-            logger.info(`Service: table airlines filled`)
+            logger.info(`Airlines service: table airlines filled`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
+    error: (req, res) => {
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: "Bad Request"
+        })
+    }
 }
 
 module.exports = airlinesService;

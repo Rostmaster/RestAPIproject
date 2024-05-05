@@ -1,12 +1,31 @@
 const DAL = require("../dals/users.js")
+
 const logger = require("../utils/logger.js")
-const cookieService = require("./cookies.js")
 const securityService = require("./security.js")
-const pagesService = require("./pages.js")
+const pagePrefix = "/api/airlines"
+
+const returnError = (req, res, error) => {
+    if (error.message[0] === '_') {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |400|: ${error.message}`)
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+    else {
+        logger.error(`${req.method} to ...${pagePrefix}${req.url} |500|: ${error.message}`)
+        res.status(500).json({
+            status: "error",
+            internal: false,
+            error: error.message.replaceAll("\"", "'")
+        })
+    }
+}
 
 const userValidation = (user, strict = true) => {
     let errorMSG = null
-    const keys = ['username', 'password', 'email']
+    const keys = ['username', 'password', 'email', 'role_id']
 
     if (strict) {
         for (let key of keys) {
@@ -36,62 +55,37 @@ const userService = {
     //? User CRUD
     getAll: async (req, res) => {
         try {
-            console.log(req.query)
             const users = await DAL.getAll()
             res.status(200).json(users)
         } catch (error) {
-            logger.error(error)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     get: async (req, res) => {
         try {
             const user = await DAL.get(req.params.userId)
-            if (!user) throw new Error("User not found")
+            if (user.data === undefined) throw new Error(`_user ${id} not found`)
             res.status(200).json(user)
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     add: async (req, res) => {
         try {
             let raw_user = req.body
-            raw_user.password = securityService.toEncrypt(raw_user.password)
 
             let validationResult = userValidation(raw_user)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
             const user = await DAL.add(raw_user)
-            logger.info(`Service: user ${user.data.id} added`)
+            if (user.status === "error") throw new Error(user.error)
+            const id = user.data.id
 
-            cookieService.addExistingUserCookie(req, res)
-
-            pagesService.loginPage(req, res)
-
+            logger.info(`Users service: user ${id} added`)
+            res.status(200).json(user)
         } catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
     update: async (req, res) => {
@@ -100,32 +94,17 @@ const userService = {
             let id = req.params.userId
 
             let validationResult = userValidation(raw_user)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const user = await DAL.update(id, raw_user)
-            logger.info(`Service: user ${user.data.id} updated`)
+            await DAL.update(id, raw_user)
+            const user = await DAL.get(id)
+            if (user.data === undefined) throw new Error(`_user ${id} not found`)
+            logger.info(`Users service: user ${user.data.id} updated`)
             res.status(200).json(user)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     patch: async (req, res) => {
@@ -134,42 +113,63 @@ const userService = {
             let id = req.params.userId
 
             let validationResult = userValidation(raw_user, false)
-            console.log("Validation returned obj ", validationResult, id)
             if (validationResult.message !== 'success')
                 throw new Error(validationResult.message)
 
-            const user = await DAL.update(id, raw_user)
-            logger.info(`Service: user ${user.data.id} updated`)
+            await DAL.patch(id, raw_user)
+            const user = await DAL.get(id)
+            if (user.data === undefined) throw new Error(`_user ${id} not found`)
+            logger.info(`Users service: user ${user.data.id} updated`)
             res.status(200).json(user)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            if (error.message[0] === '_') {
-                logger.error(`${req.method} to ${req.url} |400|: ${error.message}`)
-                res.status(400).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
-            else {
-                logger.error(`${req.method} to ${req.url} |500|: ${error.message}`)
-                res.status(500).json({
-                    status: "error",
-                    internal: false,
-                    error: error.message.replaceAll("\"", "'")
-                })
-            }
+            returnError(req, res, error)
         }
     },
     delete: async (req, res) => {
         try {
+            //delete customers related to this user if they exist
+            let customersByUsers =
+                await fetch(`http://localhost:3000/api/customers/by_user/${req.params.userId}`)
+            customersByUsers = await customersByUsers.json()
+            if (customersByUsers.status !== "success") {
+                throw new Error(`_tickets by user id ${req.params.userId} were not received ${customersByUsers}`)
+            }
+            for (const customer of customersByUsers.data) {
+                await fetch(`http://localhost:3000/api/customers/${customer.id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+            }
+
+            //delete airlines related to this user if they exist
+            let airlinesByUsers =
+                await fetch(`http://localhost:3000/api/airlines/by_user/${req.params.userId}`)
+            airlinesByUsers = await airlinesByUsers.json()
+            if (airlinesByUsers.status !== "success") {
+                throw new Error(`_airlines by user id ${req.params.userId} were not received ${airlinesByUsers}`)
+            }
+            for (const flight of airlinesByUsers.data) {
+                await fetch(`http://localhost:3000/api/airlines/${flight.id}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+            }
+
+            //TODO add verification that airlines and customers are deleted
+
             const user = await DAL.delete(req.params.userId)
-            logger.info(`Service: user ${user.data.id} deleted`)
+            if (user.data === undefined) throw new Error(`_user ${req.params.userId} not found`)
+            if (user.status === "error") throw new Error(user.error)
+            logger.info(`Users service: user ${user.data.id} deleted`)
             res.status(200).json(user)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
 
@@ -178,74 +178,61 @@ const userService = {
     createTable: async (req, res) => {
         try {
             const result = await DAL.createTable()
-            logger.info(`Service: table users created`)
+            logger.info(`Users service: table users created`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
     dropTable: async (req, res) => {
         try {
-            const reuslt = await DAL.dropTable()
-            logger.info(`Service: table users dropped`)
-            res.status(200).json(reuslt)
+            const result = await DAL.dropTable()
+            logger.info(`Users service: table users dropped`)
+            res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
 
     },
     fillTable: async (req, res) => {
         try {
             const result = await DAL.fillTable()
-            logger.info(`Service: table users filled`)
+            logger.info(`Users service: table users filled`)
             res.status(200).json(result)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
+            returnError(req, res, error)
         }
     },
 
     //? Actions
-    login: async (req, res) => {
+    getByEmail: async (req, res) => {
         try {
             const credentials = req.body
-            const requestForUser = await DAL.login(credentials.email)
+            const requestForUser = await DAL.getByEmail(credentials.email)
             req.body.user = requestForUser.data
-            
+
             if (requestForUser.status !== 'success') {
                 throw new Error("User not found")
             }
-            // if (securityService.comparePassword(credentials.password, requestForUser.data.password)) {
             if (credentials.password !== requestForUser.data.password) {
-                throw new Error("Invalid credentials")
+                if (!securityService.compare(credentials.password, requestForUser.data.password))
+                    throw new Error("Invalid credentials")
             }
-
-            await cookieService.addAuthCookie(req,res)
-            // await cookieService.addExistingUserCookie(req,res)
-
-            logger.info(`Service: user ${requestForUser.data.username} logged in`)
-            pagesService.dashboardPage(req, res)
+            res.status(200).json(requestForUser)
         }
         catch (error) {
-            logger.error(`${req.method} to ${req.url} |: ${error.message}`)
-            res.status(500).json({
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            })
+            returnError(req, res, error)
         }
     },
-    newUserRequest: async (req, res) => {
-        await cookieService.addNewUserCookie(req, res)
-        await pagesService.signupPage(req, res)
-        return
-    },
-    logout: async (req, res) => {
-        await cookieService.deleteAuthCookie(req, res)
-        await pagesService.loginPage(req, res)
-        return
+    error: (req, res) => {
+        res.status(400).json({
+            status: "error",
+            internal: false,
+            error: "Bad Request"
+        })
     }
 }
 

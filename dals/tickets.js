@@ -8,53 +8,50 @@ let ticketsDal = {
     //? Tickets CRUD
     getAll: async () => {
         const tickets = await data_base.raw("select * from tickets")
-        console.log(tickets.rows.map(s => `[ID:${s.id}], Customer:${s.customer_id}`));
         return {
             status: "success",
             data: tickets.rows
         }
     },
     get: async (id) => {
-        const tickets = await data_base.raw(`select * from tickets where id = ${id}`)
-        console.log(tickets.rows[0]);
+        const ticket = await data_base.raw(`select * from tickets where id = ${id}`)
         return {
             status: "success",
-            data: tickets.rows[0]
+            data: ticket.rows[0]
         }
     },
     add: async (ticket) => {
         try {
             delete ticket.id
             const result_ids = await data_base('tickets').insert(ticket).returning('id');
-            console.log(result_ids[0]);
-            const id = result_ids[0].id 
-            console.log('insert succeed!');
+            const id = result_ids[0].id
             return {
                 status: "success",
                 data: { id, ...ticket }
             }
         }
-        catch (e) {
-            console.log('insert failed!');
+        catch (error) {
+            console.log('insert failed!', error.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
-                error: e.message.replaceAll("\"", "'")
+                error: error.message.replaceAll("\"", "'")
             }
         }
     },
     update: async (id, ticket) => {
         try {
-            const result = await data_base.raw(`UPDATE tickets set flight_id=?,customer_id=? where id=?`,
+            await data_base.raw(`UPDATE tickets set flight_id=?,customer_id=? where id=?`,
                 [
                     ticket.flight_id ? ticket.flight_id : 0,
                     ticket.customer_id ? ticket.customer_id : 0,
                     id
                 ])
-            console.log('updated succeeded for id ' + id);
+            const result = await data_base.raw(`select * from tickets where id = ${id}`)
+
             return {
                 status: "success",
-                data: result.rowCount
+                data: result.rows[0]
             }
         }
         catch (error) {
@@ -76,10 +73,12 @@ let ticketsDal = {
 
             if (query_arr.length > 0) {
                 const query = `UPDATE tickets set ${query_arr.join(', ')} where id=${id}`
-                const result = await data_base.raw(query)
+                await data_base.raw(query)
+            const result = await data_base.raw(`select * from tickets where id = ${id}`)
+
                 return {
                     status: "success",
-                    data: {id, ...ticket }
+                    data: { id, ...result.rows[0] }
                 }
             }
 
@@ -87,7 +86,7 @@ let ticketsDal = {
 
             return {
                 status: "success",
-                data: {id, ...ticket }
+                data: { id, ...ticket }
             }
         }
         catch (error) {
@@ -103,10 +102,9 @@ let ticketsDal = {
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from tickets where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
-                data: {id}
+                data: { id }
             }
         }
         catch (error) {
@@ -126,24 +124,21 @@ let ticketsDal = {
             data: tickets.rows
         }
     },
-    deleteTicketsByFlightId: async (flight_id) => {
-        try {
-            const result = await data_base.raw(`DELETE from tickets where flight_id = ${flight_id}`)
-            console.log(result.rowCount);
-            return {
-                status: "success",
-                data: {flight_id}
-            }
-        }
-        catch (error) {
-            console.log('delete failed for id ' + flight_id);
-            return {
-                status: "error",
-                internal: false,
-                error: error.message.replaceAll("\"", "'")
-            }
+    getTicketsByFlightId: async (flight_id) => {
+        const tickets = await data_base.raw(`select * from tickets where flight_id = ${flight_id}`)
+        return {
+            status: "success",
+            data: tickets.rows
         }
     },
+    getTicketsByCustomerId: async (customer_id) => {
+        const tickets = await data_base.raw(`select * from tickets where customer_id = ${customer_id}`)
+        return {
+            status: "success",
+            data: tickets.rows
+        }
+    },
+
     //? Tickets Table 
     createTable: async () => {
         await data_base.schema.hasTable('tickets').then((exists) => {
@@ -151,9 +146,9 @@ let ticketsDal = {
                 return data_base.schema.createTable('tickets', (table) => {
                     table.increments('id').primary()
                     table.integer('flight_id').notNullable()
-                    .references('id').inTable('flights')
+                        .references('id').inTable('flights')
                     table.integer('customer_id').notNullable()
-                    .references('id').inTable('customers')
+                        .references('id').inTable('customers')
                 })
         }).catch((err) => {
             console.log(err)
@@ -161,15 +156,15 @@ let ticketsDal = {
 
         return {
             status: "success",
-            data: {message: "table tickets created"}
+            data: { message: "table tickets created" }
         }
     },
     dropTable: async () => {
-       await data_base.schema.dropTableIfExists('tickets')
-       return {
-        status: "success",
-        data: {message: "table tickets dropped"}
-       }
+        await data_base.schema.dropTableIfExists('tickets')
+        return {
+            status: "success",
+            data: { message: "table tickets dropped" }
+        }
     },
     fillTable: async () => {
         await data_base('tickets').insert([
@@ -202,9 +197,9 @@ let ticketsDal = {
                 customer_id: 7
             }
         ])
-        return{
+        return {
             status: "success",
-            data: {message: "table tickets filled"}
+            data: { message: "table tickets filled" }
         }
     }
 

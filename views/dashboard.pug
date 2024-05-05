@@ -3,61 +3,116 @@ head
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
     title Dashboard
 body
-    .wrapper 
-        section#logout
-            .header
-                h1 Dashboard page
-                .controls
-                    button(id="logout_btn") Logout 
-                    button(id="switch_user_btn") Switch User
-            .content 
-                h2 Your Flights:
-                table
-                    thead 
-                        tr 
-                            th TICKET
-                            th FLIGHT
-                            th AIRWAYS
-                            th TIME
-                            th DEPARTURE
-                            th TIME
-                            th DESTINATION 
-                            th Options
-                    tbody(id="user_flights")
-                        each flight in customerFlights
-                            tr(id=`row-${flight.id}`)
-                                td= flight.ticket_id
-                                td= flight.id
-                                td= flight.airline
-                                td= flight.departure_time
-                                td= flight.origin_country
-                                td= flight.landing_time
-                                td= flight.destination_country
-                                td
-                                    button(id=`${flight.ticket_id}` class="cancel_btn") Cancel
+    #wrapper 
+        section.header
+            h1#header_title
+            .controls
+                button(id="logout_btn") Logout 
+                button(id="switch_user_btn") Switch User
+                button(id='register_btn').hidden Register
+        section.body
+            section.content 
+                section.customer_flights.table_section#customer_flights_block
+                    h2#customer_flights_heading.heading Your Flights:
+                    h2#customer_message.hidden You have no flights
+                    table#customer_flight_table
+                        thead 
+                            tr 
+                                th.h_cell &nbsp; TICKET &nbsp;
+                                th.h_cell &nbsp; FLIGHT &nbsp;
+                                th.h_cell &nbsp; AIRWAYS &nbsp;
+                                th.h_cell &nbsp; DEPARTURE &nbsp;
+                                th.h_cell &nbsp; TIME &nbsp;
+                                th.h_cell &nbsp; DESTINATION &nbsp; 
+                                th.h_cell &nbsp; TIME &nbsp;
+                                th.h_cell &nbsp; Options &nbsp;
+                        tbody(id="customer_flights")
+                    #customer_pagination.pagination
+                        h3 pages:
+                        ul(id="customer-flights-pages_list") 
+                    #customer_place.hidden &nbsp;
 
+                section.all_flights.table_section
+                    h2.heading All the flights:
+                    h2#all_flights_message.hidden You have no flights
+                    table
+                        thead 
+                            th.h_cell &nbsp; AIRLINE &nbsp;
+                            th.h_cell &nbsp; FLIGHT &nbsp;
+                            th.h_cell &nbsp; DEPARTURE &nbsp;
+                            th.h_cell &nbsp; TIME &nbsp;
+                            th.h_cell &nbsp; DESTINATION &nbsp;
+                            th.h_cell &nbsp; TIME &nbsp;
+                            th.h_cell &nbsp; TICKETS REMAINED &nbsp;
+                        tbody(id="all_flights")
+                    #all_flights_pagination.pagination
+                        h3 pages:
+                        ul(id="active-flights-pages_list") 
+                    #all_flights_place.hidden &nbsp;
 
-                h2 All the flights:
-                table
-                    thead 
-                            th AIRLINE
-                            th FLIGHT 
-                            th DEPARTURE
-                            th TIME
-                            th DESTINATION 
-                            th TIME
-                            th TICKETS REMAINED 
-                    tbody(id="all_flights")
-                .pagination
-                    h3 pages:
-                    ul(id="active-flights-pages_list") 
+            section.add_block
+                h1#message_block.hidden Please register to view the possible options
+                //The iframe used to avoid redirecting to the different page after form submitted
+                <iframe name="redirect_frame" id="redirect_frame" style="display: none;"></iframe>
+                #admin_block 
+                    h2.heading Admin Block 
+                    form(id="admin_form" action="/api/admin" method="POST" target="redirect_frame")
+                        label(for="customer_id") Customer for edit 
+                        select(id="customer_id_select" name="customer_id")
+                        label(for="airline_id") Airline for edit 
+                        select(id="airline_id_select" name="airline_id")
+                #customer_block
+                    h2.heading Customer Details 
+                    form(id="customer_details_form" action=`/api/customers/ID` method="UPDATE" target="redirect_frame")
+                        label(for="first_name") First Name 
+                        input(type="text" name="first_name" placeholder="First Name")
+                        label(for="last_name") Last Name
+                        input(type="text" name="last_name" placeholder="Last Name")
+                        label(for="address") Address 
+                        input(type="text" name="address" placeholder="Address")
+                        label(for="phone_number") Phone
+                        input(type="text" name="phone_number" placeholder="Phone Number")
+                        label(for="credit_card") Credit Card
+                        input(type="text" name="credit_card" placeholder="Credit Card Number")
+                        input(type="submit" value="Update")
+                #airline_block
+                    h2.heading Airline Details 
+                    form(id="airline_details_form" action=`/api/airlines/ID` method="UPDATE" target="redirect_frame")
+                        label(for="name") Name 
+                        input(type="text" name="name" placeholder="AIRLINE NAME")
+                        label(for="country_id") Country 
+                        select(id="country_id_select" name="country_id_select")
+                        input(type="submit" value="Update")
+                #flight_block
+                    h2.heading Add flight
+                    form(id="add_flight_form" action="/api/flights" method="POST" target="redirect_frame")
+                        label(for="airline_id" class="hidden") Airline
+                        input(type="number" name="airline_id" value="ID" class="hidden")
+                        label(for="origin_country_id") Departure 
+                        select(id="origin_country_select" name="origin_country_id")
+                        label(for="departure_time") Date
+                        input(type="date" name="departure_time")
+                        label(for="destination_country_id") Destination
+                        select(id="destination_country_select" name="destination_country_id")
+                        label(for="landing_time") Date
+                        input(type="date" name="landing_time")
+                        label(for="remaining_tickets") Tickets Remained
+                        input(type="number" name="remaining_tickets" placeholder="Tickets Remained")
+                        input(type="submit" value="Add Flight")
 
-    span Your flights pagination
-    br
-    span LOG for key procedures
+                #country_block
+                    h2.heading Add country
+                    form(id="add_country_form" action="/api/countries" method="POST" target="redirect_frame")
+                        input(type="text" name="name" placeholder="Country name")
+                        input(type="submit" value="Add Country")
 
-style
-    include ./includes/style/dashboard.css
+        span.info css
+        br
+        span.info auth logic
+        br
 
 script
     include ./includes/js/dashboard.js
+
+style
+    include ./includes/style/dashboard.css

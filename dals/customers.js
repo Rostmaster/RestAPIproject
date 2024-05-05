@@ -5,10 +5,9 @@ const data_base = knex(config.database)
 
 let customersDal = {
 
-    //? Customer CRUD
+    //? Customers CRUD
     getAll: async () => {
         const customers = await data_base.raw("select * from customers")
-        console.log(customers.rows.map(s => `[ID:${s.id}], ${s.first_name} ${s.last_name}`));
         return {
             status: "success",
             data: customers.rows
@@ -16,7 +15,6 @@ let customersDal = {
     },
     get: async (id) => {
         const customers = await data_base.raw(`select * from customers where id = ${id}`)
-        console.log(customers.rows[0]);
         return {
             status: "success",
             data: customers.rows[0]
@@ -26,16 +24,14 @@ let customersDal = {
         try {
             delete customer.id
             const result_ids = await data_base('customers').insert(customer).returning('id');
-            console.log(result_ids[0]);
             const id = result_ids[0].id
-            console.log('insert succeed!');
             return {
                 status: "success",
                 data: { id, ...customer }
             }
         }
         catch (e) {
-            console.log('insert failed!');
+            console.log('insert failed!', e.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
@@ -45,7 +41,7 @@ let customersDal = {
     },
     update: async (id, customer) => {
         try {
-            const result = await data_base.raw(`UPDATE customers set first_name=?,last_name=?, address=?,phone_number=?, credit_card=?, user_id=? where id=?`,
+            await data_base.raw(`UPDATE customers set first_name=?,last_name=?, address=?,phone_number=?, credit_card=?, user_id=? where id=?`,
                 [
                     customer.first_name ? customer.first_name : '',
                     customer.last_name ? customer.last_name : '',
@@ -55,14 +51,15 @@ let customersDal = {
                     customer.user_id ? customer.user_id : 0,
                     id
                 ])
-            console.log('updated succeeded for id ' + id);
+            const result = await data_base.raw(`select * from customers where id = ${id}`)
+            if (result.rows[0] === undefined) throw new Error(`_customer ${id} not found`)
             return {
                 status: "success",
-                data: { id, ...customer }
+                data: { id, ...result.rows[0] }
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
+            console.log('updated failed for id ' + id, error.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
@@ -77,17 +74,16 @@ let customersDal = {
             for (let key in customer) {
                 query_arr.push(`${key}='${customer[key]}'`)
             }
-
             if (query_arr.length > 0) {
                 const query = `UPDATE customers set ${query_arr.join(', ')} where id=${id}`
-                const result = await data_base.raw(query)
+                await data_base.raw(query)
+                const result = await data_base.raw(`select * from customers where id = ${id}`)
+                if (result.rows[0] === undefined) throw new Error(`_customer ${id} not found`)
                 return {
                     status: "success",
-                    data: { id, ...customer }
+                    data: { id, ...result.rows[0] }
                 }
             }
-
-            console.log('updated successfully for id ' + id);
 
             return {
                 status: "success",
@@ -95,7 +91,6 @@ let customersDal = {
             }
         }
         catch (error) {
-            console.log('updated failed for id ' + id);
             return {
                 status: "error",
                 internal: false,
@@ -107,17 +102,30 @@ let customersDal = {
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from customers where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
-                data: {
-                    message: 'success',
-                    id
-                }
+                data: { id }
             }
         }
         catch (error) {
-            console.log('delete failed for id ' + id);
+            return {
+                status: "error",
+                internal: false,
+                error: error.message.replaceAll("\"", "'")
+            }
+        }
+    },
+    
+    //? Customers Custom CRUD Actions
+    getCustomersByUserId: async (user_id) => {
+        try {
+            const customers = await data_base.raw(`select * from customers where user_id=${user_id}`)
+            return {
+                status: "success",
+                data: customers.rows
+            }
+        }
+        catch (error) {
             return {
                 status: "error",
                 internal: false,
@@ -138,10 +146,14 @@ let customersDal = {
                     table.string('phone_number').notNullable().unique()
                     table.string('credit_card').notNullable().unique()
                     table.integer('user_id').notNullable().unique()
-                    .references('id').inTable('users')
+                        .references('id').inTable('users')
                 })
         }).catch((err) => {
-            console.log(err)
+            return {
+                status: "error",
+                internal: false,
+                error: err.message.replaceAll("\"", "'")
+            }
         })
         return {
             status: "success",
@@ -213,14 +225,6 @@ let customersDal = {
                 credit_card: '1345678901234564',
                 user_id: 7
             },
-            {
-                first_name: 'Gene',
-                last_name: 'Dion',
-                address: '456 Secondary St',
-                phone_number: '123-456-7905',
-                credit_card: '2345678901234565',
-                user_id: 8
-            }
 
         ])
         return {

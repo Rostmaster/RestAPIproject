@@ -473,3 +473,1504 @@
   level: 'error',
   timestamp: '2024-04-27T10:37:47.605Z'
 }
+{
+  message: "GET to /api/services/get_customer_flights/ |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-27T11:26:15.854Z'
+}
+{
+  message: "GET to /api/services/get_customer_flights/ |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-27T11:26:36.742Z'
+}
+{
+  message: 'GET to /dashboard |: select * from tickets where customer_id = 1,$2b$10$bCZec5oUbEpphHTmssy4Y.C08/4.PaZ9Z7998iM7MrLI6O6UCX27u - syntax error at or near ","',
+  level: 'error',
+  timestamp: '2024-04-27T11:30:01.317Z'
+}
+{
+  message: "undefined to undefined |: Cannot read properties of undefined (reading 'airlineId')",
+  level: 'error',
+  timestamp: '2024-04-28T17:28:01.243Z'
+}
+{
+  message: "undefined to undefined |: Cannot read properties of undefined (reading 'airlineId')",
+  level: 'error',
+  timestamp: '2024-04-28T17:29:39.988Z'
+}
+{
+  message: "undefined to undefined |: Cannot read properties of undefined (reading 'airlineId')",
+  level: 'error',
+  timestamp: '2024-04-28T17:29:52.935Z'
+}
+{
+  message: "undefined to undefined |: Cannot read properties of undefined (reading 'airlineId')",
+  level: 'error',
+  timestamp: '2024-04-28T17:30:34.529Z'
+}
+{
+  message: "undefined to undefined |: Cannot read properties of undefined (reading 'airlineId')",
+  level: 'error',
+  timestamp: '2024-04-28T17:32:10.703Z'
+}
+{
+  message: 'POST to / |: _Key airline is invalid',
+  level: 'error',
+  timestamp: '2024-04-28T17:42:24.291Z'
+}
+{
+  message: 'POST to / |: _Key airline is invalid',
+  level: 'error',
+  timestamp: '2024-04-28T17:47:20.185Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:50:42.816Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:51:46.215Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:52:54.920Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:53:06.749Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:53:21.690Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:55:31.516Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:56:47.471Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:57:35.248Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:57:43.263Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:58:14.948Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-28T17:58:38.188Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:28:25.611Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:30:12.322Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:31:17.013Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:32:04.871Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:32:37.307Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T11:57:02.709Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:05:02.445Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:06:30.010Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:09:32.185Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:42:29.221Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T12:42:29.243Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:43:16.858Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T12:43:16.875Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T12:58:48.891Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T12:58:48.923Z'
+}
+{
+  message: 'PUT to /287 |: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:00:54.339Z'
+}
+{
+  message: 'PUT to /287 |400|: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:00:54.340Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T13:03:29.662Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:29.682Z'
+}
+{
+  message: 'PUT to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:29.689Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:29.690Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T13:03:55.413Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:55.434Z'
+}
+{
+  message: 'PUT to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:55.443Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:03:55.444Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T13:05:06.126Z'
+}
+{
+  message: 'GET to /undefined |: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:05:06.134Z'
+}
+{
+  message: 'PATCH to /305 |: _Key first_name is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:11:53.764Z'
+}
+{
+  message: 'PATCH to /305 |400|: _Key first_name is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:11:53.764Z'
+}
+{
+  message: 'PATCH to /307 |: _Key first_name is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:12:21.460Z'
+}
+{
+  message: 'PATCH to /307 |400|: _Key first_name is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:12:21.460Z'
+}
+{
+  message: 'POST to / |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.916Z'
+}
+{
+  message: 'GET to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.936Z'
+}
+{
+  message: 'PUT to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.945Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.946Z'
+}
+{
+  message: 'PATCH to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.953Z'
+}
+{
+  message: 'PATCH to /undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.953Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T13:25:14.960Z'
+}
+{
+  message: 'POST to / |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:26:31.926Z'
+}
+{
+  message: 'POST to / |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:26:58.915Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T13:26:58.935Z'
+}
+{
+  message: 'POST to / |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:29:00.274Z'
+}
+{
+  message: 'POST to / |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:31:03.723Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T13:31:03.744Z'
+}
+{
+  message: 'POST to / |: customer is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:32:14.674Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T13:32:14.698Z'
+}
+{
+  message: 'POST to / |: customer is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:32:55.551Z'
+}
+{
+  message: 'PUT to /170 |: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:02.973Z'
+}
+{
+  message: 'PUT to /170 |400|: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:02.974Z'
+}
+{
+  message: 'PATCH to /170 |: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:02.983Z'
+}
+{
+  message: 'PATCH to /170 |400|: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:02.983Z'
+}
+{
+  message: "POST to / |: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.284Z'
+}
+{
+  message: 'GET to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.303Z'
+}
+{
+  message: 'PUT to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.311Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.312Z'
+}
+{
+  message: 'PATCH to /undefined |: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.322Z'
+}
+{
+  message: 'PATCH to /undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.322Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T13:34:53.328Z'
+}
+{
+  message: "POST to / |: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T13:36:06.511Z'
+}
+{
+  message: 'PUT to /90 |: DAL is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:44:55.009Z'
+}
+{
+  message: 'PUT to /90 |500|: DAL is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:44:55.009Z'
+}
+{
+  message: 'PATCH to /90 |: DAL is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:44:55.017Z'
+}
+{
+  message: 'PATCH to /90 |500|: DAL is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T13:44:55.017Z'
+}
+{
+  message: 'PUT to /98 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:52:42.949Z'
+}
+{
+  message: 'PUT to /98 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:52:42.950Z'
+}
+{
+  message: 'PUT to /100 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:53:44.081Z'
+}
+{
+  message: 'PUT to /100 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:53:44.082Z'
+}
+{
+  message: 'PUT to /102 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:54:49.236Z'
+}
+{
+  message: 'PUT to /102 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:54:49.237Z'
+}
+{
+  message: 'PUT to /104 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:55:59.900Z'
+}
+{
+  message: 'PUT to /104 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:55:59.901Z'
+}
+{
+  message: 'PUT to /106 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:57:27.478Z'
+}
+{
+  message: 'PUT to /106 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:57:27.479Z'
+}
+{
+  message: 'PUT to /108 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:58:01.464Z'
+}
+{
+  message: 'PUT to /108 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:58:01.465Z'
+}
+{
+  message: 'PUT to /110 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:59:27.635Z'
+}
+{
+  message: 'PUT to /110 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T13:59:27.635Z'
+}
+{
+  message: 'PUT to /112 |: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T14:02:03.471Z'
+}
+{
+  message: 'PUT to /112 |400|: _landing_time is required',
+  level: 'error',
+  timestamp: '2024-04-29T14:02:03.472Z'
+}
+{
+  message: "POST to / |: Cannot access 'id' before initialization",
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.366Z'
+}
+{
+  message: 'GET to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.401Z'
+}
+{
+  message: 'PUT to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.413Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.413Z'
+}
+{
+  message: 'PATCH to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.422Z'
+}
+{
+  message: 'PATCH to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.423Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:10:43.429Z'
+}
+{
+  message: "POST to / |: Cannot access 'id' before initialization",
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.711Z'
+}
+{
+  message: 'GET to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.748Z'
+}
+{
+  message: 'PUT to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.759Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.759Z'
+}
+{
+  message: 'PATCH to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.776Z'
+}
+{
+  message: 'PATCH to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.777Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:11:44.786Z'
+}
+{
+  message: "POST to / |: Cannot access 'id' before initialization",
+  level: 'error',
+  timestamp: '2024-04-29T14:12:11.632Z'
+}
+{
+  message: "POST to / |: insert into 'tickets' ('customer_id', 'flight_id') values ($1, $2) returning 'id' - insert or update on table 'tickets' violates foreign key constraint 'tickets_flight_id_foreign'",
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.809Z'
+}
+{
+  message: 'GET to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.829Z'
+}
+{
+  message: 'PUT to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.837Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.838Z'
+}
+{
+  message: 'PATCH to /undefined |: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.847Z'
+}
+{
+  message: 'PATCH to /undefined |500|: select * from tickets where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.848Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:12:26.855Z'
+}
+{
+  message: "POST to / |: insert into 'tickets' ('customer_id', 'flight_id') values ($1, $2) returning 'id' - insert or update on table 'tickets' violates foreign key constraint 'tickets_flight_id_foreign'",
+  level: 'error',
+  timestamp: '2024-04-29T14:13:37.773Z'
+}
+{
+  message: 'PATCH to /154 |: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T14:15:03.121Z'
+}
+{
+  message: 'PATCH to /154 |400|: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T14:15:03.121Z'
+}
+{
+  message: 'PATCH to /156 |: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T14:15:33.890Z'
+}
+{
+  message: 'PATCH to /156 |400|: _Key id is invalid',
+  level: 'error',
+  timestamp: '2024-04-29T14:15:33.890Z'
+}
+{
+  message: "POST to / |: Cannot access 'id' before initialization",
+  level: 'error',
+  timestamp: '2024-04-29T14:26:33.352Z'
+}
+{
+  message: 'GET to /undefined |: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:26:33.397Z'
+}
+{
+  message: 'PUT to /undefined |: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:26:33.406Z'
+}
+{
+  message: 'PUT to /undefined |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:26:33.407Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:26:33.416Z'
+}
+{
+  message: "POST to / |: Cannot access 'id' before initialization",
+  level: 'error',
+  timestamp: '2024-04-29T14:27:05.438Z'
+}
+{
+  message: 'PUT to /undefined |: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:27:16.473Z'
+}
+{
+  message: 'PUT to /undefined |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:27:16.474Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:27:16.483Z'
+}
+{
+  message: 'PUT to /undefined |: raw_airline is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:28:26.408Z'
+}
+{
+  message: 'PUT to /undefined |500|: raw_airline is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T14:28:26.408Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:28:26.423Z'
+}
+{
+  message: "POST to / |: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T14:28:46.238Z'
+}
+{
+  message: 'PUT to /undefined |: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:28:59.087Z'
+}
+{
+  message: 'PUT to /undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:28:59.087Z'
+}
+{
+  message: "DELETE to /undefined |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-04-29T14:28:59.096Z'
+}
+{
+  message: "POST to / |: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-04-29T14:30:00.536Z'
+}
+{
+  message: 'GET to /undefined |: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-04-29T14:30:00.542Z'
+}
+{
+  message: "GET to /dashboard |: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-04-29T15:24:09.913Z'
+}
+{
+  message: "POST to /login |: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-04-29T15:24:37.986Z'
+}
+{
+  message: 'GET to /dashboard |: ordering is not defined',
+  level: 'error',
+  timestamp: '2024-04-29T16:22:51.641Z'
+}
+{
+  message: "POST to /login |: Cannot read properties of undefined (reading 'password')",
+  level: 'error',
+  timestamp: '2024-04-29T18:45:52.548Z'
+}
+{
+  message: "POST to /login |: Cannot read properties of undefined (reading 'password')",
+  level: 'error',
+  timestamp: '2024-04-29T18:45:55.724Z'
+}
+{
+  message: 'POST to / |: _value of email() is blank',
+  level: 'error',
+  timestamp: '2024-04-29T18:56:02.811Z'
+}
+{
+  message: 'POST to / |: _value of email() is blank',
+  level: 'error',
+  timestamp: '2024-04-29T18:56:44.767Z'
+}
+{
+  message: 'POST to / |: _value of email() is blank',
+  level: 'error',
+  timestamp: '2024-04-29T18:57:25.971Z'
+}
+{
+  message: "POST to /login |: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T11:20:53.587Z'
+}
+{
+  message: 'airlines service: GET to /222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:43:56.272Z'
+}
+{
+  message: 'airlines service: GET to /222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:44:04.298Z'
+}
+{
+  message: ' GET to .../api/airlines/222 |: airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T11:45:01.222Z'
+}
+{
+  message: "POST to / |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:46:07.927Z'
+}
+{
+  message: 'POST to .../api/airlines/ |: \n' +
+    "            insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:47:52.160Z'
+}
+{
+  message: "POST to .../api/airlines/ |: insert into 'airlines' ('country_id', 'name', 'user_id') values ($1, $2, $3) returning 'id' - duplicate key value violates unique constraint 'airlines_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-03T11:48:12.917Z'
+}
+{
+  message: "PUT to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:54:38.267Z'
+}
+{
+  message: "PUT to /122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:54:38.271Z'
+}
+{
+  message: "PUT to .../api/airlines/122/122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:55:31.301Z'
+}
+{
+  message: "PUT to .../api/airlines/122/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:55:31.303Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:56:02.211Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:56:02.215Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:57:08.480Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:58:15.706Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:58:45.843Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T11:59:53.425Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:01:01.942Z'
+}
+{
+  message: "PUT to .../api/airlines/122 |500|: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:01:06.659Z'
+}
+{
+  message: 'PUT to .../api/airlines/122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:01:58.391Z'
+}
+{
+  message: 'PATCH to /122 |: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:03:15.972Z'
+}
+{
+  message: 'PATCH to /122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:03:15.973Z'
+}
+{
+  message: 'PATCH to .../api/airlines/122 |400|: _airline not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:04:00.351Z'
+}
+{
+  message: 'PATCH to .../api/airlines/122 |400|: _airline 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:04:55.223Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:09:20.214Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:09:59.376Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:10:33.110Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:10:41.637Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:11:36.694Z'
+}
+{
+  message: 'DELETE to /122 |: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-03T12:12:08.977Z'
+}
+{
+  message: 'DELETE to /122 |: _airline 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:13:30.159Z'
+}
+{
+  message: "DELETE to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:20:48.798Z'
+}
+{
+  message: "DELETE to /122 |: Cannot read properties of undefined (reading 'id')",
+  level: 'error',
+  timestamp: '2024-05-03T12:21:19.784Z'
+}
+{
+  message: 'DELETE to ../api/country/122 |: _country122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:22:45.087Z'
+}
+{
+  message: 'DELETE to .../api/country/122 |: _country 122 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:24:02.711Z'
+}
+{
+  message: 'PUT to .../api/country/122 |400|: _Key user_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-03T12:24:08.131Z'
+}
+{
+  message: 'GET to .../api/country/111 |: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:27:23.474Z'
+}
+{
+  message: 'GET to .../api/country/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:28:34.994Z'
+}
+{
+  message: 'GET to .../api/airlines/111 |400|: _airline 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:33:00.783Z'
+}
+{
+  message: 'GET to .../api/countries/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:35:50.462Z'
+}
+{
+  message: 'PUT to .../api/countries/111 |400|: _Key user_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-03T12:36:01.091Z'
+}
+{
+  message: 'DELETE to .../api/countries/111 |400|: _country 111 not found',
+  level: 'error',
+  timestamp: '2024-05-03T12:36:31.131Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:01.057Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:46.821Z'
+}
+{
+  message: "GET to .../api/services/dashboard |500|: Cannot read properties of undefined (reading 'split')",
+  level: 'error',
+  timestamp: '2024-05-03T15:43:56.785Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:00.323Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:09.982Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:36.741Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:16:53.365Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:17:50.790Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:19:57.543Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:45.707Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:54.983Z'
+}
+{
+  message: 'GET to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:54.991Z'
+}
+{
+  message: 'PUT to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.001Z'
+}
+{
+  message: 'DELETE to .../api/countries/undefined |400|: _country undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.008Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.024Z'
+}
+{
+  message: 'GET to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.030Z'
+}
+{
+  message: 'PUT to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.039Z'
+}
+{
+  message: 'PATCH to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.045Z'
+}
+{
+  message: 'DELETE to .../api/customers/undefined |400|: _customer undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.052Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:32:55.099Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.093Z'
+}
+{
+  message: 'GET to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.102Z'
+}
+{
+  message: 'PUT to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.111Z'
+}
+{
+  message: 'PATCH to .../api/customers/undefined |500|: select * from customers where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.118Z'
+}
+{
+  message: 'DELETE to .../api/customers/undefined |400|: _customer undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:33:31.124Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.716Z'
+}
+{
+  message: 'GET to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.723Z'
+}
+{
+  message: 'PUT to .../api/countries/undefined |500|: select * from countries where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.732Z'
+}
+{
+  message: 'DELETE to .../api/countries/undefined |400|: _country undefined not found',
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.739Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-04T10:34:08.805Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T11:20:05.873Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:32:45.236Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:33:23.796Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |500|: Failed to parse URL from /api/tickets/delete_by_flight/173',
+  level: 'error',
+  timestamp: '2024-05-04T11:34:56.343Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted',
+  level: 'error',
+  timestamp: '2024-05-04T11:36:51.432Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted',
+  level: 'error',
+  timestamp: '2024-05-04T11:58:01.226Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:00:42.956Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:01:24.982Z'
+}
+{
+  message: 'DELETE to .../api/flights/173 |400|: _tickets by flight id not deleted 400',
+  level: 'error',
+  timestamp: '2024-05-04T12:02:07.239Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T12:46:49.628Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T12:47:52.083Z'
+}
+{
+  message: 'GET to .../api/flights/173 |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T16:09:35.810Z'
+}
+{
+  message: 'DELETE to .../api/flights/174 |500|: ticketsByFlight.data is not iterable',
+  level: 'error',
+  timestamp: '2024-05-04T16:10:08.660Z'
+}
+{
+  message: 'GET to .../api/flights/173 |500|: id is not defined',
+  level: 'error',
+  timestamp: '2024-05-04T16:12:57.842Z'
+}
+{
+  message: "DELETE to .../api/flights/174 |500|: Cannot read properties of undefined (reading 'forEach')",
+  level: 'error',
+  timestamp: '2024-05-04T16:14:29.144Z'
+}
+{
+  message: 'DELETE to .../api/airlines/377 |400|: _airline 377 not found',
+  level: 'error',
+  timestamp: '2024-05-04T16:42:35.135Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:06:37.647Z'
+}
+{
+  message: 'DELETE to .../api/flights/235 |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:14.478Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:14.516Z'
+}
+{
+  message: 'DELETE to .../api/airlines/318 |400|: _user 318 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:22:43.620Z'
+}
+{
+  message: 'DELETE to .../api/airlines/379 |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-04T17:36:34.880Z'
+}
+{
+  message: 'DELETE to .../api/airlines/265 |400|: _user 265 not found',
+  level: 'error',
+  timestamp: '2024-05-04T17:36:34.903Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:30.309Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:45.382Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:46.017Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id not deleted [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:40:46.334Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:47:21.068Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:47:27.737Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:49:17.102Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:50:35.028Z'
+}
+{
+  message: 'GET to .../api/flights/by_origin_country/209 |500|: flights.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:52.651Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:52.665Z'
+}
+{
+  message: 'GET to .../api/flights/by_origin_country/209 |500|: flights.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:54.981Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:54:54.988Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |400|: _Countries service:flights by origin country id 209 were not received [object Response]',
+  level: 'error',
+  timestamp: '2024-05-04T17:55:14.476Z'
+}
+{
+  message: 'DELETE to .../api/countries/209 |500|: Assignment to constant variable.',
+  level: 'error',
+  timestamp: '2024-05-04T18:08:37.621Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:32:36.816Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:34:04.899Z'
+}
+{
+  message: 'POST to .../api/countries/ |500|: country.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T19:37:11.418Z'
+}
+{
+  message: 'POST to .../api/flights/ |500|: flight.hasOwnProperty is not a function',
+  level: 'error',
+  timestamp: '2024-05-04T20:18:12.875Z'
+}
+{
+  message: 'POST to .../api/flights/ |400|: _Key tickets_remained is invalid',
+  level: 'error',
+  timestamp: '2024-05-04T20:19:22.476Z'
+}
+{
+  message: 'POST to .../api/flights/ |400|: _Key tickets_remained is invalid',
+  level: 'error',
+  timestamp: '2024-05-04T20:20:21.368Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:20:39.274Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:21:30.069Z'
+}
+{
+  message: "POST to .../api/flights/ |500|: insert into 'flights' ('departure_time', 'destination_country_id', 'landing_time', 'origin_country_id', 'remaining_tickets') values ($1, $2, $3, $4, $5) returning 'id' - null value in column 'airline_id' of relation 'flights' violates not-null constraint",
+  level: 'error',
+  timestamp: '2024-05-04T20:25:43.672Z'
+}
+{
+  message: "POST to .../api/countries/ |500|: insert into 'countries' ('name') values ($1) returning 'id' - duplicate key value violates unique constraint 'countries_name_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T07:36:31.277Z'
+}
+{
+  message: 'POST to .../api/airlines/ |400|: _Key role_id is invalid',
+  level: 'error',
+  timestamp: '2024-05-05T13:39:48.140Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - insert or update on table 'customers' violates foreign key constraint 'customers_user_id_foreign'",
+  level: 'error',
+  timestamp: '2024-05-05T13:57:38.402Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:00:22.627Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:30:29.872Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:31:54.511Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:32:09.885Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: user is not defined',
+  level: 'error',
+  timestamp: '2024-05-05T14:33:23.049Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:36:44.105Z'
+}
+{
+  message: 'POST to .../api/customers/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T14:39:57.021Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:47:08.918Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_user_id_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T14:49:16.376Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:49:51.917Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:50:45.365Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T14:57:11.644Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: Bad request: user 30 already registered as customer',
+  level: 'error',
+  timestamp: '2024-05-05T15:02:35.031Z'
+}
+{
+  message: 'POST to .../api/pages/registration |400|: _Bad request: user 30 already registered as customer',
+  level: 'error',
+  timestamp: '2024-05-05T15:04:52.499Z'
+}
+{
+  message: 'POST to .../api/pages/registration |500|: fetch failed',
+  level: 'error',
+  timestamp: '2024-05-05T15:15:53.285Z'
+}
+{
+  message: "POST to .../api/customers/ |500|: insert into 'customers' ('address', 'credit_card', 'first_name', 'last_name', 'phone_number', 'user_id') values ($1, $2, $3, $4, $5, $6) returning 'id' - duplicate key value violates unique constraint 'customers_phone_number_unique'",
+  level: 'error',
+  timestamp: '2024-05-05T15:17:39.120Z'
+}
+{
+  message: 'POST to .../api/airlines/ |400|: _user_id is required',
+  level: 'error',
+  timestamp: '2024-05-05T15:23:17.250Z'
+}
+{
+  message: 'POST to .../api/pages/registration |400|: _Bad request: user 34 already registered as airline',
+  level: 'error',
+  timestamp: '2024-05-05T15:24:23.985Z'
+}
+{
+  message: 'POST to .../api/airlines/getByEmail |500|: securityService.comparePassword is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T15:48:14.672Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: cookiesService.addSessionCookie is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:08:49.444Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:14:45.858Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:14:55.066Z'
+}
+{
+  message: 'POST to .../api/pages/login |500|: isAuthenticated.json is not a function',
+  level: 'error',
+  timestamp: '2024-05-05T16:15:03.389Z'
+}
+{
+  message: 'GET to .../api/airlines/d41 |500|: select * from users where id = d41 - column "d41" does not exist',
+  level: 'error',
+  timestamp: '2024-05-05T17:04:57.291Z'
+}
+{
+  message: 'GET to .../api/services/current_user_info |400|: _airline 41 not found',
+  level: 'error',
+  timestamp: '2024-05-05T17:45:30.359Z'
+}
+{
+  message: 'GET to .../api/services/current_user_info |400|: _airline 41 not found',
+  level: 'error',
+  timestamp: '2024-05-05T17:47:35.187Z'
+}
+{
+  message: 'GET to .../api/services/get_chosen_customer_flights/1 |500|: select * from airlines where id = undefined - column "undefined" does not exist',
+  level: 'error',
+  timestamp: '2024-05-05T19:34:01.383Z'
+}

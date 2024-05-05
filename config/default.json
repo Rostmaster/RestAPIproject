@@ -23,5 +23,8 @@
   "pages":{
     "dashboard":{
       "resultLimit": 3    }
+  },
+  "session": {
+    "secret": "kfui654oiferwDaie1k%"
   }
 }

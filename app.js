@@ -1,10 +1,13 @@
 //? Libraries
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const config = require('config');
 const path = require('path');
+
+//? Utils
+const config = require('config');
+const logger = require('./utils/logger.js');
 
 //? Routers
 const usersRouter = require('./routers/users.js');
@@ -21,19 +24,15 @@ const app = express();
 //? Middleware
 app.use(cors());
 app.use(cookieParser());
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
+//? Static files
+app.set('view engine', 'pug');
+app.set("views", path.join(".", "views"));
+app.use(express.static(path.join('.', 'views')))
+
 //? Routers
-
-//TODO move the router to the services file ======================
-const globalServices = require("./services/globalServices.js")
-app.get('/api/services/get_active_flights', async (req, res) => {
-    let result = await globalServices.getActiveFlights(req, res)
-    res.status(200).json(result)
-})
-//TODO============================================================
-
 app.use('/api/services/', globalServicesRouter);
 app.use('/api/users/', usersRouter);
 app.use('/api/tickets/', ticketsRouter);
@@ -43,12 +42,8 @@ app.use('/api/countries/', countriesRouter);
 app.use('/api/airlines/', airlinesRouter);
 app.use('/', pagesRouter);//* Must be the last one
 
-//? Static files
-app.set('view engine', 'pug');
-app.set("views", path.join(".", "views"));
-app.use(express.static(path.join('.', 'views')))
-
+//?Server
 app.listen(config.server.port, () => {
-    console.clear();
-    console.log(`Server is running on port ${config.server.port}`);
+  console.clear();
+  logger.info(`Server is started on port ${config.server.port}`);
 });

@@ -5,33 +5,20 @@ head
     title 
 body
     .wrapper 
-        h1 Sign up Page
-        section#sign_up
-            label(for="username") Username 
-            input(type="text" id="username")
-            label(for="email") Email 
-            input(type="text" id="email" name="email")
-            label(for="password") Password
-            input(type="password" id="password" name="password")
-            button(id="submit") Sign up
-
-            p Already have an account? <a href="/login">Login</a>
+        section
+            h1.heading Sign up Page 
+            form#sign_up(action="/signup" method="POST")
+                input(type="text" id="name" name="name" placeholder='Name')
+                input(type="email" id="email" name="email" placeholder="Email")
+                input(type="password" id="password" name="password" placeholder='Password')
+                .controls
+                    button(type="submit" id="submit") Sign up
+                    button(id="login") Login
 
 script
     include ./includes/js/signup.js
 
 
-style.
-    #sign_up {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    label {
-        display:block;
-    }
-    input {
-        width:200px;
-        padding:10px;
-        margin:10px;
-    }
+style
+    include ./includes/style/signup.css
 

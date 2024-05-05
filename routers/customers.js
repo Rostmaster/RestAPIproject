@@ -10,12 +10,15 @@ router.delete("/table-delete", service.dropTable);
 router.post("/table-fill", service.fillTable);
 
 //customers
+router.get("/by_user/:userId", service.getCustomersByUserId);
+
 router.get("/", service.getAll);
 router.get("/:customerId", service.get);
 router.post("/", service.add);
 router.put("/:customerId", service.update);
 router.patch("/:customerId", service.patch);
 router.delete("/:customerId", service.delete);
+router.use("/", service.error);
 
 
 module.exports = router

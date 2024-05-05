@@ -26,14 +26,13 @@ let usersDal = {
             delete user.id
             const result_ids = await data_base('users').insert(user).returning('id');
             const id = result_ids[0].id
-            console.log('insert succeed!');
             return {
                 status: "success",
                 data: { id, ...user }
             }
         }
         catch (e) {
-            console.log('insert failed!');
+            console.log('insert failed!', e.message.replaceAll("\"", "'"));
             return {
                 status: "error",
                 internal: false,
@@ -43,18 +42,18 @@ let usersDal = {
     },
     update: async (id, user) => {
         try {
-            console.log(user)
-            const result = await data_base.raw(`UPDATE users set username=?,password=?, email=? where id=?`,
+            await data_base.raw(`UPDATE users set username=?,password=?, email=? where id=?`,
                 [
                     user.username ? user.username : '',
                     user.password ? user.password : 0,
                     user.email ? user.email : 0,
                     id
                 ])
-            console.log('DAL update:', 'updated succeeded for id ' + id);
+
+            const result = await data_base.raw(`select * from users where id = ${id}`)
             return {
                 status: "success",
-                data: { "id": id }
+                data: { id: id, ...result.rows[0] },
             }
         }
         catch (error) {
@@ -73,18 +72,15 @@ let usersDal = {
             for (let key in user) {
                 query_arr.push(`${key}='${user[key]}'`)
             }
-
             if (query_arr.length > 0) {
                 const query = `UPDATE users set ${query_arr.join(', ')} where id=${id}`
-                const result = await data_base.raw(query)
+                await data_base.raw(query)
+                const result = await data_base.raw(`select * from users where id = ${id}`)
                 return {
                     status: "success",
-                    data: result.rowCount
+                    data: { id: id, ...result.rows[0] },
                 }
             }
-
-            console.log('updated successfully for id ' + id);
-
             return {
                 status: "success",
                 data: query_arr.length
@@ -103,7 +99,6 @@ let usersDal = {
     delete: async (id) => {
         try {
             const result = await data_base.raw(`DELETE from users where id=${id}`)
-            console.log(result.rowCount);
             return {
                 status: "success",
                 data: { "id": id }
@@ -128,6 +123,7 @@ let usersDal = {
                     table.string('username').notNullable().unique()
                     table.string('password').notNullable()
                     table.string('email').notNullable().unique()
+                    table.integer('role_id').notNullable()
                 })
         }).catch((err) => {
             console.log(err)
@@ -145,45 +141,54 @@ let usersDal = {
             {
                 username: 'admin',
                 password: 'pass1',
-                email: 'admin@pass1.com'
+                email: 'admin@pass1.com',
+                role_id: 1
             },
             {
                 username: 'user',
                 password: 'pass2',
-                email: 'user@pass2.com'
+                email: 'user@pass2.com',
+                role_id: 3
             },
             {
                 username: 'guest',
                 password: 'pass3',
-                email: 'guest@pass3.com'
+                email: 'guest@pass3.com',
+                role_id: 4
             }, {
                 username: 'admin2',
                 password: 'pass1',
-                email: 'admin@pass12.com'
+                email: 'admin@pass12.com',
+                role_id: 1
             },
             {
                 username: 'user2',
                 password: 'pass2',
-                email: 'user@pass22.com'
+                email: 'user@pass22.com',
+                role_id: 3
             },
             {
                 username: 'guest2',
                 password: 'pass3',
-                email: 'guest@pass32.com'
+                email: 'guest@pass32.com',
+                role_id: 4
             }, {
                 username: 'admin3',
                 password: 'pass1',
-                email: 'admin@pass13.com'
+                email: 'admin@pass13.com',
+                role_id: 1
             },
             {
                 username: 'user3',
                 password: 'pass2',
-                email: 'user@pass23.com'
+                email: 'user@pass23.com',
+                role_id: 3
             },
             {
-                username: 'guest3',
+                username: 'airline',
                 password: 'pass3',
-                email: 'guest@pass33.com'
+                email: 'airline@pass3.com',
+                role_id: 2
             },
         ])
         return {
@@ -193,10 +198,9 @@ let usersDal = {
     },
 
     //? Authentication
-    login: async (email) => {
+    getByEmail: async (email) => {
         try {
             const result = await data_base.raw(`select * from users where email = '${email}'`)
-            console.log(result.rows[0]);
             return {
                 status: "success",
                 data: result.rows[0]
@@ -215,15 +219,3 @@ let usersDal = {
 }
 
 module.exports = usersDal;
-
-//? FOR TESTING ONLY
-// console.clear()
-// usersDal.dropTable()
-// usersDal.createTable()
-// usersDal.fillTable()
-// usersDal.getAll()
-// usersDal.get(1)
-// usersDal.add({username:"visitor",password:'pass3', email:'visitor@pass3.com'})
-// usersDal.update(4,{username:"visitor",password:'passs3', email:'visitor@pass3.com'})
-// usersDal.patch(4, { password: "pass3"})
-// usersDal.delete(4)
