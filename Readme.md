@@ -114,8 +114,7 @@ This project provides RESTful API routes for managing various resources. Below a
 - Part of the services and routs covered by combined tests (routers checked by checking the service within this route)
 ---
 ## Folder structure:
-.
-
+```
 ├── config
 ├── dals
 ├── logs
@@ -130,6 +129,7 @@ This project provides RESTful API routes for managing various resources. Below a
 │ │ ├─- style
 │ │── ***`pages..`***
 ├── app.js 
+```
 
 ---
 ## Things that probably will be added:
