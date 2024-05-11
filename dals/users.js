@@ -7,7 +7,7 @@ let usersDal = {
 
     //? User CRUD
     getAll: async () => {
-        const users = await data_base.raw("select * from users")
+        const users = await data_base.raw("select * from users order by id asc")
         return {
             status: "success",
             data: users.rows

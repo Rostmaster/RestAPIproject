@@ -43,7 +43,8 @@ isAirlineFormSwitch.addEventListener('change', (event) => {
   }
 })
 
-document.getElementById('guest_btn').addEventListener('click',continueAsGuest)
+document.getElementById('guest_btn_1').addEventListener('click',continueAsGuest)
+document.getElementById('guest_btn_2').addEventListener('click',continueAsGuest)
 
 window.onload = async () => {
   await renderCountries()

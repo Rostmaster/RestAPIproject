@@ -7,6 +7,7 @@ body
         section.header
             h1#header_title
             .controls
+                button(id="home_btn")  &nbsp;Home&nbsp;
                 button(id="logout_btn") Logout 
                 button(id="switch_user_btn") Switch User
                 button(id='register_btn').hidden Register
@@ -34,7 +35,7 @@ body
 
                 section.all_flights.table_section
                     h2.heading All the flights:
-                    h2#all_flights_message.hidden You have no flights
+                    h2#all_flights_message.hidden There are no flights
                     table
                         thead 
                             th.h_cell &nbsp; AIRLINE &nbsp;
@@ -63,53 +64,48 @@ body
                         select(id="airline_id_select" name="airline_id")
                 #customer_block
                     h2.heading Customer Details 
-                    form(id="customer_details_form" action=`/api/customers/ID` method="UPDATE" target="redirect_frame")
+                    form(id="customer_details_form")
                         label(for="first_name") First Name 
-                        input(type="text" name="first_name" placeholder="First Name")
+                        input(type="text" name="first_name" id="first_name" placeholder="First Name")
                         label(for="last_name") Last Name
-                        input(type="text" name="last_name" placeholder="Last Name")
+                        input(type="text" name="last_name" id="last_name" placeholder="Last Name")
                         label(for="address") Address 
-                        input(type="text" name="address" placeholder="Address")
+                        input(type="text" name="address" id="address" placeholder="Address")
                         label(for="phone_number") Phone
-                        input(type="text" name="phone_number" placeholder="Phone Number")
+                        input(type="text" name="phone_number" id="phone_number" placeholder="Phone Number")
                         label(for="credit_card") Credit Card
-                        input(type="text" name="credit_card" placeholder="Credit Card Number")
-                        input(type="submit" value="Update")
+                        input(type="text" name="credit_card" id="credit_card" placeholder="Credit Card Number")
+                        input(type="submit" id="update_customer_btn" value="Update")
                 #airline_block
                     h2.heading Airline Details 
-                    form(id="airline_details_form" action=`/api/airlines/ID` method="UPDATE" target="redirect_frame")
+                    form(id="airline_details_form" )
                         label(for="name") Name 
-                        input(type="text" name="name" placeholder="AIRLINE NAME")
+                        input(type="text" id="name" name="name" placeholder="AIRLINE NAME")
                         label(for="country_id") Country 
                         select(id="country_id_select" name="country_id_select")
-                        input(type="submit" value="Update")
+                        input(type="submit" id="update_airline_btn" value="Update")
                 #flight_block
                     h2.heading Add flight
                     form(id="add_flight_form" action="/api/flights" method="POST" target="redirect_frame")
-                        label(for="airline_id" class="hidden") Airline
-                        input(type="number" name="airline_id" value="ID" class="hidden")
+                        input(type="number" id="airline_id" name="airline_id" value="" class="hidden")
                         label(for="origin_country_id") Departure 
                         select(id="origin_country_select" name="origin_country_id")
                         label(for="departure_time") Date
-                        input(type="date" name="departure_time")
+                        input(type="date" id="departure_time" name="departure_time")
                         label(for="destination_country_id") Destination
                         select(id="destination_country_select" name="destination_country_id")
                         label(for="landing_time") Date
-                        input(type="date" name="landing_time")
+                        input(type="date" id="landing_time" name="landing_time")
                         label(for="remaining_tickets") Tickets Remained
-                        input(type="number" name="remaining_tickets" placeholder="Tickets Remained")
-                        input(type="submit" value="Add Flight")
+                        input(type="number" id="remaining_tickets" name="remaining_tickets" placeholder="Tickets Remained")
+                        input(type="submit" id="add_flight_btn" value="Add Flight")
 
                 #country_block
                     h2.heading Add country
                     form(id="add_country_form" action="/api/countries" method="POST" target="redirect_frame")
-                        input(type="text" name="name" placeholder="Country name")
-                        input(type="submit" value="Add Country")
+                        input(type="text" id="add_country_name" name="name" placeholder="Country name")
+                        input(type="submit" id="add_country_btn" value="Add Country")
 
-        span.info css
-        br
-        span.info auth logic
-        br
 
 script
     include ./includes/js/dashboard.js

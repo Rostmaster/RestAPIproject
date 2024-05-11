@@ -153,7 +153,6 @@ const pagesService = {
             res.redirect('/registration')
         } catch (error) {
             printError(req, res, error)
-            console.log(error)
             res.redirect('/signup')
         }
     },
@@ -200,21 +199,30 @@ const pagesService = {
                 },
                 body: JSON.stringify(loginUser)
             })
-            isUserExists = await isUserExists.json()
-
-            res.status(200).redirect('/dashboard/cookieAdd')
+            if (isUserExists.status !== 'success') {
+                isUserExists = await isUserExists.json()
+                req.body.user = isUserExists.data
+                cookiesService.addAuthCookie(req, res)
+                res.status(200).redirect('/dashboard/cookieAdd')
+            }
+            else {
+                throw new Error('_Unauthorized: user not found')
+            }
         } catch (error) {
             printError(req, res, error)
             res.redirect('/login')
         }
 
     },
+    logout: async (req, res) => {
+        cookiesService.deleteAuthCookie(req, res)
+        res.status(200).redirect('/login')
+    },
     dashboardCookieAdd: async (req, res) => {
         res.status(200).redirect('/dashboard')
     },
     pageNotFound: async (req, res) => {// Must be the last one
-        res.status(404).send(
-            "<h1>Page not found at all</h1>")
+        res.status(404).render('404')
     }
 
 }

@@ -26,7 +26,7 @@ body
           label(for='credit_card') Credit card
           input(type="number" id="credit_card" name="credit_card")
           input(type="submit" value="Register")
-          input(type="button" id="guest_btn" value="Continue as a Guest")
+          input(type="button" id="guest_btn_1" value="Continue as a Guest")
 
       #airline_block.block.hidden
         form(id='new_airline_form' action="/registration" method='POST' target='/redirect_frame')
@@ -36,7 +36,7 @@ body
           label(for='country_id') Country
           select(id="country_id" name="country_id")
           input(type="submit" value="Register")
-          input(type="button" value="Continue as a Guest")
+          input(type="button" id="guest_btn_2" value="Continue as a Guest")
 
 
 script

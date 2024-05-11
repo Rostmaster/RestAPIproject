@@ -6,7 +6,7 @@ const data_base = knex(config.database)
 let flightsDal = {
     //? Flights CRUD
     getAll: async () => {
-        const flights = await data_base.raw("select * from flights")
+        const flights = await data_base.raw("select * from flights order by id asc") 
         return {
             status: "success",
             data: flights.rows

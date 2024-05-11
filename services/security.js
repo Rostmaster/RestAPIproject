@@ -4,13 +4,10 @@ const securityService = {
 
     toEncrypt: (data) => {
         const salt = bcrypt.genSaltSync()
-        const encrypted = bcrypt.hashSync(data, salt)
-        console.log('encrypted', data, 'to ', encrypted)
-        return encrypted
+        return bcrypt.hashSync(data, salt)
     },
     compare: async (password1, password2) => {
-        result =  await bcrypt.compareSync(password1, password2)
-        return result
+        return await bcrypt.compareSync(password1, password2)
     }
 }
 

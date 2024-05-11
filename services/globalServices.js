@@ -1,5 +1,4 @@
 const logger = require("../utils/logger.js")
-
 const airlinesDal = require("../dals/airlines.js")
 const countriesDal = require("../dals/countries.js")
 const customersDal = require("../dals/customers.js")
@@ -7,7 +6,6 @@ const flightsDal = require("../dals/flights.js")
 const ticketsDal = require("../dals/tickets.js")
 const usersDal = require("../dals/users.js")
 const cookieService = require("./cookies.js")
-
 const pagePrefix = "/api/services"
 
 const returnError = (req, res, error) => {
@@ -28,6 +26,7 @@ const returnError = (req, res, error) => {
         })
     }
 }
+
 const globalServices = {
 
     //? Complex CRUD operations
@@ -35,7 +34,8 @@ const globalServices = {
         try {
 
             let userID = req.cookies.auth.split(',')[0]
-            let tickets = await ticketsDal.getTicketsByUser(userID)
+            let customerId = (await customersDal.getCustomersByUserId(userID)).data[0].id
+            let tickets = await ticketsDal.getTicketsByUser(customerId)
             let flights = await flightsDal.getFlightsByTickets(tickets.data)
             let flightsWithCountries = await countriesDal.getCountriesByFlights(flights.data)
             let flightsWithAirlines = await airlinesDal.getAirlinesByFlights(flightsWithCountries.data)
@@ -95,7 +95,6 @@ const globalServices = {
             let result = flightsWithAirlines.data
 
             for (flight of result) {
-                delete flight.airline_id
                 delete flight.origin_country_id
                 delete flight.destination_country_id
                 flight.landing_time = new Date(flight.landing_time).toLocaleString()
@@ -111,10 +110,6 @@ const globalServices = {
             returnError(req, res, error)
         }
     },
-    getCurrentUser: async (req, res) => {
-        const userID = req.cookies.auth.split(',')[0]
-        res.status(200).json({ id: userID })
-    },
 
     //? Actions
     buyTicket: async (req, res) => {
@@ -126,7 +121,7 @@ const globalServices = {
             flight = flight.data
             flight.remaining_tickets = flight.remaining_tickets - 1
             await flightsDal.update(flight.id, flight)
-            logger.info(`User ${customer_id} bought ticket ${ticket.id} for flight ${flight_id}`)
+            logger.info(`Customer ${customer_id} bought ticket ${ticket.data.id} for flight ${flight_id}`)
             res.status(200).json(ticket)
         }
         catch (error) {
@@ -146,6 +141,19 @@ const globalServices = {
             await flightsDal.update(flight.id, flight)
 
             res.status(200).json(ticket)
+        }
+        catch (error) {
+            returnError(req, res, error)
+        }
+    },
+    deleteFlight: async (req, res) => {
+        try {
+            let flight_id = req.body.flight_id
+
+            let flight = await flightsDal.get(flight_id)
+            flightsDal.delete(flight_id)
+
+            res.status(200).json(flight)
         }
         catch (error) {
             returnError(req, res, error)
@@ -210,12 +218,12 @@ const globalServices = {
             }
             else if (role_id === 2) {
                 let airline = await airlinesDal.getAirlinesByUserId(user.id)
-                airline = airline.data
+                airline = airline.data[0]
                 result = { ...result, airline }
             }
             else if (role_id === 3) {
                 let customer = await customersDal.getCustomersByUserId(userID)
-                customer = customer.data
+                customer = customer.data[0]
                 result = { ...result, customer }
             }
             res.status(200).json({
@@ -228,39 +236,6 @@ const globalServices = {
         catch (error) {
             returnError(req, res, error)
         }
-    },
-
-    //? Authentication
-    signUp: async (req, res) => {
-        cookieService.addExistingUserCookie(req, res)
-        pagesService.loginPage(req, res)
-    },
-    login: async (req, res) => {
-        try {
-            const credentials = req.body
-            const requestForUser = await DAL.login(credentials.email)
-            req.body.user = requestForUser.data
-
-            if (requestForUser.status !== 'success') {
-                throw new Error("User not found")
-            }
-            // if (securityService.comparePassword(credentials.password, requestForUser.data.password)) {
-            if (credentials.password !== requestForUser.data.password) {
-                throw new Error("Invalid credentials")
-            }
-
-            await cookieService.addAuthCookie(req, res)
-            // await cookieService.addExistingUserCookie(req,res)
-
-            logger.info(`Service: user ${requestForUser.data.username} logged in`)
-            res.redirect('/dashboard')
-        }
-        catch (error) {
-            returnError(req, res, error)
-        }
-    },
-    logout: async (req, res) => {
-
     },
 
     //? Errors

@@ -8,3 +8,7 @@ document.getElementById('sign_up').addEventListener('click', (event) => {
     console.dir(id);
     if (id ==='login') loginRedirect(event)
 })
+
+document.getElementById('name').value = ""
+document.getElementById('email').value = ""
+document.getElementById('password').value = ""

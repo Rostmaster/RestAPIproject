@@ -4,5 +4,18 @@ head
   title Home
 body
   .wrapper 
-    h1.title Homepage
-    
+    h1 This project not about the homepage 
+    #description
+      p This project is about the flight manager fullstack application:
+      ul
+        li postgress for the database 
+        li express for the server side
+        li and plain html /css / js for the client 
+      p You can check the <a href="https://github.com/Rostmaster/RestAPIproject"  target="_blank">Repository</a> repository Read.me file for more tech information
+      p For now you have 2 options : 
+        a(href="/login") Login
+        span  or 
+        a(href="/signup") Signup
+
+style
+  include ./includes/style/homepage.css

@@ -7,7 +7,7 @@ let airlinesDal = {
 
     //? Airlines CRUD
     getAll: async () => {
-        const airlines = await data_base.raw("select * from airlines")
+        const airlines = await data_base.raw("select * from airlines order by id asc")
         return {
             status: "success",
             data: airlines.rows

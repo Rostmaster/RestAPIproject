@@ -13,7 +13,7 @@ router.get('/registration', service.registrationPage)
 router.post('/signup',service.signup)
 router.post('/registration',service.register)
 router.post('/login',service.login)
-router.delete('/logout', (req, res) => {})
+router.delete('/logout', service.logout)
 
 router.use(service.pageNotFound) 
 

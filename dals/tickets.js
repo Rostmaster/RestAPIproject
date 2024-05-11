@@ -7,7 +7,7 @@ let ticketsDal = {
 
     //? Tickets CRUD
     getAll: async () => {
-        const tickets = await data_base.raw("select * from tickets")
+        const tickets = await data_base.raw("select * from tickets order by id asc")
         return {
             status: "success",
             data: tickets.rows
