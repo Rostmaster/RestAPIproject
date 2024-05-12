@@ -41,10 +41,11 @@ const initAllFlights = async () => {
     return result
 }
 const initCustomerFlights = async () => {
-
+    
     if (userInfo.user.role_id === 3) {
         let result = await fetch(`http://localhost:3000/api/services/get_customer_flights/`)
-        return await result.json()
+        result = await result.json()
+        return result
     }
 
     if (userInfo.user.role_id === 1) {
@@ -113,7 +114,6 @@ const cancelTicket = async (event) => {
     if (result.ok) window.location = ('http://localhost:3000/dashboard');
 }
 const updateCustomerInfo = async (event) => {
-    alert()
     event.preventDefault()
     let customerId = 0
     if (userInfo.user.role_id === 3) customerId = userInfo.customer.id
@@ -125,9 +125,6 @@ const updateCustomerInfo = async (event) => {
     document.getElementById('address').value === '' ? null : update_data.address = document.getElementById('address').value
     document.getElementById('phone_number').value === '' ? null : update_data.phone_number = document.getElementById('phone_number').value
     document.getElementById('credit_card').value === '' ? null : update_data.credit_card = document.getElementById('credit_card').value
-
-    console.log(update_data)
-
     let updateResult = await fetch(`http://localhost:3000/api/customers/${customerId}`, {
         method: 'PATCH',
         headers: {
@@ -218,7 +215,8 @@ const renderCustomerFlightsTable = () => {
 
 }
 const renderCustomerFlightsPaginator = async () => {
-    customerFlights = (await initCustomerFlights()).data
+    customerFlights = await initCustomerFlights()
+    customerFlights = customerFlights.data
     customerFlights.sort((a, b) => { return a.id - b.id });
 
     if (customerFlights.length > customerFlightsResultsLimit) {
@@ -393,7 +391,6 @@ const renderCustomerPanel = () => {
         customerToRender = userInfo.customer
     }
 
-    console.log(userInfo)
     document.getElementById('first_name').value = customerToRender.first_name
     document.getElementById('last_name').value = customerToRender.last_name
     document.getElementById('address').value = customerToRender.address
@@ -507,8 +504,6 @@ window.onload = async (event) => {
 
     if (userInfo.user.role_id === 1 || userInfo.user.role_id === 3) {
         customerChange()
-        await renderCustomerFlightsPaginator()
-        await renderCustomerFlightsTable()
     }
 
     clearFields()

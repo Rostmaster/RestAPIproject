@@ -13,7 +13,6 @@ describe('countries DAL CRUD methods tests:', () => {
     //Act
     const countryCreateResult = await countriesDal.add(country)
     country.id = countryCreateResult.data.id
-
     //Assert
     assert.strictEqual(countryCreateResult.status, 'success')
     assert.deepStrictEqual(countryCreateResult.data, country)
@@ -25,7 +24,6 @@ describe('countries DAL CRUD methods tests:', () => {
     //=============
     //Act
     const countryCreateResult = await countriesDal.get(country.id)
-
     //Assert
     assert.strictEqual(countryCreateResult.status, 'success')
     assert.deepStrictEqual(countryCreateResult.data, country)

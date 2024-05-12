@@ -1,18 +1,3 @@
-# Before you start to check the project I recommend you to install these apps to your VS code:
-###### (maybe you will like it as well)
----
-### For improved comment color coding
-
-![better comment](./static/img/better_comment_app.png)
-
----
-
-### For cleaner folding of the code
-
-![better folding](./static/img/better_folding_app.png)
-
----
-
 # Description
 
 After a sign up you will see the registration page, on this moment you are a guest with no additional information. 
@@ -21,11 +6,17 @@ In the registration page you have 2 options for to choose: the customer and airl
 - As a customer you will be able to purchase and cancel the tickets for the flights which will be visible only if there is at least 1 ticket
 - As an airline you will be able to add and cancel your flights, in addition you can add the country to the list if one needed
 
-The 4th role is and Administrator. To gain the admin permissions you will need to change the role in the database manually.
+The last role is and Administrator. To gain the admin permissions you will need to change the role in the database manually.
 Administrator can 
 - Choose the customer to edit and buy and cancel the tickets under him
 - Choose the airline to edit and add or cancel the flights under it
 - View all the active flights
+
+Roles id:
+- Admin : 1
+- Airline : 2
+- Customer : 3
+- Guest : 4
 
 For the pages you have:
 - `/` : homepage
@@ -34,18 +25,26 @@ For the pages you have:
 - `/login`: will be redirected to `/dashboard` if the user already authenticated 
 - `/...` : 404 page if the address was wrong
 ---
-# REST API Routes
+## Key technology used:
+- `Express` for the server side
+- `Plain CSS / PUG templater / JS` for the Front End
+- `Winston` for the logging
+- `Postgress` as database
+- `Knex` as a query builder for postgress
+---
+## REST API Routes
 
 This project provides RESTful API routes for managing various resources. Below are the available routes along with their functionalities:
 
 ## Routes:
-
-##### Users /api/users/
-##### Tickets /api/tickets/
-##### Flights /api/flights/
-##### Customers /api/customers/
-##### Countries /api/countries/
-##### Airlines /api/airlines/
+```
+ Users: /api/users/
+ Tickets: /api/tickets/
+ Flights: /api/flights/
+ Customers: /api/customers/
+ Countries: /api/countries/
+ Airlines: /api/airlines/
+```
 
 #### CRUD operations for above routes:
 
@@ -63,6 +62,14 @@ This project provides RESTful API routes for managing various resources. Below a
 - `DELETE /table-delete`: Completely delete the table
 
 #### Global services /api/services:
+- Cookies related operations:
+  - `POST to /addAuthCookie` to add auth cookie for the user that logged in /signed up
+  - `GET to /getAuthenticatedUser` returns the information of the authenticated user 
+  <br>
+- Global tables operation (==You should start with this one to init the tables==)
+   - `DELETE to /table_delete_all` to delete all the tables
+   - `POST to /init_database` to init the database with proper tables and foreign keys
+  <br>
 - Complex CURD operations:
   - `GET to /get_active_flights`: to get all the flights that currently in the flight table
   - `GET to /get_customer_flights`: to get all the flights of the authenticated user
@@ -71,7 +78,7 @@ This project provides RESTful API routes for managing various resources. Below a
   - `DELETE to /cancel_ticket`: to delete the ticket by ID
   - `DELETE to /delete_flight`: to delete a flight of airline that authenticated or chosen by admin
   - `GET to /current_user_info`: Get the authenticated user in the following format:
-
+    <br>
     ```js
     // If user is admin:
     {
@@ -97,16 +104,6 @@ This project provides RESTful API routes for managing various resources. Below a
         uer:{id, password, email, role}
     }
     ```
-
-- Cookies related operations:
-  - `POST to /addAuthCookie` to add auth cookie for the user that logged in /signed up
-  - `GET to /getAuthenticatedUser` returns the information of the authenticated user 
-
-
-- Global tables operation
-   - `DELETE to /table_delete_all` to delete all the tables
-   - `POST to /init_database` to init the database with proper tables and foreign keys
-
 ---
 ## Tests
 
@@ -115,13 +112,13 @@ This project provides RESTful API routes for managing various resources. Below a
 ---
 ## Folder structure:
 ```
-├── config
+├── config (config your db connection here)
 ├── dals
-├── logs
+├── logs (will be created automatically)
 ├── routers
 ├── services
 ├── tests
-├── utils
+├── utils (logger)
 ├── views
 │ ├── images
 │ ├── includes
@@ -137,5 +134,5 @@ This project provides RESTful API routes for managing various resources. Below a
 - [ ] Swagger
 - [ ] JWT auth
 - [ ] Alerts from server to the client
-- [ ] 100% test coverage (if one is possible...)
-- [ ] Connection flight logic
+- [ ] Better test coverage
+- [ ] React FrontEnd

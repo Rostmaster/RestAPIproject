@@ -65,7 +65,7 @@ let countriesDal = {
     },
     delete: async (id) => {
         try {
-            const result = await data_base.raw(`DELETE from countries where id=${id}`)
+            await data_base.raw(`DELETE from countries where id=${id}`)
             return {
                 status: "success",
                 data: { id }
