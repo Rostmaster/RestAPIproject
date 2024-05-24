@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sintony:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sintony", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1577222749259-ba87d76685be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sign_up {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  display: block;
+}
+input {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+.heading {
+  text-align: center;
+}
+
+.login_link{
+  text-decoration: none;
+  color: #272635;
+  font-size: 20px;
+  background-color: #A6A6A8;
+  border-radius: 7px;
+  padding:3px
+}
+
+button{
+  width: 99px;
+  padding: 10px;
+  margin: 5px 1px;
+}

@@ -1,0 +1,46 @@
+doctype html 
+head 
+  link(rel="shortcut icon" href="#")
+  title 
+body
+  #wrapper 
+    #switch_section 
+      h1#customer_header New Customer
+      label(class='switch')
+        input(type="checkbox" id="switch" name="switch")
+        span(class='slider')
+      h1#airline_header New Airline
+    #query_section
+      <iframe name="redirect_frame" id="redirect_frame" style="display: none;"></iframe>
+      #customer_block.block
+        form(id="new_customer_form" action="/registration" method="POST" target='/redirect_frame')
+          input(type="hidden" name='type' value="customer")
+          label(for='first_name') Name 
+          input(type="text" id="first_name" name="first_name")
+          label(for="last_name") Last Name 
+          input(type="text" id="last_name" name="last_name")
+          label(for='address') Address 
+          input(type="text" id="address" name="address")
+          label(for='phone_number') Phone number 
+          input(type="number" id="phone_number" name="phone_number")
+          label(for='credit_card') Credit card
+          input(type="number" id="credit_card" name="credit_card")
+          input(type="submit" value="Register")
+          input(type="button" id="guest_btn_1" value="Continue as a Guest")
+
+      #airline_block.block.hidden
+        form(id='new_airline_form' action="/registration" method='POST' target='/redirect_frame')
+          input(type="hidden" name='type' value="airline")
+          label(for='name') Name 
+          input(type="text" id="name" name="name")
+          label(for='country_id') Country
+          select(id="country_id" name="country_id")
+          input(type="submit" value="Register")
+          input(type="button" id="guest_btn_2" value="Continue as a Guest")
+
+
+script
+  include ./includes/js/registration.js
+
+style
+  include ./includes/style/registration.css

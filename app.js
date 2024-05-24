@@ -7,17 +7,17 @@ const path = require('path');
 
 //? Utils
 const config = require('config');
-const logger = require('./utils/logger.js');
+const logger = require('./server/utils/logger.js');
 
 //? Routers
-const usersRouter = require('./routers/users.js');
-const ticketsRouter = require('./routers/tickets.js');
-const flightsRouter = require('./routers/flights.js');
-const customersRouter = require('./routers/customers.js');
-const countriesRouter = require('./routers/countries.js');
-const airlinesRouter = require('./routers/airlines.js');
-const globalServicesRouter = require('./routers/globalServices.js');
-const pagesRouter = require('./routers/pages.js');
+const usersRouter = require('./server/routers/users.js');
+const ticketsRouter = require('./server/routers/tickets.js');
+const flightsRouter = require('./server/routers/flights.js');
+const customersRouter = require('./server/routers/customers.js');
+const countriesRouter = require('./server/routers/countries.js');
+const airlinesRouter = require('./server/routers/airlines.js');
+const globalServicesRouter = require('./server/routers/globalServices.js');
+const pagesRouter = require('./server/routers/pages.js');
 
 const app = express();
 
