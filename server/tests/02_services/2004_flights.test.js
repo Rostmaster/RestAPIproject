@@ -1,5 +1,6 @@
 const assert = require('assert')
-
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 describe('flights Service CRUD methods tests:', () => {
   console.clear()
   let flight = {
@@ -15,7 +16,7 @@ describe('flights Service CRUD methods tests:', () => {
     //Arrange
 
     //Act
-    const flightCreateResult = await fetch(`http://localhost:3000/api/flights/`, {
+    const flightCreateResult = await fetch(`${url}/api/flights/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +42,7 @@ describe('flights Service CRUD methods tests:', () => {
       remaining_tickets: flight.remaining_tickets
     }
     //Act
-    const flightCreateResult = await fetch(`http://localhost:3000/api/flights/${flight.id}`)
+    const flightCreateResult = await fetch(`${url}/api/flights/${flight.id}`)
     //Assert
     assert.strictEqual(flightCreateResult.ok, true)
     let flightResultWithNoDates = await flightCreateResult.json()
@@ -72,7 +73,7 @@ describe('flights Service CRUD methods tests:', () => {
 
     //Act
 
-    const flightUpdateResult = await fetch(`http://localhost:3000/api/flights/${flight.id}`, {
+    const flightUpdateResult = await fetch(`${url}/api/flights/${flight.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -99,7 +100,7 @@ describe('flights Service CRUD methods tests:', () => {
       remaining_tickets: flight.remaining_tickets
     }
     //Act
-    const flightPatchResult = await fetch(`http://localhost:3000/api/flights/${flight.id}`, {
+    const flightPatchResult = await fetch(`${url}/api/flights/${flight.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -120,7 +121,7 @@ describe('flights Service CRUD methods tests:', () => {
     //Arrange
     //==============
     //Act
-    const flightDeleteResult = await fetch(`http://localhost:3000/api/flights/${flight.id}`, {
+    const flightDeleteResult = await fetch(`${url}/api/flights/${flight.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -1,5 +1,7 @@
 const DAL = require("../dals/customers.js")
 const logger = require("../utils/logger.js")
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const pagePrefix = "/api/customers"
 
@@ -131,13 +133,13 @@ const customersService = {
         try {
             //delete tickets related to this customer if they exist
                 let ticketsByCustomer =
-                    await fetch(`http://localhost:3000/api/tickets/by_customer/${req.params.customerId}`)
+                    await fetch(`${url}/api/tickets/by_customer/${req.params.customerId}`)
                 ticketsByCustomer = await ticketsByCustomer.json()
                 if (ticketsByCustomer.status !== 'success') {
                     throw new Error(`_tickets by customer id ${req.params.customerId} were not received ${ticketsByCustomer}`)
                 }
                 for (const ticket of ticketsByCustomer.data) {
-                    await fetch(`http://localhost:3000/api/tickets/${ticket.id}`, {
+                    await fetch(`${url}/api/tickets/${ticket.id}`, {
                         method: 'DELETE',
                         headers: {
                             'Content-Type': 'application/json'

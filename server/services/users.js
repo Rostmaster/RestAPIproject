@@ -1,4 +1,6 @@
 const DAL = require("../dals/users.js")
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const logger = require("../utils/logger.js")
 const securityService = require("./security.js")
@@ -130,13 +132,13 @@ const userService = {
         try {
             //delete customers related to this user if they exist
             let customersByUsers =
-                await fetch(`http://localhost:3000/api/customers/by_user/${req.params.userId}`)
+                await fetch(`${url}/api/customers/by_user/${req.params.userId}`)
             customersByUsers = await customersByUsers.json()
             if (customersByUsers.status !== "success") {
                 throw new Error(`_tickets by user id ${req.params.userId} were not received ${customersByUsers}`)
             }
             for (const customer of customersByUsers.data) {
-                await fetch(`http://localhost:3000/api/customers/${customer.id}`, {
+                await fetch(`${url}/api/customers/${customer.id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'
@@ -146,13 +148,13 @@ const userService = {
 
             //delete airlines related to this user if they exist
             let airlinesByUsers =
-                await fetch(`http://localhost:3000/api/airlines/by_user/${req.params.userId}`)
+                await fetch(`${url}/api/airlines/by_user/${req.params.userId}`)
             airlinesByUsers = await airlinesByUsers.json()
             if (airlinesByUsers.status !== "success") {
                 throw new Error(`_airlines by user id ${req.params.userId} were not received ${airlinesByUsers}`)
             }
             for (const flight of airlinesByUsers.data) {
-                await fetch(`http://localhost:3000/api/airlines/${flight.id}`, {
+                await fetch(`${url}/api/airlines/${flight.id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'

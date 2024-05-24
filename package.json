@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "mocha -w ./tests/**/*test.js",
-    "start": "clear && kill-port 3000 && nodemon app.js",
+    "start": "clear && kill-port 9000 && nodemon app.js",
     "dependency-check": "dependency-check ./package.json --verbose"
   },
   "keywords": [],

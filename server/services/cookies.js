@@ -1,4 +1,6 @@
 const securityService = require('./security.js')
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const cookieService = {
     //adds cookies to the response
@@ -10,7 +12,7 @@ const cookieService = {
     validateAuthentication: async (req, res) => {
         try {
             const userCookie = req.cookies.auth.split(',')
-            const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
+            const user = await (await fetch(`${url}/api/users/${userCookie[0]}`)).json()
             if (securityService.compare(user.data.password, userCookie[2])) {
                 return true
             }
@@ -27,7 +29,7 @@ const cookieService = {
         try {
             if (req.cookies.auth === undefined) return false
             const userCookie = req.cookies.auth.split(',')
-            const user = await (await fetch(`http://localhost:3000/api/users/${userCookie[0]}`)).json()
+            const user = await (await fetch(`${url}/api/users/${userCookie[0]}`)).json()
             if (securityService.compare(user.data.password, userCookie[2])) {
                 return user.data
             }

@@ -1,4 +1,6 @@
 const assert = require('assert')
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 describe('airlines Service CRUD methods tests:', () => {
   console.clear()
@@ -12,7 +14,7 @@ describe('airlines Service CRUD methods tests:', () => {
     //Arrange
 
     //Act
-    const airlineCreateResult = await fetch(`http://localhost:3000/api/airlines/`, {
+    const airlineCreateResult = await fetch(`${url}/api/airlines/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +35,7 @@ describe('airlines Service CRUD methods tests:', () => {
     //Arrange
     //=============
     //Act
-    const airlineCreateResult = await fetch(`http://localhost:3000/api/airlines/${airline.id}`)
+    const airlineCreateResult = await fetch(`${url}/api/airlines/${airline.id}`)
     //Assert
     assert.strictEqual(airlineCreateResult.ok, true)
     assert.deepStrictEqual((await airlineCreateResult.json()).data, airline)
@@ -50,7 +52,7 @@ describe('airlines Service CRUD methods tests:', () => {
     }
     //Act
     
-    const airlineUpdateResult =await fetch(`http://localhost:3000/api/airlines/${airline.id}`, {
+    const airlineUpdateResult =await fetch(`${url}/api/airlines/${airline.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -67,7 +69,7 @@ describe('airlines Service CRUD methods tests:', () => {
     //Arrange
     airline.name= 'PatchTest'
     //Act
-    const airlinePatchResult =await fetch(`http://localhost:3000/api/airlines/${airline.id}`, {
+    const airlinePatchResult =await fetch(`${url}/api/airlines/${airline.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -84,7 +86,7 @@ describe('airlines Service CRUD methods tests:', () => {
     //Arrange
     //==============
     //Act
-    const airlineDeleteResult = await fetch(`http://localhost:3000/api/airlines/${airline.id}`, {
+    const airlineDeleteResult = await fetch(`${url}/api/airlines/${airline.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

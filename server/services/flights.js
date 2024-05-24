@@ -1,5 +1,7 @@
 const DAL = require("../dals/flights.js")
 const logger = require("../utils/logger.js")
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const pagePrefix = "/api/flights"
 
@@ -131,13 +133,13 @@ const flightsService = {
         try {
             //delete tickets related to this flight if they exist
             let ticketsByFlight =
-                await fetch(`http://localhost:3000/api/tickets/by_flight/${req.params.flightId}`)
+                await fetch(`${url}/api/tickets/by_flight/${req.params.flightId}`)
             ticketsByFlight = await ticketsByFlight.json()
             if (ticketsByFlight.status !== 'success') {
                 throw new Error(`_tickets by flight id ${req.params.flightId} were not received ${ticketsByFlight}`)
             }
             for (const ticket of ticketsByFlight.data) {
-                await fetch(`http://localhost:3000/api/tickets/${ticket.id}`, {
+                await fetch(`${url}/api/tickets/${ticket.id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'

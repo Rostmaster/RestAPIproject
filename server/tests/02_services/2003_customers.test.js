@@ -1,5 +1,6 @@
 const assert = require('assert')
-
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 describe('customers Service CRUD methods tests:', () => {
   console.clear()
   let customer = {
@@ -15,7 +16,7 @@ describe('customers Service CRUD methods tests:', () => {
     //Arrange
 
     //Act
-    const customerCreateResult = await fetch(`http://localhost:3000/api/customers/`, {
+    const customerCreateResult = await fetch(`${url}/api/customers/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +37,7 @@ describe('customers Service CRUD methods tests:', () => {
     //Arrange
     //=============
     //Act
-    const customerCreateResult = await fetch(`http://localhost:3000/api/customers/${customer.id}`)
+    const customerCreateResult = await fetch(`${url}/api/customers/${customer.id}`)
     //Assert
     assert.strictEqual(customerCreateResult.ok, true)
     assert.deepStrictEqual((await customerCreateResult.json()).data, customer)
@@ -56,7 +57,7 @@ describe('customers Service CRUD methods tests:', () => {
     }
     //Act
     
-    const customerUpdateResult =await fetch(`http://localhost:3000/api/customers/${customer.id}`, {
+    const customerUpdateResult =await fetch(`${url}/api/customers/${customer.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -73,7 +74,7 @@ describe('customers Service CRUD methods tests:', () => {
     //Arrange
     customer.first_name= 'PatchTest'
     //Act
-    const customerPatchResult =await fetch(`http://localhost:3000/api/customers/${customer.id}`, {
+    const customerPatchResult =await fetch(`${url}/api/customers/${customer.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -90,7 +91,7 @@ describe('customers Service CRUD methods tests:', () => {
     //Arrange
     //==============
     //Act
-    const customerDeleteResult = await fetch(`http://localhost:3000/api/customers/${customer.id}`, {
+    const customerDeleteResult = await fetch(`${url}/api/customers/${customer.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

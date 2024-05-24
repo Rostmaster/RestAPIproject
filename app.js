@@ -7,6 +7,7 @@ const path = require('path');
 
 //? Utils
 const config = require('config');
+const url = `${config.server.port}`
 const logger = require('./server/utils/logger.js');
 
 //? Routers
@@ -29,8 +30,8 @@ app.use(bodyParser.json());
 
 //? Static files
 app.set('view engine', 'pug');
-app.set("views", path.join(".", "views"));
-app.use(express.static(path.join('.', 'views')))
+app.set("views", path.join(".", "views" , "pug"));
+app.use(express.static(path.join('.', 'views', "pug")))
 
 //? Routers
 app.use('/api/services/', globalServicesRouter);

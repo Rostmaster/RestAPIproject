@@ -1,4 +1,6 @@
 const assert = require('assert')
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 describe('tickets Service CRUD methods tests:', () => {
   console.clear()
@@ -11,7 +13,7 @@ describe('tickets Service CRUD methods tests:', () => {
     //Arrange
 
     //Act
-    const ticketCreateResult = await fetch(`http://localhost:3000/api/tickets/`, {
+    const ticketCreateResult = await fetch(`${url}/api/tickets/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -32,7 +34,7 @@ describe('tickets Service CRUD methods tests:', () => {
     //Arrange
     //=============
     //Act
-    const ticketCreateResult = await fetch(`http://localhost:3000/api/tickets/${ticket.id}`)
+    const ticketCreateResult = await fetch(`${url}/api/tickets/${ticket.id}`)
     //Assert
     assert.strictEqual(ticketCreateResult.ok, true)
     assert.deepStrictEqual((await ticketCreateResult.json()).data, ticket)
@@ -48,7 +50,7 @@ describe('tickets Service CRUD methods tests:', () => {
     }
     //Act
     
-    const ticketUpdateResult =await fetch(`http://localhost:3000/api/tickets/${ticket.id}`, {
+    const ticketUpdateResult =await fetch(`${url}/api/tickets/${ticket.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -65,7 +67,7 @@ describe('tickets Service CRUD methods tests:', () => {
     //Arrange
     ticket.flight_id= 3
     //Act
-    const ticketPatchResult =await fetch(`http://localhost:3000/api/tickets/${ticket.id}`, {
+    const ticketPatchResult =await fetch(`${url}/api/tickets/${ticket.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +84,7 @@ describe('tickets Service CRUD methods tests:', () => {
     //Arrange
     //==============
     //Act
-    const ticketDeleteResult = await fetch(`http://localhost:3000/api/tickets/${ticket.id}`, {
+    const ticketDeleteResult = await fetch(`${url}/api/tickets/${ticket.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

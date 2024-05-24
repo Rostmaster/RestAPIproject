@@ -1,5 +1,6 @@
 const assert = require('assert')
-
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 describe('countries Service CRUD methods tests:', () => {
   console.clear()
   let country = {
@@ -10,7 +11,7 @@ describe('countries Service CRUD methods tests:', () => {
     //Arrange
 
     //Act
-    const countryCreateResult = await fetch(`http://localhost:3000/api/countries/`, {
+    const countryCreateResult = await fetch(`${url}/api/countries/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -31,7 +32,7 @@ describe('countries Service CRUD methods tests:', () => {
     //Arrange
     //=============
     //Act
-    const countryCreateResult = await fetch(`http://localhost:3000/api/countries/${country.id}`)
+    const countryCreateResult = await fetch(`${url}/api/countries/${country.id}`)
     //Assert
     assert.strictEqual(countryCreateResult.ok, true)
     assert.deepStrictEqual((await countryCreateResult.json()).data, country)
@@ -46,7 +47,7 @@ describe('countries Service CRUD methods tests:', () => {
     }
     //Act
     
-    const countryUpdateResult =await fetch(`http://localhost:3000/api/countries/${country.id}`, {
+    const countryUpdateResult =await fetch(`${url}/api/countries/${country.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +64,7 @@ describe('countries Service CRUD methods tests:', () => {
     //Arrange
     //==============
     //Act
-    const countryDeleteResult = await fetch(`http://localhost:3000/api/countries/${country.id}`, {
+    const countryDeleteResult = await fetch(`${url}/api/countries/${country.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

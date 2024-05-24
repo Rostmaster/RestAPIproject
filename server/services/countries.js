@@ -1,4 +1,6 @@
 const DAL = require("../dals/countries.js")
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const logger = require("../utils/logger.js")
 
@@ -118,36 +120,36 @@ const countriesService = {
             }
 
             let flightsByOriginCountries = await
-                await fetch(`http://localhost:3000/api/flights/by_origin_country/${req.params.countryId}`)
+                await fetch(`${url}/api/flights/by_origin_country/${req.params.countryId}`)
             flightsByOriginCountries = await flightsByOriginCountries.json()
             if (flightsByOriginCountries.status !== "success") {
                 throw new Error(`_Countries service:flights by origin country id ${req.params.countryId} were not received ${flightsByOriginCountries}`)
             }
             if (flightsByOriginCountries.length !== 0)
                 for (const flight of flightsByOriginCountries.data) {
-                    await fetch(`http://localhost:3000/api/flights/${flight.id}`, options)
+                    await fetch(`${url}/api/flights/${flight.id}`, options)
                 }
 
             let flightsByDestinationCountries =
-                await fetch(`http://localhost:3000/api/flights/by_destination_country/${req.params.countryId}`)
+                await fetch(`${url}/api/flights/by_destination_country/${req.params.countryId}`)
             flightsByDestinationCountries = await flightsByDestinationCountries.json()
             if (flightsByDestinationCountries.status !== "success") {
                 throw new Error(`_Countries service:flights by destination country id ${req.params.countryId} were not received ${flightsByDestinationCountries}`)
             }
             if (flightsByDestinationCountries.length !== 0)
                 for (const flight of flightsByDestinationCountries.data) {
-                    await fetch(`http://localhost:3000/api/flights/${flight.id}`, options)
+                    await fetch(`${url}/api/flights/${flight.id}`, options)
                 }
 
             let airlinesByCountry =
-                await fetch(`http://localhost:3000/api/airlines/by_country/${req.params.countryId}`)
+                await fetch(`${url}/api/airlines/by_country/${req.params.countryId}`)
             airlinesByCountry = await airlinesByCountry.json()
             if (airlinesByCountry.status !== "success") {
                 throw new Error(`_Countries service:airlines by country id ${req.params.countryId} were not received ${airlinesByCountry}`)
             }
             if (airlinesByCountry.length !== 0)
                 for (const airline of airlinesByCountry.data) {
-                    await fetch(`http://localhost:3000/api/airlines/${airline.id}`, options)
+                    await fetch(`${url}/api/airlines/${airline.id}`, options)
                 }
 
             //TODO add verification that flights and airlines are deleted

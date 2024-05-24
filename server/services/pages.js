@@ -2,6 +2,8 @@ const securityServices = require("../services/security.js")
 const cookiesService = require("./cookies.js")
 const logger = require("../utils/logger.js")
 const pagePrefix = "/api/pages"
+const config = require('config');
+const url = `http://localhost:${config.server.port}`
 
 const printError = (req, res, error) => {
     if (error.message[0] === '_') {
@@ -23,7 +25,7 @@ const updateUserRole = async (req, res, type) => {
             update = { role_id: 1 }
         }
         let id = user.id
-        let result = await fetch(`http://localhost:3000/api/users/${id}`, {
+        let result = await fetch(`${url}/api/users/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +54,7 @@ const addCustomer = async (req, res) => {
         credit_card: req.body.credit_card,
         user_id: req.body.user.id
     }
-    let result = await fetch(`http://localhost:3000/api/customers`, {
+    let result = await fetch(`${url}/api/customers`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -71,7 +73,7 @@ const addAirline = async (req, res) => {
         country_id: req.body.country_id,
         user_id: req.body.user.id
     }
-    let result = await fetch(`http://localhost:3000/api/airlines`, {
+    let result = await fetch(`${url}/api/airlines`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -134,7 +136,7 @@ const pagesService = {
                 password: hashedPassword,
                 role_id: 4
             }
-            let result = await fetch(`http://localhost:3000/api/users`, {
+            let result = await fetch(`${url}/api/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -191,7 +193,7 @@ const pagesService = {
     login: async (req, res) => {
         try {
             let loginUser = req.body
-            let isUserExists = await fetch(`http://localhost:3000/api/users/getByEmail`, {
+            let isUserExists = await fetch(`${url}/api/users/getByEmail`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
